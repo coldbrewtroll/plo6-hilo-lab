@@ -1,0 +1,4 @@
+{ "note": "paired duplicate deals, 40,000 per table type, after the rules fixes (rake on called pots only, real-pool ranks)",
+  "cols": { "round1": "round-1 bots", "round3": "round-3 bots", "round5": "round-5 bots", "stations": "calling stations", "mixed": "mixed table" },
+  "rows": [ { "label": "Round 6 vs round 5", "vals": { "round1": [4.54, 2.73], "round3": [3.77, 2.60], "round5": [12.00, 2.90], "stations": [2.82, 3.08], "mixed": [6.58, 2.81] } },
+            { "label": "Round 6 vs round 3", "vals": { "round1": [-5.08, 3.43], "round3": [23.46, 3.54], "round5": [31.54, 3.78], "stations": [-4.23, 3.83], "mixed": [15.37, 3.68] } } ] }

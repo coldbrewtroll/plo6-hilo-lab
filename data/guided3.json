@@ -1,0 +1,83 @@
+[
+ {
+  "name": "river heads-up: bluff 25% when checked to and behind, pot-size",
+  "street": "river",
+  "patch": {
+   "bluff": 0.25,
+   "bluffSize": 1.0,
+   "bluffMax": 0.0
+  }
+ },
+ {
+  "name": "river heads-up: bluff 50% when checked to and behind, pot-size",
+  "street": "river",
+  "patch": {
+   "bluff": 0.5,
+   "bluffSize": 1.0,
+   "bluffMax": 0.0
+  }
+ },
+ {
+  "name": "turn heads-up: bluff 25% when checked to and behind, pot-size",
+  "street": "turn",
+  "patch": {
+   "bluff": 0.25,
+   "bluffSize": 1.0,
+   "bluffMax": 0.0
+  }
+ },
+ {
+  "name": "turn heads-up: bluff 50% when checked to and behind, pot-size",
+  "street": "turn",
+  "patch": {
+   "bluff": 0.5,
+   "bluffSize": 1.0,
+   "bluffMax": 0.0
+  }
+ },
+ {
+  "name": "turn heads-up: pot-size thin value (bet 6 pts thinner)",
+  "street": "turn",
+  "patch": {
+   "huVb": 0.06,
+   "thin": 1.0
+  }
+ },
+ {
+  "name": "river heads-up: pot-size thin value (bet 6 pts thinner)",
+  "street": "river",
+  "patch": {
+   "huVb": 0.06,
+   "thin": 1.0
+  }
+ },
+ {
+  "name": "flop: one-third pot when well ahead",
+  "street": "flop",
+  "patch": {
+   "bigSize": 0.33
+  }
+ },
+ {
+  "name": "flop: one-third pot after the edge jumps",
+  "street": "flop",
+  "patch": {
+   "swingSize": 0.33
+  }
+ },
+ {
+  "name": "flop heads-up: call tax 4 pts",
+  "street": "flop",
+  "patch": {
+   "huAdj": 0.04
+  }
+ },
+ {
+  "name": "flop heads-up: pot-size thin value (bet 4 pts thinner)",
+  "street": "flop",
+  "patch": {
+   "huVb": 0.04,
+   "thin": 1.0
+  }
+ }
+]

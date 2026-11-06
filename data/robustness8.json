@@ -1,0 +1,3 @@
+{ "note": "paired duplicate deals, 40,000 per table type. Round 8 is level with round 7 everywhere (all within noise): the postflop strategy has converged",
+  "cols": { "round1": "round-1 bots", "round3": "round-3 bots", "round7": "round-7 bots", "stations": "calling stations", "mixed": "mixed table" },
+  "rows": [ { "label": "Round 8 vs round 7", "vals": { "round1": [-1.06, 1.97], "round3": [1.74, 1.61], "round7": [0.70, 1.91], "stations": [1.32, 2.16], "mixed": [0.33, 1.99] } } ] }

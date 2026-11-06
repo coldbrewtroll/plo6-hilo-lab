@@ -1,0 +1,10 @@
+[
+ { "name": "blinds 3-bet the top 5% vs opens (solver chart: never)", "street": "pre", "patch": { "tbBlind": 5 } },
+ { "name": "blinds 3-bet the top 10% vs opens", "street": "pre", "patch": { "tbBlind": 10 } },
+ { "name": "BB defends 20% wider", "street": "pre", "patch": { "ctBB": 1.2 } },
+ { "name": "BB defends 20% tighter", "street": "pre", "patch": { "ctBB": 0.8 } },
+ { "name": "open 15% wider from every position", "street": "pre", "patch": { "rfiUTG": 1.15, "rfiHJ": 1.15, "rfiCO": 1.15, "rfiBTN": 1.15, "rfiSB": 1.15 } },
+ { "name": "open 15% tighter from every position", "street": "pre", "patch": { "rfiUTG": 0.85, "rfiHJ": 0.85, "rfiCO": 0.85, "rfiBTN": 0.85, "rfiSB": 0.85 } },
+ { "name": "3-bet twice as wide in position", "street": "pre", "patch": { "tbIP": 2.0 } },
+ { "name": "flat calls vs opens 25% tighter in position", "street": "pre", "patch": { "ctIP": 0.75 } }
+]

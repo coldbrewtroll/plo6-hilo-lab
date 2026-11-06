@@ -1,0 +1,5 @@
+# build outputs (the desktop .exe is rebuilt by desktop/build.sh)
+*.exe
+dist/
+shots/
+node_modules/

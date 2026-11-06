@@ -1,0 +1,703 @@
+{
+ "theta": {
+  "flop": {
+   "vb": 0.092,
+   "big": 0.18,
+   "thin": 0.66,
+   "bomb": 1.01,
+   "bluff": 0.03,
+   "slack": -0.021,
+   "sizeAdj": 0.425,
+   "raiseM": 0.3,
+   "raiseSc": 1.01
+  },
+  "turn": {
+   "vb": 0.14,
+   "big": 0.18,
+   "thin": 0.66,
+   "bomb": 1.01,
+   "bluff": 0.03,
+   "slack": -0.025,
+   "sizeAdj": 0.511,
+   "raiseM": 0.38,
+   "raiseSc": 1.01
+  },
+  "river": {
+   "vb": 0.14,
+   "big": 0.18,
+   "thin": 0.66,
+   "bomb": 1.01,
+   "bluff": 0,
+   "slack": -0.046,
+   "sizeAdj": 0.633,
+   "raiseM": 0.38,
+   "raiseSc": 1.01
+  }
+ },
+ "baseline": {
+  "flop": {
+   "vb": 0.18,
+   "big": 0.18,
+   "thin": 0.66,
+   "bomb": 1.01,
+   "bluff": 0.08,
+   "slack": 0.03,
+   "sizeAdj": 0,
+   "raiseM": 0.3,
+   "raiseSc": 1.01
+  },
+  "turn": {
+   "vb": 0.18,
+   "big": 0.18,
+   "thin": 0.66,
+   "bomb": 1.01,
+   "bluff": 0.08,
+   "slack": 0.03,
+   "sizeAdj": 0,
+   "raiseM": 0.3,
+   "raiseSc": 1.01
+  },
+  "river": {
+   "vb": 0.18,
+   "big": 0.18,
+   "thin": 0.66,
+   "bomb": 1.01,
+   "bluff": 0.08,
+   "slack": 0.03,
+   "sizeAdj": 0,
+   "raiseM": 0.3,
+   "raiseSc": 1.01
+  }
+ },
+ "history": [
+  {
+   "sweep": 1,
+   "street": "river",
+   "key": "vb",
+   "from": 0.18,
+   "to": 0.14,
+   "bb100": 2.3,
+   "se100": 0.52,
+   "z": 4.39,
+   "deals": 60000,
+   "changedShare": 0.006
+  },
+  {
+   "sweep": 1,
+   "street": "river",
+   "key": "bluff",
+   "from": 0.08,
+   "to": 0.03,
+   "bb100": 2.53,
+   "se100": 0.41,
+   "z": 6.16,
+   "deals": 60000,
+   "changedShare": 0.003
+  },
+  {
+   "sweep": 1,
+   "street": "river",
+   "key": "slack",
+   "from": 0.03,
+   "to": 0,
+   "bb100": 3.87,
+   "se100": 0.47,
+   "z": 8.21,
+   "deals": 60000,
+   "changedShare": 0.003
+  },
+  {
+   "sweep": 1,
+   "street": "river",
+   "key": "sizeAdj",
+   "from": 0,
+   "to": 0.25,
+   "bb100": 15.6,
+   "se100": 1.31,
+   "z": 11.88,
+   "deals": 60000,
+   "changedShare": 0.008
+  },
+  {
+   "sweep": 1,
+   "street": "river",
+   "key": "raiseM",
+   "from": 0.3,
+   "to": 0.38,
+   "bb100": 7.14,
+   "se100": 0.97,
+   "z": 7.33,
+   "deals": 60000,
+   "changedShare": 0.003
+  },
+  {
+   "sweep": 1,
+   "street": "turn",
+   "key": "vb",
+   "from": 0.18,
+   "to": 0.14,
+   "bb100": 3.3,
+   "se100": 0.84,
+   "z": 3.9,
+   "deals": 60000,
+   "changedShare": 0.008
+  },
+  {
+   "sweep": 1,
+   "street": "turn",
+   "key": "bluff",
+   "from": 0.08,
+   "to": 0.03,
+   "bb100": 1.46,
+   "se100": 0.4,
+   "z": 3.65,
+   "deals": 60000,
+   "changedShare": 0.003
+  },
+  {
+   "sweep": 1,
+   "street": "turn",
+   "key": "slack",
+   "from": 0.03,
+   "to": 0,
+   "bb100": 3.04,
+   "se100": 0.72,
+   "z": 4.25,
+   "deals": 60000,
+   "changedShare": 0.003
+  },
+  {
+   "sweep": 1,
+   "street": "turn",
+   "key": "sizeAdj",
+   "from": 0,
+   "to": 0.25,
+   "bb100": 8.67,
+   "se100": 1.33,
+   "z": 6.52,
+   "deals": 60000,
+   "changedShare": 0.007
+  },
+  {
+   "sweep": 1,
+   "street": "turn",
+   "key": "raiseM",
+   "from": 0.3,
+   "to": 0.38,
+   "bb100": 2.65,
+   "se100": 0.74,
+   "z": 3.6,
+   "deals": 60000,
+   "changedShare": 0.002
+  },
+  {
+   "sweep": 1,
+   "street": "flop",
+   "key": "vb",
+   "from": 0.18,
+   "to": 0.14,
+   "bb100": 3.66,
+   "se100": 1.06,
+   "z": 3.47,
+   "deals": 60000,
+   "changedShare": 0.009
+  },
+  {
+   "sweep": 1,
+   "street": "flop",
+   "key": "bluff",
+   "from": 0.08,
+   "to": 0.03,
+   "bb100": 1.16,
+   "se100": 0.38,
+   "z": 3.09,
+   "deals": 60000,
+   "changedShare": 0.002
+  },
+  {
+   "sweep": 1,
+   "street": "flop",
+   "key": "slack",
+   "from": 0.03,
+   "to": 0,
+   "bb100": 3.25,
+   "se100": 0.59,
+   "z": 5.49,
+   "deals": 60000,
+   "changedShare": 0.002
+  },
+  {
+   "sweep": 1,
+   "street": "flop",
+   "key": "sizeAdj",
+   "from": 0,
+   "to": 0.25,
+   "bb100": 6.21,
+   "se100": 1.16,
+   "z": 5.34,
+   "deals": 60000,
+   "changedShare": 0.006
+  },
+  {
+   "sweep": 2,
+   "street": "river",
+   "key": "bluff",
+   "from": 0.03,
+   "to": 0,
+   "bb100": 0.73,
+   "se100": 0.22,
+   "z": 3.32,
+   "deals": 60000,
+   "changedShare": 0.002
+  },
+  {
+   "sweep": 2,
+   "street": "river",
+   "key": "slack",
+   "from": 0,
+   "to": -0.021,
+   "bb100": 1.67,
+   "se100": 0.31,
+   "z": 5.38,
+   "deals": 60000,
+   "changedShare": 0.001
+  },
+  {
+   "sweep": 2,
+   "street": "river",
+   "key": "sizeAdj",
+   "from": 0.25,
+   "to": 0.425,
+   "bb100": 5.26,
+   "se100": 0.69,
+   "z": 7.63,
+   "deals": 60000,
+   "changedShare": 0.003
+  },
+  {
+   "sweep": 2,
+   "street": "turn",
+   "key": "sizeAdj",
+   "from": 0.25,
+   "to": 0.425,
+   "bb100": 2.74,
+   "se100": 0.63,
+   "z": 4.32,
+   "deals": 60000,
+   "changedShare": 0.004
+  },
+  {
+   "sweep": 2,
+   "street": "flop",
+   "key": "vb",
+   "from": 0.14,
+   "to": 0.112,
+   "bb100": 2.55,
+   "se100": 0.85,
+   "z": 2.98,
+   "deals": 60000,
+   "changedShare": 0.008
+  },
+  {
+   "sweep": 2,
+   "street": "flop",
+   "key": "slack",
+   "from": 0,
+   "to": -0.021,
+   "bb100": 2.06,
+   "se100": 0.58,
+   "z": 3.58,
+   "deals": 60000,
+   "changedShare": 0.003
+  },
+  {
+   "sweep": 2,
+   "street": "flop",
+   "key": "sizeAdj",
+   "from": 0.25,
+   "to": 0.425,
+   "bb100": 2.42,
+   "se100": 0.81,
+   "z": 2.98,
+   "deals": 60000,
+   "changedShare": 0.004
+  },
+  {
+   "sweep": 3,
+   "street": "river",
+   "key": "slack",
+   "from": -0.021,
+   "to": -0.036,
+   "bb100": 1.47,
+   "se100": 0.27,
+   "z": 5.47,
+   "deals": 60000,
+   "changedShare": 0.001
+  },
+  {
+   "sweep": 3,
+   "street": "river",
+   "key": "sizeAdj",
+   "from": 0.425,
+   "to": 0.547,
+   "bb100": 2.86,
+   "se100": 0.5,
+   "z": 5.68,
+   "deals": 60000,
+   "changedShare": 0.002
+  },
+  {
+   "sweep": 3,
+   "street": "turn",
+   "key": "slack",
+   "from": 0,
+   "to": -0.015,
+   "bb100": 1.14,
+   "se100": 0.29,
+   "z": 4,
+   "deals": 60000,
+   "changedShare": 0.001
+  },
+  {
+   "sweep": 3,
+   "street": "flop",
+   "key": "vb",
+   "from": 0.112,
+   "to": 0.092,
+   "bb100": 1.85,
+   "se100": 0.62,
+   "z": 2.97,
+   "deals": 60000,
+   "changedShare": 0.007
+  },
+  {
+   "sweep": 4,
+   "street": "river",
+   "key": "slack",
+   "from": -0.036,
+   "to": -0.046,
+   "bb100": 0.69,
+   "se100": 0.22,
+   "z": 3.06,
+   "deals": 60000,
+   "changedShare": 0.001
+  },
+  {
+   "sweep": 4,
+   "street": "river",
+   "key": "sizeAdj",
+   "from": 0.547,
+   "to": 0.633,
+   "bb100": 1.94,
+   "se100": 0.45,
+   "z": 4.35,
+   "deals": 60000,
+   "changedShare": 0.002
+  },
+  {
+   "sweep": 4,
+   "street": "turn",
+   "key": "slack",
+   "from": -0.015,
+   "to": -0.025,
+   "bb100": 1.03,
+   "se100": 0.32,
+   "z": 3.25,
+   "deals": 60000,
+   "changedShare": 0.001
+  },
+  {
+   "sweep": 4,
+   "street": "turn",
+   "key": "sizeAdj",
+   "from": 0.425,
+   "to": 0.511,
+   "bb100": 1.73,
+   "se100": 0.43,
+   "z": 3.98,
+   "deals": 60000,
+   "changedShare": 0.002
+  }
+ ],
+ "sweeps": 5,
+ "deals": 32400000,
+ "hypothesesStart": [
+  {
+   "name": "thin river value",
+   "street": "river",
+   "key": "vb",
+   "from": 0.18,
+   "to": 0.02,
+   "bb100": 2.81,
+   "se100": 1.31,
+   "z": 2.14
+  },
+  {
+   "name": "thin river value",
+   "street": "river",
+   "key": "vb",
+   "from": 0.18,
+   "to": 0.06,
+   "bb100": 4.53,
+   "se100": 1.11,
+   "z": 4.07
+  },
+  {
+   "name": "thin river value",
+   "street": "river",
+   "key": "vb",
+   "from": 0.18,
+   "to": 0.1,
+   "bb100": 4.75,
+   "se100": 0.85,
+   "z": 5.56
+  },
+  {
+   "name": "thin river value",
+   "street": "river",
+   "key": "vb",
+   "from": 0.18,
+   "to": 0.14,
+   "bb100": 2.52,
+   "se100": 0.58,
+   "z": 4.37
+  },
+  {
+   "name": "river bomb with scoop potential",
+   "street": "river",
+   "key": "bomb",
+   "from": 1.01,
+   "to": 0.4,
+   "bb100": 1.67,
+   "se100": 1.14,
+   "z": 1.47
+  },
+  {
+   "name": "river bomb with scoop potential",
+   "street": "river",
+   "key": "bomb",
+   "from": 1.01,
+   "to": 0.55,
+   "bb100": 0.83,
+   "se100": 1.03,
+   "z": 0.8
+  },
+  {
+   "name": "river bomb with scoop potential",
+   "street": "river",
+   "key": "bomb",
+   "from": 1.01,
+   "to": 0.7,
+   "bb100": 0.08,
+   "se100": 0.93,
+   "z": 0.09
+  },
+  {
+   "name": "turn bomb with scoop potential",
+   "street": "turn",
+   "key": "bomb",
+   "from": 1.01,
+   "to": 0.5,
+   "bb100": 1.67,
+   "se100": 1.14,
+   "z": 1.47
+  },
+  {
+   "name": "turn bomb with scoop potential",
+   "street": "turn",
+   "key": "bomb",
+   "from": 1.01,
+   "to": 0.65,
+   "bb100": 1.81,
+   "se100": 0.77,
+   "z": 2.35
+  },
+  {
+   "name": "thin value size (river)",
+   "street": "river",
+   "key": "thin",
+   "from": 0.66,
+   "to": 0.33,
+   "bb100": 0,
+   "se100": 0,
+   "z": 0
+  },
+  {
+   "name": "thin value size (river)",
+   "street": "river",
+   "key": "thin",
+   "from": 0.66,
+   "to": 0.5,
+   "bb100": 0,
+   "se100": 0,
+   "z": 0
+  },
+  {
+   "name": "thin value size (river)",
+   "street": "river",
+   "key": "thin",
+   "from": 0.66,
+   "to": 0.75,
+   "bb100": 0,
+   "se100": 0,
+   "z": 0
+  }
+ ],
+ "hypothesesEnd": [
+  {
+   "name": "thin river value",
+   "street": "river",
+   "key": "vb",
+   "from": 0.14,
+   "to": 0.02,
+   "bb100": -1.8,
+   "se100": 0.84,
+   "z": -2.14
+  },
+  {
+   "name": "thin river value",
+   "street": "river",
+   "key": "vb",
+   "from": 0.14,
+   "to": 0.06,
+   "bb100": -1,
+   "se100": 0.68,
+   "z": -1.48
+  },
+  {
+   "name": "thin river value",
+   "street": "river",
+   "key": "vb",
+   "from": 0.14,
+   "to": 0.1,
+   "bb100": -0.6,
+   "se100": 0.47,
+   "z": -1.28
+  },
+  {
+   "name": "river bomb with scoop potential",
+   "street": "river",
+   "key": "bomb",
+   "from": 1.01,
+   "to": 0.4,
+   "bb100": -3.22,
+   "se100": 0.97,
+   "z": -3.33
+  },
+  {
+   "name": "river bomb with scoop potential",
+   "street": "river",
+   "key": "bomb",
+   "from": 1.01,
+   "to": 0.55,
+   "bb100": -3.9,
+   "se100": 0.89,
+   "z": -4.37
+  },
+  {
+   "name": "river bomb with scoop potential",
+   "street": "river",
+   "key": "bomb",
+   "from": 1.01,
+   "to": 0.7,
+   "bb100": -3.1,
+   "se100": 0.77,
+   "z": -4.01
+  },
+  {
+   "name": "turn bomb with scoop potential",
+   "street": "turn",
+   "key": "bomb",
+   "from": 1.01,
+   "to": 0.5,
+   "bb100": -3.83,
+   "se100": 1.12,
+   "z": -3.43
+  },
+  {
+   "name": "turn bomb with scoop potential",
+   "street": "turn",
+   "key": "bomb",
+   "from": 1.01,
+   "to": 0.65,
+   "bb100": -1.66,
+   "se100": 0.8,
+   "z": -2.09
+  },
+  {
+   "name": "thin value size (river)",
+   "street": "river",
+   "key": "thin",
+   "from": 0.66,
+   "to": 0.33,
+   "bb100": -0.17,
+   "se100": 0.31,
+   "z": -0.55
+  },
+  {
+   "name": "thin value size (river)",
+   "street": "river",
+   "key": "thin",
+   "from": 0.66,
+   "to": 0.5,
+   "bb100": 0.13,
+   "se100": 0.27,
+   "z": 0.48
+  },
+  {
+   "name": "thin value size (river)",
+   "street": "river",
+   "key": "thin",
+   "from": 0.66,
+   "to": 0.75,
+   "bb100": 0.25,
+   "se100": 0.22,
+   "z": 1.13
+  }
+ ],
+ "final": {
+  "vsOriginalTable": {
+   "bb100": 75.49,
+   "se100": 1.96,
+   "z": 38.6,
+   "deals": 200000
+  }
+ },
+ "started": "2026-11-02T08:49:01.680Z",
+ "finished": "2026-11-02T15:32:06.163Z",
+ "exploits": {
+  "vsStations": [
+   {
+    "name": "bomb scoop hands vs calling stations",
+    "street": "river",
+    "key": "bomb",
+    "from": 1.01,
+    "to": 0.4,
+    "bb100": 9.93,
+    "se100": 1.41,
+    "z": 7.0
+   },
+   {
+    "name": "bomb scoop hands vs calling stations",
+    "street": "river",
+    "key": "bomb",
+    "from": 1.01,
+    "to": 0.55,
+    "bb100": 6.8,
+    "se100": 1.18,
+    "z": 5.7
+   },
+   {
+    "name": "bomb scoop hands vs calling stations",
+    "street": "river",
+    "key": "bomb",
+    "from": 1.01,
+    "to": 0.7,
+    "bb100": 2.87,
+    "se100": 0.93,
+    "z": 3.1
+   }
+  ],
+  "stationDef": "opponents that ignore bet size (sizeAdj 0) and call 5 pts looser; learner = tuned policy; 40,000 duplicate deals each; turn trigger = river + 0.10"
+ }
+}

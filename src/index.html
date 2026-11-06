@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>PLO6 Hi/Lo Lab</title>
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#0b0f13">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="PLO6 Lab">
+<meta name="format-detection" content="telephone=no">
+<link rel="apple-touch-icon" href="/*TOUCHICON*/">
+<!--WEBAPP-->
+<style>/*STYLE*/</style>
+</head>
+<body>
+<header>
+  <h1>PLO6 Hi/Lo Lab <small>6-card Omaha 8-or-better · 6-max</small></h1>
+  <nav class="tabs">
+    <button class="tab on" data-tab="sim">Simulator</button>
+    <button class="tab" data-tab="train">Trainer</button>
+  </nav>
+  <div class="spacer"></div>
+    <label class="hdr-opt"><input type="checkbox" id="fourColor" checked> 4-color deck</label>
+</header>
+<main>
+<!-- ================= SIMULATOR ================= -->
+<section class="page on" id="page-sim">
+  <div class="subtabs">
+    <button class="subtab on" data-sub="sim-table">6-Max Table Equity</button>
+    <button class="subtab" data-sub="sim-analyzer">Hand Analyzer</button>
+  </div>
+
+  <div class="page on" id="sim-table">
+    <div class="sim-grid">
+      <div>
+        <div class="table-wrap" id="tableWrap">
+          <div id="seat-0"></div><div id="seat-1"></div><div id="seat-2"></div>
+          <div class="center">
+            <div class="board-cards" id="boardCards" title="Click to target the board, then pick cards"></div>
+            <div class="row">
+              <input type="text" id="boardInput" placeholder="Board, e.g. Ks7h2d">
+              <button class="btn sm" id="dealFlop">Flop</button>
+              <button class="btn sm" id="dealTurn">Turn</button>
+              <button class="btn sm" id="dealRiver">River</button>
+              <button class="btn sm" id="clearBoard">Clear</button>
+            </div>
+            <div class="row"><span class="muted" style="font-size:12px">Dead</span><input type="text" id="deadInput" placeholder="Dead / mucked cards"></div>
+            <div class="progress"><span id="simProg"></span></div>
+            <div class="summary" id="simSummary">&nbsp;</div>
+          </div>
+          <div id="seat-5"></div><div id="seat-4"></div><div id="seat-3"></div>
+        </div>
+        <div class="err-msg" id="simErr"></div>
+      </div>
+      <div class="col">
+        <div class="panel col">
+          <div class="row">
+            <button class="btn primary" id="runSim">Run <kbd>Enter</kbd></button>
+            <button class="btn" id="stopSim">Stop</button>
+          </div>
+          <div class="row">
+            <label class="ink2" style="font-size:13px">Method
+              <select id="simMode" title="How equity is computed">
+                <option value="auto" selected>Auto (exact when feasible)</option>
+                <option value="mc">Monte Carlo</option>
+                <option value="exact">Exact enumeration</option>
+              </select></label>
+            <label class="ink2" style="font-size:13px">Stop
+              <select id="simTrials" title="Monte Carlo stopping rule">
+                <option value="10000">10k trials</option><option value="30000">30k trials</option>
+                <option value="100000">100k trials</option><option value="300000">300k trials</option><option value="1000000">1M trials</option>
+                <option value="ci:0.005" selected>at ±0.5% (95% CI)</option><option value="ci:0.0025">at ±0.25% (95% CI)</option><option value="ci:0.001">at ±0.1% (95% CI)</option>
+              </select></label>
+          </div>
+          <label class="row ink2" style="font-size:13px"><input type="checkbox" id="autoRun" checked> Auto-run on change</label>
+          <div class="row">
+            <button class="btn sm" id="randAll">Randomize active hands</button>
+            <button class="btn sm" id="allIn">All 6 seats in</button>
+            <button class="btn sm" id="heroVsField">Hero (UTG) vs 5 random</button>
+            <button class="btn sm" id="clearAll">Clear all</button>
+          </div>
+          <div class="note" style="margin-top:0">An active seat with fewer than 6 cards is filled randomly each trial (blank = random hand).
+            Click a seat or the board to target it, then click cards below. Click a card in a seat to remove it.</div>
+        </div>
+        <div class="panel">
+          <h3>Card picker <span class="muted" id="pickTarget" style="font-weight:500"></span></h3>
+          <div class="picker" id="picker"></div>
+        </div>
+      </div>
+    </div>
+    <div class="panel section">
+      <h3>Results</h3>
+      <table class="data" id="simTable"></table>
+      <div class="note">± is the 95% confidence interval of the Monte Carlo estimate (1.96 × standard error of the per-trial pot share); exact enumeration has no sampling error.
+        Equity = share of the pot won (half to best high, half to best qualifying low; whole pot to high when no low). Hi / Lo = tie-adjusted win rate of each half. Scoop = won the whole pot alone. Low made = made any qualifying 8-low.</div>
+    </div>
+
+    <div class="panel section">
+      <div class="row" style="justify-content:space-between"><h3 style="margin:0">Monte Carlo convergence</h3>
+        <div class="row"><select id="convView"><option value="dev" selected>Deviation from final estimate</option><option value="eq">Running equity</option></select>
+        <label class="ink2" style="font-size:13px"><input type="checkbox" id="convBands"> Per-seat 95% CI bands</label></div></div>
+      <div class="legend" id="convLegend"></div>
+      <div class="conv" id="convChart"><div class="muted" style="padding:20px 0">Run a Monte Carlo simulation to see each seat's equity estimate converge as trials accumulate.</div></div>
+      <div class="note">Each run deals the unknown cards (random hands, missing hole cards, the rest of the board) from a shuffled deck, scores the hi/lo split, and averages pot share over all trials. Error shrinks with 1/√trials: 4× the trials halves the ± band. X-axis is log-scaled.</div>
+    </div>
+  </div>
+
+  <div class="page" id="sim-analyzer">
+    <div class="panel">
+      <div class="row">
+        <input type="text" id="anHand" style="width:240px" placeholder="Hero hand, e.g. As2s3dKdQh9c" value="As2s3dKdQh9c">
+        <input type="text" id="anBoard" style="width:160px" placeholder="Board (optional)">
+        <select id="anTrials"><option value="8000">8k / row</option><option value="25000" selected>25k / row</option><option value="80000">80k / row</option></select>
+        <button class="btn primary" id="anRun">Analyze</button>
+        <button class="btn" id="anRand">Random hand</button>
+        <span class="err-msg" id="anErr"></span>
+      </div>
+      <div id="anHandView" class="hero-hand"></div>
+    </div>
+    <div class="sim-grid section" style="grid-template-columns:minmax(0,1fr) minmax(0,1fr)">
+      <div class="panel">
+        <h3>Equity vs N random opponents (6-max field)</h3>
+        <table class="data" id="anTable"></table>
+        <div class="note">Fair share = 1 / players. A ratio above 1.00× means the hand out-earns its share of the pot against random holdings.</div>
+      </div>
+      <div class="panel">
+        <h3>Hero's final high hand (by river)</h3>
+        <div id="anCats"></div>
+        <div class="statline section" id="anLow"></div>
+      </div>
+    </div>
+    <div class="sim-grid section" style="grid-template-columns:minmax(0,1fr) minmax(0,1fr)">
+      <div class="panel"><h3>Preflop strategy verdict (trainer model)</h3><div id="anVerdict" class="muted">Run an analysis.</div></div>
+      <div class="panel"><h3>Hand features</h3><div id="anFeat" class="chips"></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= TRAINER ================= -->
+<section class="page" id="page-train">
+  <div class="subtabs">
+    <button class="subtab on" data-sub="tr-pre">Preflop Ranges</button>
+    <button class="subtab" data-sub="tr-eq">Equity Guess</button>
+    <button class="subtab" data-sub="tr-sd">Showdown Reader</button>
+    <button class="subtab" data-sub="tr-stats">Stats &amp; Charts</button>
+  </div>
+
+  <div class="page on" id="tr-pre">
+    <div class="train-grid">
+      <div class="col" style="gap:14px">
+        <div class="ptable-wrap" id="preTable"></div>
+        <div class="sim-grid" style="grid-template-columns:minmax(0,1.4fr) minmax(0,1fr);gap:14px">
+          <div class="panel"><h3>Coach · this hand</h3><div id="preCoach" class="col" style="gap:8px"></div>
+            <div class="note">Your first decision is graded by the range chart (or EV). Later decisions follow the self-play strategy: bets and raises use your equity vs. each opponent's preflop range; calls and folds use your equity vs. the hands they are likely to hold, read from their betting, against the price after rake. Reads are range-vs-range: every bet, raise, call and check reweights the hands in their range by how often the bots' own strategy (with its Nit/Maniac tilt, bluffs and traps) would take that action with each one, so a river bet still contains bluffs. Bot-vs-bot tests: these reads land within ~1–3 points of the true average equity (the old cut-off reads were 6–14 points too pessimistic). It's a heuristic coach, not a solver.</div></div>
+          <div class="panel"><h3>Hand history</h3><div id="preLog" class="handlog"></div></div>
+        </div>
+        <div class="feedback panel" id="preFb"></div>
+        <div class="panel">
+          <h3>Decision tree: EV of each choice</h3>
+          <div id="preTree"></div>
+          <div class="note">EV in big blinds, measured against folding now. Assumes pot-limit sizing and 100bb stacks.
+            Equity is simulated against each response range and scaled by equity realization:
+            in or out of position, adjusted for playability (nut-heavy hands realize more, weak hands less).
+            Opens can get one caller or several (simulated 3-way). 4-bets are treated as all-in, and opponents act according to the range settings.
+            It's a simplified model, not a solver.</div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="panel">
+          <h3>Preflop decision flow</h3><div class="muted" style="font-size:12px;margin:-6px 0 8px">How your first decision this hand was graded. Later streets are graded in the Coach panel.</div>
+          <div class="flow" id="preFlow"></div>
+        </div>
+        <div class="panel">
+          <h3>Session</h3>
+          <div class="statline" id="preSession"></div>
+        </div>
+        <details class="panel filters" open>
+          <summary>Drill settings</summary>
+          <h4>Grade by</h4>
+          <select id="gradeBy"><option value="range">Range chart (default)</option><option value="ev">Best EV (decision tree)</option></select>
+          <h4>Spots</h4>
+          <label><input type="checkbox" class="preType" value="rfi" checked> Raise first in (folded to you)</label>
+          <label><input type="checkbox" class="preType" value="vsopen" checked> Facing an open</label>
+          <label><input type="checkbox" class="preType" value="vs3" checked> Facing a 3-bet</label>
+          <h4>Hero position</h4>
+          <div class="row" id="prePosF"></div>
+          <h4>Hands</h4>
+          <label><input type="checkbox" id="preBorder" checked> Focus on borderline hands</label>
+          <label><input type="checkbox" id="prePlayOut" checked> Play hands out to showdown</label>
+          <label><input type="checkbox" id="mathAll"> Call math on every street (always on the river)</label>
+          <label><input type="checkbox" id="adjType" checked> Adjust preflop grading for the opener's type</label>
+          <h4>Opponents</h4>
+          <select id="oppMix"><option value="mixed" selected>Mixed table (50% Reg · 25% Nit · 25% Maniac)</option><option value="reg">All Regs (balanced)</option><option value="nit">All Nits</option><option value="maniac">All Maniacs</option></select>
+          <label><input type="checkbox" id="preAuto"> Auto-advance after a correct answer (when not playing out)</label>
+        </details>
+        <details class="panel filters">
+          <summary>Ranges &amp; EV model</summary>
+          <div id="cfgForm"></div>
+          <div class="note">Hand rank = simulated pot share 3-way against 2 hands from the top 40% ("hands that would actually play"), compared with 40,000 simulated random hands (5,000 runouts each).
+            The default ranges are a fixed point of the EV model: every spot's ranges are a best response to the others, so the range chart and the EV tree agree.
+            Change anything here and the two can drift apart. It's an equilibrium of a simplified model, not a full-game solver.</div>
+        </details>
+      </div>
+    </div>
+  </div>
+
+  <div class="page" id="tr-eq">
+    <div class="train-grid">
+      <div class="col" style="gap:14px">
+        <div class="ptable-wrap" id="eqTable"></div>
+        <div class="feedback panel" id="eqFb"></div>
+        <div class="muted" style="font-size:12px">Keys: <kbd>←</kbd>/<kbd>→</kbd> nudge the slider (<kbd>Shift</kbd> = 5%) · <kbd>Enter</kbd> submit · <kbd>Space</kbd> next</div>
+      </div>
+      <div class="col">
+        <div class="panel"><h3>Session</h3><div class="statline" id="eqSession"></div></div>
+        <div class="panel filters">
+          <h3>Drill settings</h3>
+          <h4>Players</h4>
+          <select id="eqPlayers"><option value="2">Heads-up</option><option value="3">3-way</option><option value="4">4-way</option><option value="6">6-way (full 6-max)</option><option value="mix" selected>Mixed 2–6</option></select>
+          <h4>Street</h4>
+          <select id="eqStreet"><option value="pre">Preflop</option><option value="flop">Flop</option><option value="turn">Turn</option><option value="mix" selected>Mixed</option></select>
+          <div class="note">Scoring: 100 points for a perfect guess, −8 per percentage point of error. Equity uses exact enumeration when possible, otherwise 20k-trial Monte Carlo.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="page" id="tr-sd">
+    <div class="train-grid">
+      <div class="col" style="gap:14px">
+        <div class="ptable-wrap" id="sdTable"></div>
+        <div class="feedback panel" id="sdFb"></div>
+      </div>
+      <div class="col">
+        <div class="panel"><h3>Session</h3><div class="statline" id="sdSession"></div></div>
+        <div class="panel filters"><h3>Drill settings</h3><h4>Hands at showdown</h4>
+          <select id="sdCount"><option value="2">2</option><option value="3" selected>3</option><option value="4">4</option><option value="6">6</option></select>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="page" id="tr-stats">
+    <div class="statcards" id="statCards"></div>
+    <div class="sim-grid section" style="grid-template-columns:minmax(0,1fr) minmax(0,1fr)">
+      <div class="panel"><h3>Preflop accuracy by position</h3><table class="data" id="stPos"></table>
+        <h3 class="section">By spot type</h3><table class="data" id="stType"></table></div>
+      <div class="panel"><h3>Recent preflop mistakes</h3><div id="stMist" class="col"></div></div>
+    </div>
+    <div class="panel section"><h3>Bot self-play: leaks plugged</h3><div id="stSelfplay"></div></div>
+    <div class="panel section"><h3>Range chart (share of all 6-card hands, ranked by the model)</h3><table class="data" id="stChart"></table>
+      <div class="note" id="stModel"></div>
+      <div class="row section"><button class="btn" id="resetStats">Reset all stats</button></div>
+    </div>
+  </div>
+</section>
+</main>
+<script>/*ENGINE*/</script>
+<script>const PLO6_MODEL = /*MODEL*/;
+const PLO6_RANGES = /*RANGES*/;
+const PLO6_REALPOOL = /*REALPOOL*/;
+const PLO6_BOTPOLICY = /*BOTPOLICY*/;</script>
+<script>/*APP*/</script>
+</body>
+</html>

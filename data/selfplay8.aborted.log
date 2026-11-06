@@ -1,0 +1,6 @@
+[0.0m] guided jumps: 9 candidates from the problem-spot scan (60,000 duplicate deals each)
+[1.8m]   · flop: raise bets more (raise margin 0.15): -4.57 ± 1.87 bb/100 (z -2.4)
+[3.6m]   · flop: raise bets much more (raise margin 0.05): -10.27 ± 2.80 bb/100 (z -3.7)
+[5.2m]   · flop heads-up: re-steal (bluff-raise) 15% when slightly behind: -4.35 ± 1.18 bb/100 (z -3.7)
+[6.7m]   · flop heads-up: re-steal (bluff-raise) 30% when slightly behind: -9.42 ± 1.73 bb/100 (z -5.5)
+[8.2m]   · flop heads-up: call more (call tax 2 instead of 8): -8.12 ± 1.55 bb/100 (z -5.2)

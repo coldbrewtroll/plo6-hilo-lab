@@ -1,0 +1,11 @@
+[
+ { "name": "flop: stab pot 25% when checked to and slightly behind (any number of players)", "street": "flop", "patch": { "stab": 0.25, "stabLo": -0.10 } },
+ { "name": "flop: stab pot 50% when checked to and slightly behind (any number of players)", "street": "flop", "patch": { "stab": 0.50, "stabLo": -0.10 } },
+ { "name": "flop: stab pot 40% when checked to, down to 20 points behind", "street": "flop", "patch": { "stab": 0.40, "stabLo": -0.20 } },
+ { "name": "turn: stab pot 25% when checked to and slightly behind", "street": "turn", "patch": { "stab": 0.25, "stabLo": -0.10 } },
+ { "name": "flop: bet pot instead of two-thirds with value hands", "street": "flop", "patch": { "thin": 0.8, "bigSize": 1.0 } },
+ { "name": "flop: slow-play big hands facing a bet (raise margin +10)", "street": "flop", "patch": { "raiseM": 0.40 } },
+ { "name": "flop heads-up: bluff-raise 15% when facing a bet and slightly behind", "street": "flop", "patch": { "braise": 0.15, "bluffMax": 0.0 } },
+ { "name": "turn heads-up: trap (check) big hands 35%", "street": "turn", "patch": { "trap": 0.35 } },
+ { "name": "river heads-up: bluff 35% instead of 50%", "street": "river", "patch": { "bluff": 0.35 } }
+]

@@ -1,0 +1,3 @@
+{ "note": "paired duplicate deals, 60,000 per table type. The tuned charts (blinds 3-bet their top ~10% vs opens and keep the same flatting band behind it) are now the trainer's preflop charts; the solver's charts are kept in data/ranges.solver.json",
+  "cols": { "round1": "round-1 bots", "round3": "round-3 bots", "round8": "round-8 bots", "stations": "calling stations", "mixed": "mixed table" },
+  "rows": [ { "label": "Round 9 vs round 8", "vals": { "round1": [8.61, 3.25], "round3": [8.49, 3.16], "round8": [3.98, 3.01], "stations": [-0.15, 3.65], "mixed": [6.34, 3.27] } } ] }

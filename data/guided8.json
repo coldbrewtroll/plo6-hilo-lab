@@ -1,0 +1,11 @@
+[
+ { "name": "flop: raise bets more (raise margin 0.15)", "street": "flop", "patch": { "raiseM": 0.15 } },
+ { "name": "flop: raise bets much more (raise margin 0.05)", "street": "flop", "patch": { "raiseM": 0.05 } },
+ { "name": "flop heads-up: re-steal (bluff-raise) 15% when slightly behind", "street": "flop", "patch": { "braise": 0.15, "bluffMax": 0.0 } },
+ { "name": "flop heads-up: re-steal (bluff-raise) 30% when slightly behind", "street": "flop", "patch": { "braise": 0.30, "bluffMax": 0.0 } },
+ { "name": "flop heads-up: call more (call tax 2 instead of 8)", "street": "flop", "patch": { "huAdj": 0.02 } },
+ { "name": "flop: respect pot bets less (bet-size respect 0.2)", "street": "flop", "patch": { "sizeAdj": 0.2 } },
+ { "name": "flop: stab 35% instead of 50%", "street": "flop", "patch": { "stab": 0.35 } },
+ { "name": "flop: stab down to 20 points behind", "street": "flop", "patch": { "stabLo": -0.20 } },
+ { "name": "turn: raise bets more (raise margin 0.2)", "street": "turn", "patch": { "raiseM": 0.20 } }
+]

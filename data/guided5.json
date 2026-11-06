@@ -1,0 +1,14 @@
+[
+ { "name": "turn heads-up: raise for value when ahead of the bet (raise margin 0.10)", "street": "turn", "patch": { "raiseM": 0.10 } },
+ { "name": "turn heads-up: raise for value when ahead of the bet (raise margin 0)", "street": "turn", "patch": { "raiseM": 0.0 } },
+ { "name": "turn heads-up: bluff-raise 15% when facing a bet and behind", "street": "turn", "patch": { "braise": 0.15 } },
+ { "name": "turn heads-up: bluff-raise 30% when facing a bet and behind", "street": "turn", "patch": { "braise": 0.30 } },
+ { "name": "flop heads-up: stab pot 20% when checked to and slightly behind", "street": "flop", "patch": { "bluff": 0.20, "bluffSize": 1.0, "bluffMax": 0.0 } },
+ { "name": "flop heads-up: stab pot 40% when checked to and slightly behind", "street": "flop", "patch": { "bluff": 0.40, "bluffSize": 1.0, "bluffMax": 0.0 } },
+ { "name": "turn heads-up: stab pot 20% when checked to and behind", "street": "turn", "patch": { "bluff": 0.20, "bluffSize": 1.0, "bluffMax": 0.0 } },
+ { "name": "turn heads-up: stab pot 40% when checked to and behind", "street": "turn", "patch": { "bluff": 0.40, "bluffSize": 1.0, "bluffMax": 0.0 } },
+ { "name": "flop heads-up: fold more when slightly behind (call tax +4)", "street": "flop", "patch": { "huAdj": 0.08 } },
+ { "name": "river heads-up: stop thin-betting slightly-ahead hands", "street": "river", "patch": { "huVb": 0.0, "initVb": 0.0 } },
+ { "name": "turn heads-up: trap (check) big hands 25%", "street": "turn", "patch": { "trap": 0.25 } },
+ { "name": "turn: bet pot instead of two-thirds (thin + big)", "street": "turn", "patch": { "thin": 0.8, "bigSize": 1.0 } }
+]

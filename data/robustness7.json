@@ -1,0 +1,3 @@
+{ "note": "paired duplicate deals, 40,000 per table type. Versus calling stations the trainer turns stabs and bluffs off, so round 7 plays exactly like round 6 there",
+  "cols": { "round1": "round-1 bots", "round3": "round-3 bots", "round6": "round-6 bots", "stations": "calling stations", "mixed": "mixed table" },
+  "rows": [ { "label": "Round 7 vs round 6", "vals": { "round1": [-3.72, 2.22], "round3": [6.07, 1.92], "round6": [14.06, 1.90], "stations": [-3.12, 2.23], "mixed": [2.77, 1.99] } } ] }

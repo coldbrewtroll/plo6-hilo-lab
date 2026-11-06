@@ -1,0 +1,8 @@
+[0.0m] sweep 3 (step ×0.49, 30,000 duplicate deals per test)
+[24.3m]   ✓ river.huAdj: 0.04 → 0.06  +1.87 ± 0.62 bb/100 (z 3.0)
+[46.1m]   ✓ turn.huAdj: 0.04 → 0.06  +1.76 ± 0.65 bb/100 (z 2.7)
+[67.4m] sweep 3 done: 2 changes kept · 12.9M hands simulated so far
+[67.4m] sweep 4 (step ×0.34, 30,000 duplicate deals per test)
+[101.6m]   ✓ turn.initVb: 0 → 0.014  +0.68 ± 0.23 bb/100 (z 3.0)
+[129.0m] sweep 4 done: 1 changes kept · 19.9M hands simulated so far
+[129.0m] sweep 5 (step ×0.25, 30,000 duplicate deals per test)

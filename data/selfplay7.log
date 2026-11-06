@@ -1,0 +1,28 @@
+[0.0m] guided jumps: 9 candidates from the problem-spot scan (60,000 duplicate deals each)
+[1.8m]   · flop: stab pot 25% when checked to and slightly behind (any number of players): +1.95 ± 1.24 bb/100 (z 1.6)
+[3.9m]   ✓ flop: stab pot 50% when checked to and slightly behind (any number of players): +6.06 ± 1.53 bb/100 (z 4.0)
+[5.8m]   · flop: stab pot 40% when checked to, down to 20 points behind: +1.28 ± 1.11 bb/100 (z 1.2)
+[7.6m]   · turn: stab pot 25% when checked to and slightly behind: +0.18 ± 0.46 bb/100 (z 0.4)
+[9.4m]   · flop: bet pot instead of two-thirds with value hands: -0.96 ± 0.96 bb/100 (z -1.0)
+[11.2m]   · flop: slow-play big hands facing a bet (raise margin +10): -0.57 ± 0.92 bb/100 (z -0.6)
+[12.9m]   · flop heads-up: bluff-raise 15% when facing a bet and slightly behind: -5.40 ± 1.15 bb/100 (z -4.7)
+[14.6m]   · turn heads-up: trap (check) big hands 35%: -0.45 ± 0.64 bb/100 (z -0.7)
+[16.3m]   ✓ river heads-up: bluff 35% instead of 50%: +1.60 ± 0.58 bb/100 (z 2.8)
+[16.3m] sweep 1 (step ×1.00, 36,000 duplicate deals per test)
+[86.3m] sweep 1 done: 0 changes kept · 10.4M hands simulated so far
+[86.3m] sweep 2 (step ×0.70, 36,000 duplicate deals per test)
+[0.0m] sweep 2 (step ×0.70, 30,000 duplicate deals per test)
+[1.2m] sweep 2 done: 0 changes kept · 10.6M hands simulated so far
+[1.2m] final checks…
+[2.1m]   end thin river value: river.vb 0.1 → 0.02: -3.19 ± 1.01 bb/100 (z -3.2)
+[2.6m]   end thin river value: river.vb 0.1 → 0.06: -2.05 ± 0.86 bb/100 (z -2.4)
+[3.1m]   end thin river value: river.vb 0.1 → 0.14: +0.95 ± 0.71 bb/100 (z 1.3)
+[3.6m]   end river bomb with scoop potential: river.bomb 1.01 → 0.4: +0.31 ± 0.90 bb/100 (z 0.3)
+[4.1m]   end river bomb with scoop potential: river.bomb 1.01 → 0.55: -0.68 ± 0.84 bb/100 (z -0.8)
+[4.7m]   end river bomb with scoop potential: river.bomb 1.01 → 0.7: -1.06 ± 0.74 bb/100 (z -1.4)
+[5.2m]   end turn bomb with scoop potential: turn.bomb 1.01 → 0.5: -0.04 ± 1.58 bb/100 (z -0.0)
+[5.8m]   end turn bomb with scoop potential: turn.bomb 1.01 → 0.65: +0.93 ± 1.17 bb/100 (z 0.8)
+[6.4m]   end thin value size (river): river.thin 0.8 → 0.33: +0.03 ± 0.25 bb/100 (z 0.1)
+[6.9m]   end thin value size (river): river.thin 0.8 → 0.5: +0.08 ± 0.17 bb/100 (z 0.5)
+[7.5m]   end thin value size (river): river.thin 0.8 → 0.75: -0.08 ± 0.09 bb/100 (z -1.0)
+[13.1m] tuned bot vs the previous tuned bot (same seat, same cards, table of baseline bots): +4.43 ± 1.08 bb/100

@@ -1,0 +1,7 @@
+[
+ { "name": "blinds 3-bet the top 14% vs opens", "street": "pre", "patch": { "tbBlind": 14 } },
+ { "name": "blinds 3-bet the top 7% vs opens", "street": "pre", "patch": { "tbBlind": 7 } },
+ { "name": "blinds 3-bet the top 18% vs opens", "street": "pre", "patch": { "tbBlind": 18 } },
+ { "name": "BB defends 15% wider (with 3-bets)", "street": "pre", "patch": { "ctBB": 1.15 } },
+ { "name": "SB flats 30% less vs opens (with 3-bets)", "street": "pre", "patch": { "ctSB": 0.7 } }
+]

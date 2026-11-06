@@ -1,0 +1,12 @@
+[0.0m] sweep 1 (step ×1.00, 30,000 duplicate deals per test)
+[5.4m]   ✓ river.swingSize: 0.66 → 0.46  +1.86 ± 0.64 bb/100 (z 2.9)
+[7.2m]   ✓ river.initVb: 0 → 0.04  +0.67 ± 0.24 bb/100 (z 2.8)
+[13.8m]   ✓ river.huAdj: 0 → 0.04  +4.18 ± 0.97 bb/100 (z 4.3)
+[22.3m]   ✓ turn.bluffSize: 0.6 → 0.4  +0.20 ± 0.06 bb/100 (z 3.1)
+[26.6m]   ✓ turn.huAdj: 0 → 0.04  +3.50 ± 0.74 bb/100 (z 4.7)
+[38.8m] sweep 1 done: 5 changes kept · 3.4M hands simulated so far
+[38.8m] sweep 2 (step ×0.70, 30,000 duplicate deals per test)
+[43.1m]   ✓ river.swingSize: 0.46 → 0.33  +1.89 ± 0.65 bb/100 (z 2.9)
+[54.9m]   ✓ turn.swingVb: 0 → 0.035  +0.64 ± 0.20 bb/100 (z 3.3)
+[66.1m] sweep 2 done: 2 changes kept · 5.9M hands simulated so far
+[66.1m] phase done (final checks skipped)

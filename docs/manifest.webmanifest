@@ -1,0 +1,24 @@
+{
+ "name": "PLO6 Hi/Lo Lab",
+ "short_name": "PLO6 Lab",
+ "description": "6-card Omaha Hi/Lo 8-or-better simulator and trainer",
+ "start_url": "./",
+ "scope": "./",
+ "display": "standalone",
+ "orientation": "portrait",
+ "background_color": "#0b0f13",
+ "theme_color": "#0b0f13",
+ "icons": [
+  {
+   "src": "icon-192.png",
+   "sizes": "192x192",
+   "type": "image/png"
+  },
+  {
+   "src": "icon-512.png",
+   "sizes": "512x512",
+   "type": "image/png",
+   "purpose": "any"
+  }
+ ]
+}
