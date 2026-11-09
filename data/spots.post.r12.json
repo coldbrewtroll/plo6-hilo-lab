@@ -1,0 +1,5586 @@
+{
+ "mode": "post",
+ "hands": 2000000,
+ "plays": 5089054,
+ "decisions": 853449,
+ "policy": "botpolicy9.json",
+ "pop": "botpolicy.json,botpolicy2.round3.json,botpolicy3.round6.json,botpolicy5.round8.json,botpolicy7.round10.json,botpolicy8.round11.json,station:botpolicy8.round11.json,self,self",
+ "totalSignificantLeak": 24.26,
+ "spots": [
+  {
+   "cat": "flop · checked to / first in · heads-up · slightly behind · edge steady",
+   "n": 56365,
+   "usual": "bet pot",
+   "usualShare": 0.6478665838729708,
+   "best": "bet pot",
+   "gain": 1.0269895047006186,
+   "se": 0.0512761249060629,
+   "z": 20.028609934585504,
+   "bb100": 2.8943131716225183,
+   "alts": [
+    {
+     "a": "check",
+     "mean": -1.909,
+     "gain": -2.427,
+     "se": 0.067
+    },
+    {
+     "a": "bet ⅓",
+     "mean": -0.307,
+     "gain": -0.825,
+     "se": 0.086
+    },
+    {
+     "a": "bet ⅔",
+     "mean": 0.67,
+     "gain": 0.151,
+     "se": 0.077
+    },
+    {
+     "a": "bet pot",
+     "mean": 1.545,
+     "gain": 1.027,
+     "se": 0.051
+    }
+   ]
+  },
+  {
+   "cat": "flop · facing a bet · heads-up · ahead +10–20 · edge jumped",
+   "n": 12995,
+   "usual": "call",
+   "usualShare": 0.5391304347826087,
+   "best": "raise",
+   "gain": 2.9225999350424834,
+   "se": 0.38709861348701874,
+   "z": 7.550013958240365,
+   "bb100": 1.8989593077938534,
+   "alts": [
+    {
+     "a": "fold",
+     "mean": -7.588,
+     "gain": -6.788,
+     "se": 0.39
+    },
+    {
+     "a": "call",
+     "mean": 1.251,
+     "gain": 2.051,
+     "se": 0.315
+    },
+    {
+     "a": "raise",
+     "mean": 2.209,
+     "gain": 2.923,
+     "se": 0.387
+    }
+   ]
+  },
+  {
+   "cat": "turn · facing a bet · heads-up · slightly ahead · edge steady",
+   "n": 7989,
+   "usual": "call",
+   "usualShare": 0.562523469770935,
+   "best": "call",
+   "gain": 4.258454116284888,
+   "se": 0.29281487564271,
+   "z": 14.543161808080454,
+   "bb100": 1.7010394967499984,
+   "alts": [
+    {
+     "a": "fold",
+     "mean": -11.081,
+     "gain": -2.935,
+     "se": 0.339
+    },
+    {
+     "a": "call",
+     "mean": -3.887,
+     "gain": 4.258,
+     "se": 0.293
+    },
+    {
+     "a": "raise",
+     "mean": -4.937,
+     "gain": 2.859,
+     "se": 0.529
+    }
+   ]
+  },
+  {
+   "cat": "flop · facing a bet · multiway · slightly ahead · edge steady",
+   "n": 6908,
+   "usual": "fold",
+   "usualShare": 0.6391140706427331,
+   "best": "raise",
+   "gain": 4.237458570183253,
+   "se": 0.5484774731420826,
+   "z": 7.725857081983643,
+   "bb100": 1.4636181901412955,
+   "alts": [
+    {
+     "a": "fold",
+     "mean": -5.381,
+     "gain": -0.025,
+     "se": 0.3
+    },
+    {
+     "a": "call",
+     "mean": -2.654,
+     "gain": 2.701,
+     "se": 0.433
+    },
+    {
+     "a": "raise",
+     "mean": -1.01,
+     "gain": 4.237,
+     "se": 0.548
+    }
+   ]
+  },
+  {
+   "cat": "flop · facing a bet · multiway · ahead +10–20 · edge jumped",
+   "n": 3241,
+   "usual": "fold",
+   "usualShare": 0.502005553841407,
+   "best": "raise",
+   "gain": 8.212637779249727,
+   "se": 0.7697684377434812,
+   "z": 10.668971831742624,
+   "bb100": 1.3308579521274182,
+   "alts": [
+    {
+     "a": "fold",
+     "mean": -5.614,
+     "gain": -4.211,
+     "se": 0.661
+    },
+    {
+     "a": "call",
+     "mean": 6.503,
+     "gain": 7.906,
+     "se": 0.725
+    },
+    {
+     "a": "raise",
+     "mean": 6.296,
+     "gain": 8.213,
+     "se": 0.77
+    }
+   ]
+  },
+  {
+   "cat": "flop · checked to / first in · heads-up · behind (<−10) · edge fell",
+   "n": 53037,
+   "usual": "check",
+   "usualShare": 0.5419612723193242,
+   "best": "bet pot",
+   "gain": 0.41523553029017374,
+   "se": 0.05980392155680904,
+   "z": 6.943282639011097,
+   "bb100": 1.1011423409999972,
+   "alts": [
+    {
+     "a": "check",
+     "mean": -3.337,
+     "gain": -1.575,
+     "se": 0.054
+    },
+    {
+     "a": "bet ⅓",
+     "mean": -3.838,
+     "gain": -2.077,
+     "se": 0.068
+    },
+    {
+     "a": "bet ⅔",
+     "mean": -3.049,
+     "gain": -1.288,
+     "se": 0.069
+    },
+    {
+     "a": "bet pot",
+     "mean": -1.346,
+     "gain": 0.415,
+     "se": 0.06
+    }
+   ]
+  },
+  {
+   "cat": "flop · checked to / first in · heads-up · slightly behind · edge fell",
+   "n": 19245,
+   "usual": "bet pot",
+   "usualShare": 0.6633411275656015,
+   "best": "bet pot",
+   "gain": 1.0581491339308906,
+   "se": 0.09485300875389258,
+   "z": 11.155672844035813,
+   "bb100": 1.0182040041249993,
+   "alts": [
+    {
+     "a": "check",
+     "mean": -2.448,
+     "gain": -2.939,
+     "se": 0.126
+    },
+    {
+     "a": "bet ⅓",
+     "mean": -0.593,
+     "gain": -1.084,
+     "se": 0.157
+    },
+    {
+     "a": "bet ⅔",
+     "mean": 0.536,
+     "gain": 0.045,
+     "se": 0.138
+    },
+    {
+     "a": "bet pot",
+     "mean": 1.55,
+     "gain": 1.058,
+     "se": 0.095
+    }
+   ]
+  },
+  {
+   "cat": "flop · facing a bet · heads-up · slightly behind · edge steady",
+   "n": 38620,
+   "usual": "fold",
+   "usualShare": 0.8024598653547385,
+   "best": "fold",
+   "gain": 0.5156101261444852,
+   "se": 0.05776634569761179,
+   "z": 8.925787496469624,
+   "bb100": 0.995643153585001,
+   "alts": [
+    {
+     "a": "fold",
+     "mean": -5.162,
+     "gain": 0.516,
+     "se": 0.058
+    },
+    {
+     "a": "call",
+     "mean": -7.143,
+     "gain": -1.465,
+     "se": 0.143
+    },
+    {
+     "a": "raise",
+     "mean": -5.718,
+     "gain": -0.336,
+     "se": 0.191
+    }
+   ]
+  },
+  {
+   "cat": "river · checked to / first in · heads-up · behind (<−10) · edge fell",
+   "n": 10533,
+   "usual": "check",
+   "usualShare": 0.7984429887021741,
+   "best": "check",
+   "gain": 1.8477166199088588,
+   "se": 0.14626675544508572,
+   "z": 12.632512523343449,
+   "bb100": 0.9730999578750006,
+   "alts": [
+    {
+     "a": "check",
+     "mean": -14.543,
+     "gain": 1.848,
+     "se": 0.146
+    },
+    {
+     "a": "bet ⅓",
+     "mean": -20.765,
+     "gain": -4.374,
+     "se": 0.192
+    },
+    {
+     "a": "bet ⅔",
+     "mean": -23.674,
+     "gain": -7.283,
+     "se": 0.247
+    },
+    {
+     "a": "bet pot",
+     "mean": -23.996,
+     "gain": -7.605,
+     "se": 0.288
+    }
+   ]
+  },
+  {
+   "cat": "river · checked to / first in · heads-up · way ahead (>+20) · edge jumped",
+   "n": 10546,
+   "usual": "bet pot",
+   "usualShare": 0.7940451355964346,
+   "best": "bet pot",
+   "gain": 1.6795869979613125,
+   "se": 0.11480867246098173,
+   "z": 14.629443594795752,
+   "bb100": 0.885646224025,
+   "alts": [
+    {
+     "a": "check",
+     "mean": 23.336,
+     "gain": -5.705,
+     "se": 0.221
+    },
+    {
+     "a": "bet ⅓",
+     "mean": 28.883,
+     "gain": -0.158,
+     "se": 0.17
+    },
+    {
+     "a": "bet ⅔",
+     "mean": 30.394,
+     "gain": 1.353,
+     "se": 0.144
+    },
+    {
+     "a": "bet pot",
+     "mean": 30.72,
+     "gain": 1.68,
+     "se": 0.115
+    }
+   ]
+  },
+  {
+   "cat": "flop · checked to / first in · multiway · slightly behind · edge steady",
+   "n": 18051,
+   "usual": "bet pot",
+   "usualShare": 0.6524292282976012,
+   "best": "bet pot",
+   "gain": 0.9362942124397511,
+   "se": 0.14555913095765086,
+   "z": 6.4323976536529175,
+   "bb100": 0.8450523414374973,
+   "alts": [
+    {
+     "a": "check",
+     "mean": -2.855,
+     "gain": -3.381,
+     "se": 0.175
+    },
+    {
+     "a": "bet ⅓",
+     "mean": -1.383,
+     "gain": -1.908,
+     "se": 0.215
+    },
+    {
+     "a": "bet ⅔",
+     "mean": -1.097,
+     "gain": -1.622,
+     "se": 0.202
+    },
+    {
+     "a": "bet pot",
+     "mean": 1.462,
+     "gain": 0.936,
+     "se": 0.146
+    }
+   ]
+  },
+  {
+   "cat": "flop · facing a bet · multiway · way ahead (>+20) · edge jumped",
+   "n": 1985,
+   "usual": "raise",
+   "usualShare": 0.5002518891687657,
+   "best": "call",
+   "gain": 7.466541267506298,
+   "se": 0.9272187570848341,
+   "z": 8.052621035170842,
+   "bb100": 0.7410542208000002,
+   "alts": [
+    {
+     "a": "fold",
+     "mean": -6.288,
+     "gain": -26.746,
+     "se": 1.502
+    },
+    {
+     "a": "call",
+     "mean": 27.924,
+     "gain": 7.467,
+     "se": 0.927
+    },
+    {
+     "a": "raise",
+     "mean": 18.709,
+     "gain": -0.282,
+     "se": 0.795
+    }
+   ]
+  },
+  {
+   "cat": "flop · checked to / first in · multiway · slightly ahead · edge steady",
+   "n": 13812,
+   "usual": "bet pot",
+   "usualShare": 0.47292209672748337,
+   "best": "bet pot",
+   "gain": 0.96042570807993,
+   "se": 0.17771431270095506,
+   "z": 5.404323903252889,
+   "bb100": 0.6632699939999998,
+   "alts": [
+    {
+     "a": "check",
+     "mean": -0.665,
+     "gain": -5.167,
+     "se": 0.244
+    },
+    {
+     "a": "bet ⅓",
+     "mean": 3.067,
+     "gain": -1.435,
+     "se": 0.269
+    },
+    {
+     "a": "bet ⅔",
+     "mean": 4.09,
+     "gain": -0.412,
+     "se": 0.203
+    },
+    {
+     "a": "bet pot",
+     "mean": 5.462,
+     "gain": 0.96,
+     "se": 0.178
+    }
+   ]
+  },
+  {
+   "cat": "flop · facing a bet · heads-up · slightly ahead · edge jumped",
+   "n": 9327,
+   "usual": "fold",
+   "usualShare": 0.5820735499088667,
+   "best": "raise",
+   "gain": 1.2724222085053256,
+   "se": 0.5186010435918775,
+   "z": 2.453566617784675,
+   "bb100": 0.5933940969364586,
+   "alts": [
+    {
+     "a": "fold",
+     "mean": -6.346,
+     "gain": -0.954,
+     "se": 0.225
+    },
+    {
+     "a": "call",
+     "mean": -4.148,
+     "gain": 1.244,
+     "se": 0.413
+    },
+    {
+     "a": "raise",
+     "mean": -3.917,
+     "gain": 1.272,
+     "se": 0.519
+    }
+   ]
+  },
+  {
+   "cat": "river · checked to / first in · heads-up · way ahead (>+20) · edge steady",
+   "n": 8039,
+   "usual": "bet pot",
+   "usualShare": 0.805572832441846,
+   "best": "bet pot",
+   "gain": 1.382784009341958,
+   "se": 0.11203129972533377,
+   "z": 12.342836445994276,
+   "bb100": 0.555810032555,
+   "alts": [
+    {
+     "a": "check",
+     "mean": 19.83,
+     "gain": -5.859,
+     "se": 0.242
+    },
+    {
+     "a": "bet ⅓",
+     "mean": 24.861,
+     "gain": -0.829,
+     "se": 0.179
+    },
+    {
+     "a": "bet ⅔",
+     "mean": 26.781,
+     "gain": 1.092,
+     "se": 0.147
+    },
+    {
+     "a": "bet pot",
+     "mean": 27.072,
+     "gain": 1.383,
+     "se": 0.112
+    }
+   ]
+  },
+  {
+   "cat": "turn · facing a bet · heads-up · slightly ahead · edge fell",
+   "n": 2129,
+   "usual": "call",
+   "usualShare": 0.5777360263034288,
+   "best": "call",
+   "gain": 4.83767185298262,
+   "se": 0.6000849184285397,
+   "z": 8.0616454511991,
+   "bb100": 0.5149701687499999,
+   "alts": [
+    {
+     "a": "fold",
+     "mean": -14.628,
+     "gain": -3.659,
+     "se": 0.815
+    },
+    {
+     "a": "call",
+     "mean": -6.132,
+     "gain": 4.838,
+     "se": 0.6
+    },
+    {
+     "a": "raise",
+     "mean": -4.462,
+     "gain": 4.693,
+     "se": 1.046
+    }
+   ]
+  },
+  {
+   "cat": "flop · facing a bet · heads-up · way ahead (>+20) · edge jumped",
+   "n": 8020,
+   "usual": "call",
+   "usualShare": 0.5668329177057356,
+   "best": "raise",
+   "gain": 1.2835328861386135,
+   "se": 0.2593679982589322,
+   "z": 4.948694113208358,
+   "bb100": 0.5146966873415839,
+   "alts": [
+    {
+     "a": "fold",
+     "mean": -9.49,
+     "gain": -28.835,
+     "se": 0.719
+    },
+    {
+     "a": "call",
+     "mean": 19.813,
+     "gain": 0.468,
+     "se": 0.268
+    },
+    {
+     "a": "raise",
+     "mean": 20.457,
+     "gain": 1.284,
+     "se": 0.259
+    }
+   ]
+  },
+  {
+   "cat": "turn · checked to / first in · heads-up · ahead +10–20 · edge jumped",
+   "n": 5334,
+   "usual": "bet ⅓",
+   "usualShare": 0.760217472815898,
+   "best": "bet pot",
+   "gain": 1.8453654236970367,
+   "se": 0.2382762870921992,
+   "z": 7.744645706112529,
+   "bb100": 0.49215895849999974,
+   "alts": [
+    {
+     "a": "check",
+     "mean": 5.979,
+     "gain": -1.008,
+     "se": 0.26
+    },
+    {
+     "a": "bet ⅓",
+     "mean": 6.583,
+     "gain": -0.404,
+     "se": 0.143
+    },
+    {
+     "a": "bet ⅔",
+     "mean": 8.176,
+     "gain": 1.189,
+     "se": 0.218
+    },
+    {
+     "a": "bet pot",
+     "mean": 8.832,
+     "gain": 1.845,
+     "se": 0.238
+    }
+   ]
+  },
+  {
+   "cat": "flop · checked to / first in · heads-up · slightly ahead · edge jumped",
+   "n": 15433,
+   "usual": "bet ⅓",
+   "usualShare": 0.5606168599753775,
+   "best": "bet ⅔",
+   "gain": 0.5161546475085846,
+   "se": 0.12501733518424674,
+   "z": 4.128664610774911,
+   "bb100": 0.3982907337499993,
+   "alts": [
+    {
+     "a": "check",
+     "mean": 0.93,
+     "gain": -1.994,
+     "se": 0.164
+    },
+    {
+     "a": "bet ⅓",
+     "mean": 2.303,
+     "gain": -0.621,
+     "se": 0.1
+    },
+    {
+     "a": "bet ⅔",
+     "mean": 3.44,
+     "gain": 0.516,
+     "se": 0.125
+    },
+    {
+     "a": "bet pot",
+     "mean": 2.958,
+     "gain": 0.035,
+     "se": 0.175
+    }
+   ]
+  },
+  {
+   "cat": "flop · facing a bet · multiway · slightly ahead · edge jumped",
+   "n": 1945,
+   "usual": "fold",
+   "usualShare": 0.6426735218508998,
+   "best": "call",
+   "gain": 3.6747070035989697,
+   "se": 0.8256464109412616,
+   "z": 4.450703055088308,
+   "bb100": 0.3573652560999998,
+   "alts": [
+    {
+     "a": "fold",
+     "mean": -5.083,
+     "gain": -0.192,
+     "se": 0.606
+    },
+    {
+     "a": "call",
+     "mean": -1.216,
+     "gain": 3.675,
+     "se": 0.826
+    },
+    {
+     "a": "raise",
+     "mean": -1.959,
+     "gain": 2.725,
+     "se": 1.075
+    }
+   ]
+  },
+  {
+   "cat": "flop · checked to / first in · heads-up · slightly ahead · edge steady",
+   "n": 60172,
+   "usual": "bet ⅔",
+   "usualShare": 0.8380808349398391,
+   "best": "bet ⅔",
+   "gain": 0.10922470979082159,
+   "se": 0.031203838980483872,
+   "z": 3.50036128115951,
+   "bb100": 0.3286134618766659,
+   "alts": [
+    {
+     "a": "check",
+     "mean": 0.172,
+     "gain": -3.366,
+     "se": 0.08
+    },
+    {
+     "a": "bet ⅓",
+     "mean": 2.8,
+     "gain": -0.738,
+     "se": 0.08
+    },
+    {
+     "a": "bet ⅔",
+     "mean": 3.647,
+     "gain": 0.109,
+     "se": 0.031
+    },
+    {
+     "a": "bet pot",
+     "mean": 3.343,
+     "gain": -0.195,
+     "se": 0.066
+    }
+   ]
+  },
+  {
+   "cat": "flop · checked to / first in · heads-up · behind (<−10) · edge steady",
+   "n": 8039,
+   "usual": "bet pot",
+   "usualShare": 0.6265704689638014,
+   "best": "bet pot",
+   "gain": 0.7691576956711027,
+   "se": 0.13658916618785177,
+   "z": 5.631176447869051,
+   "bb100": 0.3091629357749997,
+   "alts": [
+    {
+     "a": "check",
+     "mean": -2.928,
+     "gain": -2.029,
+     "se": 0.152
+    },
+    {
+     "a": "bet ⅓",
+     "mean": -2.854,
+     "gain": -1.955,
+     "se": 0.192
+    },
+    {
+     "a": "bet ⅔",
+     "mean": -2.165,
+     "gain": -1.266,
+     "se": 0.182
+    },
+    {
+     "a": "bet pot",
+     "mean": -0.13,
+     "gain": 0.769,
+     "se": 0.137
+    }
+   ]
+  },
+  {
+   "cat": "turn · checked to / first in · heads-up · way ahead (>+20) · edge steady",
+   "n": 9337,
+   "usual": "bet ⅔",
+   "usualShare": 1,
+   "best": "bet ⅓",
+   "gain": 0.6112761928349578,
+   "se": 0.17424093185745798,
+   "z": 3.5082238502662917,
+   "bb100": 0.2853742906250001,
+   "alts": [
+    {
+     "a": "check",
+     "mean": 14.555,
+     "gain": -0.39,
+     "se": 0.201
+    },
+    {
+     "a": "bet ⅓",
+     "mean": 15.556,
+     "gain": 0.611,
+     "se": 0.174
+    },
+    {
+     "a": "bet ⅔",
+     "mean": 14.945,
+     "gain": 0,
+     "se": 0
+    },
+    {
+     "a": "bet pot",
+     "mean": 14.071,
+     "gain": -0.874,
+     "se": 0.162
+    }
+   ]
+  },
+  {
+   "cat": "flop · checked to / first in · multiway · ahead +10–20 · edge jumped",
+   "n": 7617,
+   "usual": "bet ⅓",
+   "usualShare": 0.8759354076408035,
+   "best": "bet pot",
+   "gain": 0.7461891667760715,
+   "se": 0.3886395825019468,
+   "z": 1.9200030063132687,
+   "bb100": 0.2841861441666668,
+   "alts": [
+    {
+     "a": "check",
+     "mean": 5.48,
+     "gain": -3.094,
+     "se": 0.376
+    },
+    {
+     "a": "bet ⅓",
+     "mean": 8.386,
+     "gain": -0.188,
+     "se": 0.119
+    },
+    {
+     "a": "bet ⅔",
+     "mean": 9.205,
+     "gain": 0.63,
+     "se": 0.327
+    },
+    {
+     "a": "bet pot",
+     "mean": 9.321,
+     "gain": 0.746,
+     "se": 0.389
+    }
+   ]
+  },
+  {
+   "cat": "flop · facing a bet · heads-up · slightly behind · edge fell",
+   "n": 9498,
+   "usual": "fold",
+   "usualShare": 0.7546851968835544,
+   "best": "fold",
+   "gain": 0.587653837123604,
+   "se": 0.13333412001143197,
+   "z": 4.407377774520272,
+   "bb100": 0.27907680724999956,
+   "alts": [
+    {
+     "a": "fold",
+     "mean": -6.059,
+     "gain": 0.588,
+     "se": 0.133
+    },
+    {
+     "a": "call",
+     "mean": -8.703,
+     "gain": -2.056,
+     "se": 0.293
+    },
+    {
+     "a": "raise",
+     "mean": -6.203,
+     "gain": -0.22,
+     "se": 0.394
+    }
+   ]
+  },
+  {
+   "cat": "turn · facing a bet · heads-up · slightly behind · edge fell",
+   "n": 5225,
+   "usual": "fold",
+   "usualShare": 0.7686124401913875,
+   "best": "call",
+   "gain": 0.8605801041148313,
+   "se": 0.4312046678567565,
+   "z": 1.9957578576137092,
+   "bb100": 0.2248265521999997,
+   "alts": [
+    {
+     "a": "fold",
+     "mean": -10.491,
+     "gain": 0.31,
+     "se": 0.235
+    },
+    {
+     "a": "call",
+     "mean": -9.94,
+     "gain": 0.861,
+     "se": 0.431
+    },
+    {
+     "a": "raise",
+     "mean": -12.62,
+     "gain": -2.792,
+     "se": 0.715
+    }
+   ]
+  },
+  {
+   "cat": "river · facing a bet · heads-up · slightly behind · edge steady",
+   "n": 1822,
+   "usual": "fold",
+   "usualShare": 0.6185510428100988,
+   "best": "fold",
+   "gain": 2.260963114023051,
+   "se": 0.45886667366693773,
+   "z": 4.927276796885321,
+   "bb100": 0.2059737396874999,
+   "alts": [
+    {
+     "a": "fold",
+     "mean": -24.386,
+     "gain": 2.261,
+     "se": 0.459
+    },
+    {
+     "a": "call",
+     "mean": -34.158,
+     "gain": -7.511,
+     "se": 0.575
+    }
+   ]
+  },
+  {
+   "cat": "river · facing a bet · heads-up · behind (<−10) · edge fell",
+   "n": 5403,
+   "usual": "fold",
+   "usualShare": 0.9370719970386822,
+   "best": "fold",
+   "gain": 0.7405226566722194,
+   "se": 0.08877218431185176,
+   "z": 8.341832099915491,
+   "bb100": 0.2000521957000001,
+   "alts": [
+    {
+     "a": "fold",
+     "mean": -21.028,
+     "gain": 0.741,
+     "se": 0.089
+    },
+    {
+     "a": "call",
+     "mean": -42.456,
+     "gain": -20.687,
+     "se": 0.348
+    }
+   ]
+  },
+  {
+   "cat": "flop · checked to / first in · heads-up · ahead +10–20 · edge jumped",
+   "n": 31927,
+   "usual": "bet ⅓",
+   "usualShare": 0.828577692861841,
+   "best": "bet ⅔",
+   "gain": 0.1209531911861426,
+   "se": 0.09169433396866078,
+   "z": 1.319091223537126,
+   "bb100": 0.19308362674999874,
+   "alts": [
+    {
+     "a": "check",
+     "mean": 4.332,
+     "gain": -1.562,
+     "se": 0.118
+    },
+    {
+     "a": "bet ⅓",
+     "mean": 5.857,
+     "gain": -0.037,
+     "se": 0.046
+    },
+    {
+     "a": "bet ⅔",
+     "mean": 6.015,
+     "gain": 0.121,
+     "se": 0.092
+    },
+    {
+     "a": "bet pot",
+     "mean": 5.205,
+     "gain": -0.69,
+     "se": 0.121
+    }
+   ]
+  },
+  {
+   "cat": "turn · facing a bet · heads-up · way ahead (>+20) · edge jumped",
+   "n": 6649,
+   "usual": "call",
+   "usualShare": 0.6649120168446383,
+   "best": "call",
+   "gain": 0.5735314884569105,
+   "se": 0.22624475163759503,
+   "z": 2.5350046102974746,
+   "bb100": 0.1906705433374999,
+   "alts": [
+    {
+     "a": "fold",
+     "mean": -16.789,
+     "gain": -41.794,
+     "se": 0.762
+    },
+    {
+     "a": "call",
+     "mean": 25.579,
+     "gain": 0.574,
+     "se": 0.226
+    }
+   ]
+  },
+  {
+   "cat": "turn · checked to / first in · multiway · behind (<−10) · edge steady",
+   "n": 1703,
+   "usual": "check",
+   "usualShare": 1,
+   "best": "bet pot",
+   "gain": 2.2268862610099824,
+   "se": 0.5285677240112057,
+   "z": 4.213057589121299,
+   "bb100": 0.18961936512500002,
+   "alts": [
+    {
+     "a": "check",
+     "mean": -2.895,
+     "gain": 0,
+     "se": 0
+    },
+    {
+     "a": "bet ⅓",
+     "mean": -4.341,
+     "gain": -1.446,
+     "se": 0.346
+    },
+    {
+     "a": "bet ⅔",
+     "mean": -2.834,
+     "gain": 0.061,
+     "se": 0.482
+    },
+    {
+     "a": "bet pot",
+     "mean": -0.669,
+     "gain": 2.227,
+     "se": 0.529
+    }
+   ]
+  },
+  {
+   "cat": "turn · facing a bet · multiway · ahead +10–20 · edge steady",
+   "n": 445,
+   "usual": "call",
+   "usualShare": 0.5887640449438202,
+   "best": "call",
+   "gain": 8.355205612359553,
+   "se": 1.9769342534634247,
+   "z": 4.226344704039564,
+   "bb100": 0.18590332487500005,
+   "alts": [
+    {
+     "a": "fold",
+     "mean": -11.519,
+     "gain": -4.083,
+     "se": 2.083
+    },
+    {
+     "a": "call",
+     "mean": 0.919,
+     "gain": 8.355,
+     "se": 1.977
+    },
+    {
+     "a": "raise",
+     "mean": -1.918,
+     "gain": 6.825,
+     "se": 2.64
+    }
+   ]
+  },
+  {
+   "cat": "flop · facing a bet · heads-up · slightly ahead · edge steady",
+   "n": 23011,
+   "usual": "fold",
+   "usualShare": 0.6127938811872583,
+   "best": "raise",
+   "gain": 0.15670729181040097,
+   "se": 0.2895928532475712,
+   "z": 0.5411296931296603,
+   "bb100": 0.18029957459245682,
+   "alts": [
+    {
+     "a": "fold",
+     "mean": -6.546,
+     "gain": -0.243,
+     "se": 0.133
+    },
+    {
+     "a": "call",
+     "mean": -7.186,
+     "gain": -0.883,
+     "se": 0.236
+    },
+    {
+     "a": "raise",
+     "mean": -5.816,
+     "gain": 0.157,
+     "se": 0.29
+    }
+   ]
+  },
+  {
+   "cat": "turn · facing a bet · heads-up · ahead +10–20 · edge steady",
+   "n": 4537,
+   "usual": "call",
+   "usualShare": 0.9717875247961207,
+   "best": "raise",
+   "gain": 0.7710921223207787,
+   "se": 0.5147118087739986,
+   "z": 1.498104588191705,
+   "bb100": 0.17492224794846867,
+   "alts": [
+    {
+     "a": "fold",
+     "mean": -14.798,
+     "gain": -15.02,
+     "se": 0.716
+    },
+    {
+     "a": "call",
+     "mean": 0.294,
+     "gain": 0.073,
+     "se": 0.083
+    },
+    {
+     "a": "raise",
+     "mean": 2.888,
+     "gain": 0.771,
+     "se": 0.515
+    }
+   ]
+  },
+  {
+   "cat": "flop · facing a bet · multiway · ahead +10–20 · edge steady",
+   "n": 343,
+   "usual": "fold",
+   "usualShare": 0.5335276967930029,
+   "best": "raise",
+   "gain": 9.979281364770461,
+   "se": 2.178485894274604,
+   "z": 4.58083359226587,
+   "bb100": 0.1711446754058134,
+   "alts": [
+    {
+     "a": "fold",
+     "mean": -5.298,
+     "gain": -2.377,
+     "se": 1.837
+    },
+    {
+     "a": "call",
+     "mean": -1.248,
+     "gain": 1.674,
+     "se": 1.808
+    },
+    {
+     "a": "raise",
+     "mean": 7.273,
+     "gain": 9.979,
+     "se": 2.178
+    }
+   ]
+  },
+  {
+   "cat": "river · checked to / first in · multiway · behind (<−10) · edge steady",
+   "n": 835,
+   "usual": "check",
+   "usualShare": 1,
+   "best": "bet pot",
+   "gain": 3.744193832335329,
+   "se": 0.5073503785831723,
+   "z": 7.379897582399312,
+   "bb100": 0.1563200925,
+   "alts": [
+    {
+     "a": "check",
+     "mean": -1.915,
+     "gain": 0,
+     "se": 0
+    },
+    {
+     "a": "bet ⅓",
+     "mean": -1.04,
+     "gain": 0.874,
+     "se": 0.352
+    },
+    {
+     "a": "bet ⅔",
+     "mean": 0.627,
+     "gain": 2.541,
+     "se": 0.464
+    },
+    {
+     "a": "bet pot",
+     "mean": 1.83,
+     "gain": 3.744,
+     "se": 0.507
+    }
+   ]
+  },
+  {
+   "cat": "turn · facing a bet · heads-up · slightly ahead · edge jumped",
+   "n": 2068,
+   "usual": "call",
+   "usualShare": 0.528046421663443,
+   "best": "call",
+   "gain": 1.3712649690522234,
+   "se": 0.6974801895931869,
+   "z": 1.9660271209308884,
+   "bb100": 0.1417887977999999,
+   "alts": [
+    {
+     "a": "fold",
+     "mean": -12.476,
+     "gain": -1.337,
+     "se": 0.596
+    },
+    {
+     "a": "call",
+     "mean": -9.768,
+     "gain": 1.371,
+     "se": 0.697
+    },
+    {
+     "a": "raise",
+     "mean": -11.606,
+     "gain": -1.916,
+     "se": 1.136
+    }
+   ]
+  },
+  {
+   "cat": "river · checked to / first in · heads-up · slightly behind · edge steady",
+   "n": 3180,
+   "usual": "check",
+   "usualShare": 0.8022012578616352,
+   "best": "check",
+   "gain": 0.8785670888364779,
+   "se": 0.22125948201179593,
+   "z": 3.970754522464439,
+   "bb100": 0.13969216712500002,
+   "alts": [
+    {
+     "a": "check",
+     "mean": -11.232,
+     "gain": 0.879,
+     "se": 0.221
+    },
+    {
+     "a": "bet ⅓",
+     "mean": -16.099,
+     "gain": -3.989,
+     "se": 0.353
+    },
+    {
+     "a": "bet ⅔",
+     "mean": -16.121,
+     "gain": -4.011,
+     "se": 0.393
+    },
+    {
+     "a": "bet pot",
+     "mean": -15.417,
+     "gain": -3.307,
+     "se": 0.445
+    }
+   ]
+  },
+  {
+   "cat": "turn · checked to / first in · multiway · slightly behind · edge steady",
+   "n": 1332,
+   "usual": "check",
+   "usualShare": 0.6073573573573574,
+   "best": "bet pot",
+   "gain": 1.9894876154904904,
+   "se": 0.5437883734554356,
+   "z": 3.658569606496988,
+   "bb100": 0.13249987519166664,
+   "alts": [
+    {
+     "a": "check",
+     "mean": -1.661,
+     "gain": -2.928,
+     "se": 0.379
+    },
+    {
+     "a": "bet ⅓",
+     "mean": -1.006,
+     "gain": -2.273,
+     "se": 0.555
+    },
+    {
+     "a": "bet ⅔",
+     "mean": 0.305,
+     "gain": -0.963,
+     "se": 0.626
+    },
+    {
+     "a": "bet pot",
+     "mean": 3.257,
+     "gain": 1.989,
+     "se": 0.544
+    }
+   ]
+  },
+  {
+   "cat": "flop · checked to / first in · multiway · slightly ahead · edge jumped",
+   "n": 3753,
+   "usual": "bet ⅓",
+   "usualShare": 0.43325339728217427,
+   "best": "bet pot",
+   "gain": 0.6891981583621996,
+   "se": 0.4956966727818238,
+   "z": 1.3903626879205293,
+   "bb100": 0.12932803441666674,
+   "alts": [
+    {
+     "a": "check",
+     "mean": 0.506,
+     "gain": -3.546,
+     "se": 0.504
+    },
+    {
+     "a": "bet ⅓",
+     "mean": 3.896,
+     "gain": -0.156,
+     "se": 0.413
+    },
+    {
+     "a": "bet ⅔",
+     "mean": 3.918,
+     "gain": -0.134,
+     "se": 0.414
+    },
+    {
+     "a": "bet pot",
+     "mean": 4.742,
+     "gain": 0.689,
+     "se": 0.496
+    }
+   ]
+  },
+  {
+   "cat": "flop · checked to / first in · multiway · slightly behind · edge fell",
+   "n": 4710,
+   "usual": "bet pot",
+   "usualShare": 0.6664543524416136,
+   "best": "bet pot",
+   "gain": 0.4868454426220811,
+   "se": 0.2804750587361787,
+   "z": 1.7357887179552005,
+   "bb100": 0.11465210173750011,
+   "alts": [
+    {
+     "a": "check",
+     "mean": -3.383,
+     "gain": -3.88,
+     "se": 0.367
+    },
+    {
+     "a": "bet ⅓",
+     "mean": -1.742,
+     "gain": -2.239,
+     "se": 0.424
+    },
+    {
+     "a": "bet ⅔",
+     "mean": -0.984,
+     "gain": -1.481,
+     "se": 0.389
+    },
+    {
+     "a": "bet pot",
+     "mean": 0.984,
+     "gain": 0.487,
+     "se": 0.28
+    }
+   ]
+  },
+  {
+   "cat": "turn · facing a bet · heads-up · behind (<−10) · edge fell",
+   "n": 15107,
+   "usual": "fold",
+   "usualShare": 0.9306943800887006,
+   "best": "fold",
+   "gain": 0.14279346329516118,
+   "se": 0.06708716934079703,
+   "z": 2.12847649853555,
+   "bb100": 0.1078590425,
+   "alts": [
+    {
+     "a": "fold",
+     "mean": -10.16,
+     "gain": 0.143,
+     "se": 0.067
+    },
+    {
+     "a": "call",
+     "mean": -17.381,
+     "gain": -7.078,
+     "se": 0.219
+    },
+    {
+     "a": "raise",
+     "mean": -30.489,
+     "gain": -21.248,
+     "se": 0.387
+    }
+   ]
+  },
+  {
+   "cat": "flop · facing a bet · multiway · slightly behind · edge steady",
+   "n": 12257,
+   "usual": "fold",
+   "usualShare": 0.8812107367218732,
+   "best": "fold",
+   "gain": 0.1706393343191647,
+   "se": 0.11419192763623189,
+   "z": 1.4943204642516486,
+   "bb100": 0.10457631603750009,
+   "alts": [
+    {
+     "a": "fold",
+     "mean": -5.065,
+     "gain": 0.171,
+     "se": 0.114
+    },
+    {
+     "a": "call",
+     "mean": -8.039,
+     "gain": -2.803,
+     "se": 0.3
+    },
+    {
+     "a": "raise",
+     "mean": -8.969,
+     "gain": -4.291,
+     "se": 0.432
+    }
+   ]
+  },
+  {
+   "cat": "river · checked to / first in · heads-up · ahead +10–20 · edge steady",
+   "n": 3610,
+   "usual": "bet pot",
+   "usualShare": 0.5825484764542936,
+   "best": "bet pot",
+   "gain": 0.5713950911819025,
+   "se": 0.16119861067745317,
+   "z": 3.544665110825446,
+   "bb100": 0.10313681395833339,
+   "alts": [
+    {
+     "a": "check",
+     "mean": 3.045,
+     "gain": -2.751,
+     "se": 0.312
+    },
+    {
+     "a": "bet ⅓",
+     "mean": 3.497,
+     "gain": -2.3,
+     "se": 0.209
+    },
+    {
+     "a": "bet ⅔",
+     "mean": 5.345,
+     "gain": -0.451,
+     "se": 0.172
+    },
+    {
+     "a": "bet pot",
+     "mean": 6.368,
+     "gain": 0.571,
+     "se": 0.161
+    }
+   ]
+  },
+  {
+   "cat": "turn · facing a bet · heads-up · slightly behind · edge steady",
+   "n": 8183,
+   "usual": "fold",
+   "usualShare": 0.7531467676891116,
+   "best": "fold",
+   "gain": 0.24671475168031318,
+   "se": 0.19281725829709156,
+   "z": 1.2795262927148185,
+   "bb100": 0.10094334065000014,
+   "alts": [
+    {
+     "a": "fold",
+     "mean": -9.562,
+     "gain": 0.247,
+     "se": 0.193
+    },
+    {
+     "a": "call",
+     "mean": -9.761,
+     "gain": 0.047,
+     "se": 0.318
+    },
+    {
+     "a": "raise",
+     "mean": -12.266,
+     "gain": -3.381,
+     "se": 0.533
+    }
+   ]
+  },
+  {
+   "cat": "turn · checked to / first in · multiway · slightly ahead · edge steady",
+   "n": 1201,
+   "usual": "bet pot",
+   "usualShare": 0.7560366361365529,
+   "best": "bet pot",
+   "gain": 1.6167906072717182,
+   "se": 0.39090997795176685,
+   "z": 4.135966586842173,
+   "bb100": 0.09708827596666668,
+   "alts": [
+    {
+     "a": "check",
+     "mean": -0.729,
+     "gain": -7.386,
+     "se": 0.815
+    },
+    {
+     "a": "bet ⅓",
+     "mean": 2.871,
+     "gain": -3.786,
+     "se": 0.843
+    },
+    {
+     "a": "bet ⅔",
+     "mean": 5.268,
+     "gain": -1.389,
+     "se": 0.747
+    },
+    {
+     "a": "bet pot",
+     "mean": 8.274,
+     "gain": 1.617,
+     "se": 0.391
+    }
+   ]
+  },
+  {
+   "cat": "river · checked to / first in · heads-up · slightly ahead · edge fell",
+   "n": 2604,
+   "usual": "check",
+   "usualShare": 0.9070660522273426,
+   "best": "bet pot",
+   "gain": 0.7409897693548383,
+   "se": 0.3975310690765192,
+   "z": 1.8639795150507044,
+   "bb100": 0.09647686796999995,
+   "alts": [
+    {
+     "a": "check",
+     "mean": -1.997,
+     "gain": -0.096,
+     "se": 0.138
+    },
+    {
+     "a": "bet ⅓",
+     "mean": -3.325,
+     "gain": -1.423,
+     "se": 0.314
+    },
+    {
+     "a": "bet ⅔",
+     "mean": -2.402,
+     "gain": -0.501,
+     "se": 0.37
+    },
+    {
+     "a": "bet pot",
+     "mean": -1.161,
+     "gain": 0.741,
+     "se": 0.398
+    }
+   ]
+  },
+  {
+   "cat": "turn · checked to / first in · heads-up · behind (<−10) · edge jumped",
+   "n": 513,
+   "usual": "check",
+   "usualShare": 0.7524366471734892,
+   "best": "bet pot",
+   "gain": 3.6055362248213125,
+   "se": 0.4419576035150445,
+   "z": 8.15810429811641,
+   "bb100": 0.09248200416666666,
+   "alts": [
+    {
+     "a": "check",
+     "mean": -1.399,
+     "gain": -0.735,
+     "se": 0.352
+    },
+    {
+     "a": "bet ⅓",
+     "mean": -0.01,
+     "gain": 0.653,
+     "se": 0.366
+    },
+    {
+     "a": "bet ⅔",
+     "mean": 1.852,
+     "gain": 2.515,
+     "se": 0.486
+    },
+    {
+     "a": "bet pot",
+     "mean": 2.942,
+     "gain": 3.606,
+     "se": 0.442
+    }
+   ]
+  },
+  {
+   "cat": "river · checked to / first in · heads-up · slightly behind · edge fell",
+   "n": 3089,
+   "usual": "check",
+   "usualShare": 0.801230171576562,
+   "best": "check",
+   "gain": 0.5955349198769828,
+   "se": 0.20927554551247007,
+   "z": 2.8456976108634575,
+   "bb100": 0.091980368375,
+   "alts": [
+    {
+     "a": "check",
+     "mean": -9.639,
+     "gain": 0.596,
+     "se": 0.209
+    },
+    {
+     "a": "bet ⅓",
+     "mean": -13.24,
+     "gain": -3.006,
+     "se": 0.321
+    },
+    {
+     "a": "bet ⅔",
+     "mean": -14.179,
+     "gain": -3.945,
+     "se": 0.389
+    },
+    {
+     "a": "bet pot",
+     "mean": -12.607,
+     "gain": -2.373,
+     "se": 0.433
+    }
+   ]
+  },
+  {
+   "cat": "turn · facing a bet · multiway · slightly ahead · edge steady",
+   "n": 953,
+   "usual": "fold",
+   "usualShare": 0.6107030430220357,
+   "best": "call",
+   "gain": 1.9109886149003152,
+   "se": 1.2765737106239756,
+   "z": 1.496966919337736,
+   "bb100": 0.09105860750000003,
+   "alts": [
+    {
+     "a": "fold",
+     "mean": -10.185,
+     "gain": -0.186,
+     "se": 0.946
+    },
+    {
+     "a": "call",
+     "mean": -8.088,
+     "gain": 1.911,
+     "se": 1.277
+    },
+    {
+     "a": "raise",
+     "mean": -11.865,
+     "gain": -3.065,
+     "se": 1.927
+    }
+   ]
+  },
+  {
+   "cat": "turn · checked to / first in · heads-up · slightly behind · edge steady",
+   "n": 14603,
+   "usual": "bet pot",
+   "usualShare": 0.9565157844278573,
+   "best": "bet pot",
+   "gain": 0.10885189344655204,
+   "se": 0.02991871164667901,
+   "z": 3.6382547060188886,
+   "bb100": 0.07947820999999998,
+   "alts": [
+    {
+     "a": "check",
+     "mean": -6.268,
+     "gain": -3.838,
+     "se": 0.227
+    },
+    {
+     "a": "bet ⅓",
+     "mean": -4.333,
+     "gain": -1.902,
+     "se": 0.197
+    },
+    {
+     "a": "bet ⅔",
+     "mean": -3.872,
+     "gain": -1.442,
+     "se": 0.152
+    },
+    {
+     "a": "bet pot",
+     "mean": -2.322,
+     "gain": 0.109,
+     "se": 0.03
+    }
+   ]
+  },
+  {
+   "cat": "flop · facing a bet · heads-up · slightly behind · edge jumped",
+   "n": 376,
+   "usual": "fold",
+   "usualShare": 0.8909574468085106,
+   "best": "raise",
+   "gain": 4.2068708617021295,
+   "se": 2.1582956104130218,
+   "z": 1.9491634238634636,
+   "bb100": 0.07908917220000004,
+   "alts": [
+    {
+     "a": "fold",
+     "mean": -4.999,
+     "gain": 0.232,
+     "se": 0.566
+    },
+    {
+     "a": "call",
+     "mean": -4.31,
+     "gain": 0.921,
+     "se": 1.702
+    },
+    {
+     "a": "raise",
+     "mean": -1.024,
+     "gain": 4.207,
+     "se": 2.158
+    }
+   ]
+  },
+  {
+   "cat": "turn · checked to / first in · multiway · ahead +10–20 · edge jumped",
+   "n": 437,
+   "usual": "bet ⅓",
+   "usualShare": 0.8146453089244852,
+   "best": "bet pot",
+   "gain": 3.5586304729214358,
+   "se": 1.1366693880764671,
+   "z": 3.130752451197389,
+   "bb100": 0.07775607583333337,
+   "alts": [
+    {
+     "a": "check",
+     "mean": 6.558,
+     "gain": -3.501,
+     "se": 1.124
+    },
+    {
+     "a": "bet ⅓",
+     "mean": 10.189,
+     "gain": 0.13,
+     "se": 0.561
+    },
+    {
+     "a": "bet ⅔",
+     "mean": 12.288,
+     "gain": 2.229,
+     "se": 1.162
+    },
+    {
+     "a": "bet pot",
+     "mean": 13.618,
+     "gain": 3.559,
+     "se": 1.137
+    }
+   ]
+  },
+  {
+   "cat": "turn · checked to / first in · heads-up · slightly ahead · edge jumped",
+   "n": 3922,
+   "usual": "bet ⅓",
+   "usualShare": 0.6779704232534421,
+   "best": "bet ⅔",
+   "gain": 0.39123687638109783,
+   "se": 0.2738047019460143,
+   "z": 1.4288902769034166,
+   "bb100": 0.07672155145833329,
+   "alts": [
+    {
+     "a": "check",
+     "mean": -3.411,
+     "gain": -2.845,
+     "se": 0.375
+    },
+    {
+     "a": "bet ⅓",
+     "mean": -0.758,
+     "gain": -0.192,
+     "se": 0.205
+    },
+    {
+     "a": "bet ⅔",
+     "mean": -0.175,
+     "gain": 0.391,
+     "se": 0.274
+    },
+    {
+     "a": "bet pot",
+     "mean": -0.232,
+     "gain": 0.334,
+     "se": 0.317
+    }
+   ]
+  },
+  {
+   "cat": "flop · checked to / first in · multiway · behind (<−10) · edge steady",
+   "n": 2173,
+   "usual": "bet pot",
+   "usualShare": 0.6194201564657156,
+   "best": "bet pot",
+   "gain": 0.6898149294370303,
+   "se": 0.3890626307313891,
+   "z": 1.773017696765851,
+   "bb100": 0.07494839208333334,
+   "alts": [
+    {
+     "a": "check",
+     "mean": -3.612,
+     "gain": -1.649,
+     "se": 0.41
+    },
+    {
+     "a": "bet ⅓",
+     "mean": -4.687,
+     "gain": -2.725,
+     "se": 0.531
+    },
+    {
+     "a": "bet ⅔",
+     "mean": -4.364,
+     "gain": -2.402,
+     "se": 0.491
+    },
+    {
+     "a": "bet pot",
+     "mean": -1.272,
+     "gain": 0.69,
+     "se": 0.389
+    }
+   ]
+  },
+  {
+   "cat": "turn · checked to / first in · heads-up · way ahead (>+20) · edge jumped",
+   "n": 12367,
+   "usual": "bet ⅓",
+   "usualShare": 0.8863912023934665,
+   "best": "bet ⅓",
+   "gain": 0.12004525484488265,
+   "se": 0.05432167945691223,
+   "z": 2.2098958656111165,
+   "bb100": 0.0742299833333332,
+   "alts": [
+    {
+     "a": "check",
+     "mean": 17.505,
+     "gain": -0.868,
+     "se": 0.161
+    },
+    {
+     "a": "bet ⅓",
+     "mean": 18.493,
+     "gain": 0.12,
+     "se": 0.054
+    },
+    {
+     "a": "bet ⅔",
+     "mean": 18.221,
+     "gain": -0.152,
+     "se": 0.141
+    },
+    {
+     "a": "bet pot",
+     "mean": 17.056,
+     "gain": -1.317,
+     "se": 0.181
+    }
+   ]
+  },
+  {
+   "cat": "turn · facing a bet · multiway · ahead +10–20 · edge jumped",
+   "n": 247,
+   "usual": "call",
+   "usualShare": 0.7004048582995951,
+   "best": "call",
+   "gain": 5.419997476383267,
+   "se": 1.9229941202097527,
+   "z": 2.8185200461206166,
+   "bb100": 0.06693696883333335,
+   "alts": [
+    {
+     "a": "fold",
+     "mean": -10.636,
+     "gain": -6.593,
+     "se": 2.969
+    },
+    {
+     "a": "call",
+     "mean": 1.377,
+     "gain": 5.42,
+     "se": 1.923
+    },
+    {
+     "a": "raise",
+     "mean": -1.16,
+     "gain": 3.417,
+     "se": 3.143
+    }
+   ]
+  },
+  {
+   "cat": "river · checked to / first in · heads-up · behind (<−10) · edge steady",
+   "n": 4566,
+   "usual": "check",
+   "usualShare": 0.8028909329829172,
+   "best": "check",
+   "gain": 0.2853902901883485,
+   "se": 0.14630525259397045,
+   "z": 1.9506496528895643,
+   "bb100": 0.06515460324999997,
+   "alts": [
+    {
+     "a": "check",
+     "mean": -5.835,
+     "gain": 0.285,
+     "se": 0.146
+    },
+    {
+     "a": "bet ⅓",
+     "mean": -8.112,
+     "gain": -1.992,
+     "se": 0.217
+    },
+    {
+     "a": "bet ⅔",
+     "mean": -8.219,
+     "gain": -2.099,
+     "se": 0.265
+    },
+    {
+     "a": "bet pot",
+     "mean": -7.458,
+     "gain": -1.338,
+     "se": 0.301
+    }
+   ]
+  },
+  {
+   "cat": "turn · checked to / first in · heads-up · way ahead (>+20) · edge fell",
+   "n": 781,
+   "usual": "bet ⅔",
+   "usualShare": 1,
+   "best": "bet ⅓",
+   "gain": 1.606693854033289,
+   "se": 0.5993485392587875,
+   "z": 2.680733744709351,
+   "bb100": 0.06274139499999994,
+   "alts": [
+    {
+     "a": "check",
+     "mean": 17.811,
+     "gain": -1.448,
+     "se": 0.742
+    },
+    {
+     "a": "bet ⅓",
+     "mean": 20.865,
+     "gain": 1.607,
+     "se": 0.599
+    },
+    {
+     "a": "bet ⅔",
+     "mean": 19.259,
+     "gain": 0,
+     "se": 0
+    },
+    {
+     "a": "bet pot",
+     "mean": 18.678,
+     "gain": -0.581,
+     "se": 0.644
+    }
+   ]
+  },
+  {
+   "cat": "turn · facing a bet · heads-up · behind (<−10) · edge steady",
+   "n": 8063,
+   "usual": "fold",
+   "usualShare": 0.9178965645541362,
+   "best": "fold",
+   "gain": 0.15182941343172524,
+   "se": 0.09999207877050983,
+   "z": 1.5184144114073916,
+   "bb100": 0.06121002802500003,
+   "alts": [
+    {
+     "a": "fold",
+     "mean": -9.406,
+     "gain": 0.152,
+     "se": 0.1
+    },
+    {
+     "a": "call",
+     "mean": -14.825,
+     "gain": -5.267,
+     "se": 0.307
+    },
+    {
+     "a": "raise",
+     "mean": -21.367,
+     "gain": -12.999,
+     "se": 0.524
+    }
+   ]
+  },
+  {
+   "cat": "river · facing a bet · heads-up · slightly ahead · edge fell",
+   "n": 1425,
+   "usual": "call",
+   "usualShare": 0.8652631578947368,
+   "best": "call",
+   "gain": 0.8476641842105261,
+   "se": 0.3407443937958755,
+   "z": 2.487683435573479,
+   "bb100": 0.060396073125,
+   "alts": [
+    {
+     "a": "fold",
+     "mean": -27.372,
+     "gain": -7.37,
+     "se": 0.963
+    },
+    {
+     "a": "call",
+     "mean": -19.154,
+     "gain": 0.848,
+     "se": 0.341
+    }
+   ]
+  },
+  {
+   "cat": "turn · checked to / first in · heads-up · behind (<−10) · edge steady",
+   "n": 10097,
+   "usual": "check",
+   "usualShare": 0.7949886104783599,
+   "best": "check",
+   "gain": 0.11898444339902951,
+   "se": 0.16013207584468936,
+   "z": 0.7430394115069828,
+   "bb100": 0.06006929625000005,
+   "alts": [
+    {
+     "a": "check",
+     "mean": -5.809,
+     "gain": 0.119,
+     "se": 0.16
+    },
+    {
+     "a": "bet ⅓",
+     "mean": -6.907,
+     "gain": -0.979,
+     "se": 0.187
+    },
+    {
+     "a": "bet ⅔",
+     "mean": -7.142,
+     "gain": -1.213,
+     "se": 0.216
+    },
+    {
+     "a": "bet pot",
+     "mean": -6.564,
+     "gain": -0.636,
+     "se": 0.223
+    }
+   ]
+  },
+  {
+   "cat": "turn · checked to / first in · multiway · slightly ahead · edge jumped",
+   "n": 359,
+   "usual": "bet ⅓",
+   "usualShare": 0.5598885793871866,
+   "best": "bet pot",
+   "gain": 3.1629062906220997,
+   "se": 1.1765727342973922,
+   "z": 2.6882369431337163,
+   "bb100": 0.05677416791666669,
+   "alts": [
+    {
+     "a": "check",
+     "mean": -0.203,
+     "gain": -2.759,
+     "se": 0.911
+    },
+    {
+     "a": "bet ⅓",
+     "mean": 1.812,
+     "gain": -0.744,
+     "se": 0.874
+    },
+    {
+     "a": "bet ⅔",
+     "mean": 4.006,
+     "gain": 1.45,
+     "se": 0.997
+    },
+    {
+     "a": "bet pot",
+     "mean": 5.719,
+     "gain": 3.163,
+     "se": 1.177
+    }
+   ]
+  },
+  {
+   "cat": "river · facing a bet · heads-up · slightly behind · edge fell",
+   "n": 1993,
+   "usual": "fold",
+   "usualShare": 0.5469141996989463,
+   "best": "fold",
+   "gain": 0.5696886463371793,
+   "se": 0.55569491812108,
+   "z": 1.025182393719588,
+   "bb100": 0.05676947360749992,
+   "alts": [
+    {
+     "a": "fold",
+     "mean": -27.305,
+     "gain": 0.57,
+     "se": 0.556
+    },
+    {
+     "a": "call",
+     "mean": -32.333,
+     "gain": -4.459,
+     "se": 0.543
+    }
+   ]
+  },
+  {
+   "cat": "river · facing a bet · heads-up · slightly ahead · edge jumped",
+   "n": 752,
+   "usual": "call",
+   "usualShare": 0.8550531914893617,
+   "best": "fold",
+   "gain": 1.493999858710106,
+   "se": 1.0069861310573152,
+   "z": 1.4836349902271606,
+   "bb100": 0.05617439468749998,
+   "alts": [
+    {
+     "a": "fold",
+     "mean": -19.84,
+     "gain": 1.494,
+     "se": 1.007
+    },
+    {
+     "a": "call",
+     "mean": -20.87,
+     "gain": 0.463,
+     "se": 0.335
+    }
+   ]
+  },
+  {
+   "cat": "river · checked to / first in · heads-up · slightly behind · edge jumped",
+   "n": 1220,
+   "usual": "check",
+   "usualShare": 0.8098360655737705,
+   "best": "bet pot",
+   "gain": 0.9171498573770501,
+   "se": 0.42225025271822714,
+   "z": 2.1720528323498143,
+   "bb100": 0.05594614130000005,
+   "alts": [
+    {
+     "a": "check",
+     "mean": -1.254,
+     "gain": -0.435,
+     "se": 0.187
+    },
+    {
+     "a": "bet ⅓",
+     "mean": -1.275,
+     "gain": -0.455,
+     "se": 0.34
+    },
+    {
+     "a": "bet ⅔",
+     "mean": -0.485,
+     "gain": 0.334,
+     "se": 0.378
+    },
+    {
+     "a": "bet pot",
+     "mean": 0.098,
+     "gain": 0.917,
+     "se": 0.422
+    }
+   ]
+  },
+  {
+   "cat": "river · facing a bet · heads-up · behind (<−10) · edge steady",
+   "n": 1586,
+   "usual": "fold",
+   "usualShare": 0.926860025220681,
+   "best": "fold",
+   "gain": 0.6484694930643128,
+   "se": 0.14099921224794953,
+   "z": 4.59910011358055,
+   "bb100": 0.05142363080000001,
+   "alts": [
+    {
+     "a": "fold",
+     "mean": -13.496,
+     "gain": 0.648,
+     "se": 0.141
+    },
+    {
+     "a": "call",
+     "mean": -24.04,
+     "gain": -9.896,
+     "se": 0.606
+    },
+    {
+     "a": "raise",
+     "mean": -30.586,
+     "gain": -20.642,
+     "se": 1.119
+    }
+   ]
+  },
+  {
+   "cat": "turn · checked to / first in · multiway · slightly behind · edge fell",
+   "n": 587,
+   "usual": "check",
+   "usualShare": 0.5809199318568995,
+   "best": "bet pot",
+   "gain": 1.6577428077796723,
+   "se": 1.0287565441342927,
+   "z": 1.6114043864232979,
+   "bb100": 0.048654751408333384,
+   "alts": [
+    {
+     "a": "check",
+     "mean": -3.962,
+     "gain": -3.547,
+     "se": 0.806
+    },
+    {
+     "a": "bet ⅓",
+     "mean": -5.127,
+     "gain": -4.712,
+     "se": 1.218
+    },
+    {
+     "a": "bet ⅔",
+     "mean": -2.21,
+     "gain": -1.794,
+     "se": 1.186
+    },
+    {
+     "a": "bet pot",
+     "mean": 1.243,
+     "gain": 1.658,
+     "se": 1.029
+    }
+   ]
+  },
+  {
+   "cat": "river · checked to / first in · multiway · slightly behind · edge steady",
+   "n": 271,
+   "usual": "check",
+   "usualShare": 1,
+   "best": "bet pot",
+   "gain": 3.501758193726939,
+   "se": 0.9375957625561454,
+   "z": 3.7348272395986277,
+   "bb100": 0.04744882352500003,
+   "alts": [
+    {
+     "a": "check",
+     "mean": -2.631,
+     "gain": 0,
+     "se": 0
+    },
+    {
+     "a": "bet ⅓",
+     "mean": -1.943,
+     "gain": 0.688,
+     "se": 0.649
+    },
+    {
+     "a": "bet ⅔",
+     "mean": -0.672,
+     "gain": 1.959,
+     "se": 0.865
+    },
+    {
+     "a": "bet pot",
+     "mean": 0.871,
+     "gain": 3.502,
+     "se": 0.938
+    }
+   ]
+  },
+  {
+   "cat": "river · checked to / first in · heads-up · ahead +10–20 · edge jumped",
+   "n": 2074,
+   "usual": "bet pot",
+   "usualShare": 0.813404050144648,
+   "best": "bet pot",
+   "gain": 0.45258880866280954,
+   "se": 0.19837502178972996,
+   "z": 2.2814808264648185,
+   "bb100": 0.046933459458333354,
+   "alts": [
+    {
+     "a": "check",
+     "mean": 2.083,
+     "gain": -2.244,
+     "se": 0.459
+    },
+    {
+     "a": "bet ⅓",
+     "mean": 1.458,
+     "gain": -2.869,
+     "se": 0.311
+    },
+    {
+     "a": "bet ⅔",
+     "mean": 3.223,
+     "gain": -1.105,
+     "se": 0.274
+    },
+    {
+     "a": "bet pot",
+     "mean": 4.78,
+     "gain": 0.453,
+     "se": 0.198
+    }
+   ]
+  },
+  {
+   "cat": "river · checked to / first in · multiway · slightly ahead · edge jumped",
+   "n": 182,
+   "usual": "check",
+   "usualShare": 1,
+   "best": "bet pot",
+   "gain": 4.956856504578756,
+   "se": 0.8747408877182683,
+   "z": 5.666656919980666,
+   "bb100": 0.04510739419166667,
+   "alts": [
+    {
+     "a": "check",
+     "mean": 2.689,
+     "gain": 0,
+     "se": 0
+    },
+    {
+     "a": "bet ⅓",
+     "mean": 4.201,
+     "gain": 1.512,
+     "se": 0.468
+    },
+    {
+     "a": "bet ⅔",
+     "mean": 5.584,
+     "gain": 2.896,
+     "se": 0.796
+    },
+    {
+     "a": "bet pot",
+     "mean": 7.645,
+     "gain": 4.957,
+     "se": 0.875
+    }
+   ]
+  },
+  {
+   "cat": "flop · facing a bet · heads-up · behind (<−10) · edge fell",
+   "n": 51197,
+   "usual": "fold",
+   "usualShare": 0.9858585463992031,
+   "best": "fold",
+   "gain": 0.017282439557005324,
+   "se": 0.014420007913714972,
+   "z": 1.1985041659074176,
+   "bb100": 0.04424045290000008,
+   "alts": [
+    {
+     "a": "fold",
+     "mean": -5.3,
+     "gain": 0.017,
+     "se": 0.014
+    },
+    {
+     "a": "call",
+     "mean": -10.195,
+     "gain": -4.877,
+     "se": 0.088
+    },
+    {
+     "a": "raise",
+     "mean": -11.883,
+     "gain": -6.978,
+     "se": 0.143
+    }
+   ]
+  },
+  {
+   "cat": "river · checked to / first in · heads-up · slightly ahead · edge steady",
+   "n": 3612,
+   "usual": "check",
+   "usualShare": 0.9343853820598007,
+   "best": "check",
+   "gain": 0.24332882751937976,
+   "se": 0.11940822307109702,
+   "z": 2.037789536274223,
+   "bb100": 0.04394518624999998,
+   "alts": [
+    {
+     "a": "check",
+     "mean": -6.317,
+     "gain": 0.243,
+     "se": 0.119
+    },
+    {
+     "a": "bet ⅓",
+     "mean": -9.261,
+     "gain": -2.7,
+     "se": 0.314
+    },
+    {
+     "a": "bet ⅔",
+     "mean": -7.962,
+     "gain": -1.402,
+     "se": 0.345
+    },
+    {
+     "a": "bet pot",
+     "mean": -6.742,
+     "gain": -0.181,
+     "se": 0.387
+    }
+   ]
+  },
+  {
+   "cat": "flop · facing a bet · heads-up · behind (<−10) · edge steady",
+   "n": 7734,
+   "usual": "fold",
+   "usualShare": 0.9429790535298681,
+   "best": "fold",
+   "gain": 0.11299766356348605,
+   "se": 0.06464601687147993,
+   "z": 1.7479447154204724,
+   "bb100": 0.04369619650000005,
+   "alts": [
+    {
+     "a": "fold",
+     "mean": -5.009,
+     "gain": 0.113,
+     "se": 0.065
+    },
+    {
+     "a": "call",
+     "mean": -8.694,
+     "gain": -3.572,
+     "se": 0.243
+    },
+    {
+     "a": "raise",
+     "mean": -8.553,
+     "gain": -3.77,
+     "se": 0.376
+    }
+   ]
+  },
+  {
+   "cat": "turn · facing a bet · heads-up · ahead +10–20 · edge jumped",
+   "n": 2826,
+   "usual": "call",
+   "usualShare": 0.962137296532201,
+   "best": "call",
+   "gain": 0.2732234439136588,
+   "se": 0.1257549134130002,
+   "z": 2.1726661527438473,
+   "bb100": 0.038606472624999985,
+   "alts": [
+    {
+     "a": "fold",
+     "mean": -13.099,
+     "gain": -9.295,
+     "se": 0.932
+    },
+    {
+     "a": "call",
+     "mean": -3.531,
+     "gain": 0.273,
+     "se": 0.126
+    },
+    {
+     "a": "raise",
+     "mean": -5.783,
+     "gain": -2.602,
+     "se": 0.607
+    }
+   ]
+  },
+  {
+   "cat": "river · checked to / first in · heads-up · behind (<−10) · edge jumped",
+   "n": 455,
+   "usual": "check",
+   "usualShare": 0.7956043956043956,
+   "best": "bet pot",
+   "gain": 1.6850489560439565,
+   "se": 0.507234910593806,
+   "z": 3.3220287500939474,
+   "bb100": 0.03833486375000001,
+   "alts": [
+    {
+     "a": "check",
+     "mean": -0.838,
+     "gain": -0.754,
+     "se": 0.305
+    },
+    {
+     "a": "bet ⅓",
+     "mean": -0.963,
+     "gain": -0.879,
+     "se": 0.356
+    },
+    {
+     "a": "bet ⅔",
+     "mean": -0.054,
+     "gain": 0.03,
+     "se": 0.486
+    },
+    {
+     "a": "bet pot",
+     "mean": 1.601,
+     "gain": 1.685,
+     "se": 0.507
+    }
+   ]
+  },
+  {
+   "cat": "flop · checked to / first in · heads-up · slightly ahead · edge fell",
+   "n": 1056,
+   "usual": "bet ⅔",
+   "usualShare": 0.5625,
+   "best": "bet ⅔",
+   "gain": 0.6970095454545451,
+   "se": 0.3930147270930414,
+   "z": 1.7734947252740902,
+   "bb100": 0.036802103999999974,
+   "alts": [
+    {
+     "a": "check",
+     "mean": -0.691,
+     "gain": -3.805,
+     "se": 0.56
+    },
+    {
+     "a": "bet ⅓",
+     "mean": 2.869,
+     "gain": -0.244,
+     "se": 0.67
+    },
+    {
+     "a": "bet ⅔",
+     "mean": 3.811,
+     "gain": 0.697,
+     "se": 0.393
+    },
+    {
+     "a": "bet pot",
+     "mean": 3.219,
+     "gain": 0.105,
+     "se": 0.481
+    }
+   ]
+  },
+  {
+   "cat": "river · checked to / first in · heads-up · slightly ahead · edge jumped",
+   "n": 1857,
+   "usual": "check",
+   "usualShare": 0.93322563274098,
+   "best": "bet pot",
+   "gain": 0.371556115778137,
+   "se": 0.44112814132957495,
+   "z": 0.8422861317762554,
+   "bb100": 0.034498985350000025,
+   "alts": [
+    {
+     "a": "check",
+     "mean": -4.23,
+     "gain": -0.096,
+     "se": 0.123
+    },
+    {
+     "a": "bet ⅓",
+     "mean": -5.642,
+     "gain": -1.507,
+     "se": 0.337
+    },
+    {
+     "a": "bet ⅔",
+     "mean": -4.876,
+     "gain": -0.741,
+     "se": 0.404
+    },
+    {
+     "a": "bet pot",
+     "mean": -3.763,
+     "gain": 0.372,
+     "se": 0.441
+    }
+   ]
+  },
+  {
+   "cat": "river · checked to / first in · multiway · slightly ahead · edge steady",
+   "n": 160,
+   "usual": "check",
+   "usualShare": 1,
+   "best": "bet pot",
+   "gain": 4.1811657963541675,
+   "se": 1.8366860436786883,
+   "z": 2.276472786813218,
+   "bb100": 0.03344932637083334,
+   "alts": [
+    {
+     "a": "check",
+     "mean": -6.49,
+     "gain": 0,
+     "se": 0
+    },
+    {
+     "a": "bet ⅓",
+     "mean": -6.697,
+     "gain": -0.207,
+     "se": 1.334
+    },
+    {
+     "a": "bet ⅔",
+     "mean": -5.474,
+     "gain": 1.016,
+     "se": 1.334
+    },
+    {
+     "a": "bet pot",
+     "mean": -2.309,
+     "gain": 4.181,
+     "se": 1.837
+    }
+   ]
+  },
+  {
+   "cat": "river · facing a bet · multiway · slightly behind · edge steady",
+   "n": 122,
+   "usual": "fold",
+   "usualShare": 0.6065573770491803,
+   "best": "fold",
+   "gain": 5.319301502732241,
+   "se": 1.3154937413046803,
+   "z": 4.043577962945429,
+   "bb100": 0.03244773916666666,
+   "alts": [
+    {
+     "a": "fold",
+     "mean": -16.657,
+     "gain": 5.319,
+     "se": 1.315
+    },
+    {
+     "a": "call",
+     "mean": -31.623,
+     "gain": -9.647,
+     "se": 2.235
+    }
+   ]
+  },
+  {
+   "cat": "turn · checked to / first in · multiway · slightly behind · edge jumped",
+   "n": 220,
+   "usual": "check",
+   "usualShare": 0.6,
+   "best": "bet pot",
+   "gain": 2.7956823863636364,
+   "se": 1.2000854233633207,
+   "z": 2.3295694889190033,
+   "bb100": 0.03075250625,
+   "alts": [
+    {
+     "a": "check",
+     "mean": -1.248,
+     "gain": -1.681,
+     "se": 0.917
+    },
+    {
+     "a": "bet ⅓",
+     "mean": 0.048,
+     "gain": -0.386,
+     "se": 1.467
+    },
+    {
+     "a": "bet ⅔",
+     "mean": 1.713,
+     "gain": 1.279,
+     "se": 1.299
+    },
+    {
+     "a": "bet pot",
+     "mean": 3.229,
+     "gain": 2.796,
+     "se": 1.2
+    }
+   ]
+  },
+  {
+   "cat": "flop · checked to / first in · heads-up · way ahead (>+20) · edge steady",
+   "n": 129,
+   "usual": "bet ⅔",
+   "usualShare": 1,
+   "best": "check",
+   "gain": 4.665545116279068,
+   "se": 1.917892671384786,
+   "z": 2.432641401622532,
+   "bb100": 0.03009276599999999,
+   "alts": [
+    {
+     "a": "check",
+     "mean": 10.358,
+     "gain": 4.666,
+     "se": 1.918
+    },
+    {
+     "a": "bet ⅓",
+     "mean": 9.977,
+     "gain": 4.284,
+     "se": 1.513
+    },
+    {
+     "a": "bet ⅔",
+     "mean": 5.693,
+     "gain": 0,
+     "se": 0
+    },
+    {
+     "a": "bet pot",
+     "mean": 5.33,
+     "gain": -0.362,
+     "se": 0.936
+    }
+   ]
+  },
+  {
+   "cat": "flop · checked to / first in · heads-up · slightly behind · edge jumped",
+   "n": 451,
+   "usual": "bet pot",
+   "usualShare": 0.6319290465631929,
+   "best": "bet pot",
+   "gain": 1.3147680709534366,
+   "se": 0.5313305545565017,
+   "z": 2.4744823343556166,
+   "bb100": 0.029648019999999997,
+   "alts": [
+    {
+     "a": "check",
+     "mean": -3.023,
+     "gain": -2.76,
+     "se": 0.665
+    },
+    {
+     "a": "bet ⅓",
+     "mean": -1.992,
+     "gain": -1.728,
+     "se": 0.854
+    },
+    {
+     "a": "bet ⅔",
+     "mean": -0.412,
+     "gain": -0.149,
+     "se": 0.808
+    },
+    {
+     "a": "bet pot",
+     "mean": 1.051,
+     "gain": 1.315,
+     "se": 0.531
+    }
+   ]
+  },
+  {
+   "cat": "river · checked to / first in · multiway · slightly behind · edge fell",
+   "n": 70,
+   "usual": "check",
+   "usualShare": 1,
+   "best": "bet pot",
+   "gain": 8.059269590476191,
+   "se": 4.638988787187895,
+   "z": 1.737290163911268,
+   "bb100": 0.028207443566666667,
+   "alts": [
+    {
+     "a": "check",
+     "mean": -16.956,
+     "gain": 0,
+     "se": 0
+    },
+    {
+     "a": "bet ⅓",
+     "mean": -19.109,
+     "gain": -2.153,
+     "se": 2.529
+    },
+    {
+     "a": "bet ⅔",
+     "mean": -14.028,
+     "gain": 2.928,
+     "se": 3.25
+    },
+    {
+     "a": "bet pot",
+     "mean": -8.897,
+     "gain": 8.059,
+     "se": 4.639
+    }
+   ]
+  },
+  {
+   "cat": "river · facing a bet · multiway · slightly ahead · edge steady",
+   "n": 114,
+   "usual": "call",
+   "usualShare": 0.7105263157894737,
+   "best": "fold",
+   "gain": 4.2698460051169596,
+   "se": 2.1419828883740277,
+   "z": 1.9934080838331,
+   "bb100": 0.02433812222916667,
+   "alts": [
+    {
+     "a": "fold",
+     "mean": -20.792,
+     "gain": 4.27,
+     "se": 2.142
+    },
+    {
+     "a": "call",
+     "mean": -30.236,
+     "gain": -5.174,
+     "se": 1.868
+    }
+   ]
+  },
+  {
+   "cat": "river · checked to / first in · multiway · slightly ahead · edge fell",
+   "n": 73,
+   "usual": "check",
+   "usualShare": 1,
+   "best": "bet pot",
+   "gain": 6.667215593607306,
+   "se": 3.086770744559342,
+   "z": 2.1599322221641364,
+   "bb100": 0.02433533691666667,
+   "alts": [
+    {
+     "a": "check",
+     "mean": -9.106,
+     "gain": 0,
+     "se": 0
+    },
+    {
+     "a": "bet ⅓",
+     "mean": -4.543,
+     "gain": 4.564,
+     "se": 2.227
+    },
+    {
+     "a": "bet ⅔",
+     "mean": -2.91,
+     "gain": 6.196,
+     "se": 2.898
+    },
+    {
+     "a": "bet pot",
+     "mean": -2.439,
+     "gain": 6.667,
+     "se": 3.087
+    }
+   ]
+  },
+  {
+   "cat": "turn · checked to / first in · heads-up · slightly behind · edge jumped",
+   "n": 1915,
+   "usual": "bet ⅓",
+   "usualShare": 0.6172323759791123,
+   "best": "bet pot",
+   "gain": 0.24385456919060025,
+   "se": 0.38430452731782155,
+   "z": 0.6345347292485354,
+   "bb100": 0.023349074999999976,
+   "alts": [
+    {
+     "a": "check",
+     "mean": -5.566,
+     "gain": -3.162,
+     "se": 0.484
+    },
+    {
+     "a": "bet ⅓",
+     "mean": -3.277,
+     "gain": -0.873,
+     "se": 0.344
+    },
+    {
+     "a": "bet ⅔",
+     "mean": -3.223,
+     "gain": -0.818,
+     "se": 0.367
+    },
+    {
+     "a": "bet pot",
+     "mean": -2.161,
+     "gain": 0.244,
+     "se": 0.384
+    }
+   ]
+  },
+  {
+   "cat": "river · checked to / first in · heads-up · way ahead (>+20) · edge fell",
+   "n": 625,
+   "usual": "bet pot",
+   "usualShare": 0.808,
+   "best": "bet pot",
+   "gain": 0.7199398248000003,
+   "se": 0.4020678294168915,
+   "z": 1.790592960009037,
+   "bb100": 0.02249811952500001,
+   "alts": [
+    {
+     "a": "check",
+     "mean": 14.015,
+     "gain": -4.469,
+     "se": 0.879
+    },
+    {
+     "a": "bet ⅓",
+     "mean": 17.959,
+     "gain": -0.525,
+     "se": 0.628
+    },
+    {
+     "a": "bet ⅔",
+     "mean": 18.485,
+     "gain": 0.002,
+     "se": 0.553
+    },
+    {
+     "a": "bet pot",
+     "mean": 19.203,
+     "gain": 0.72,
+     "se": 0.402
+    }
+   ]
+  },
+  {
+   "cat": "turn · facing a bet · multiway · slightly ahead · edge jumped",
+   "n": 102,
+   "usual": "call",
+   "usualShare": 0.5196078431372549,
+   "best": "call",
+   "gain": 4.302069411764706,
+   "se": 2.946390894257717,
+   "z": 1.4601149562840083,
+   "bb100": 0.021940554000000004,
+   "alts": [
+    {
+     "a": "fold",
+     "mean": -8.548,
+     "gain": -0.714,
+     "se": 3.654
+    },
+    {
+     "a": "call",
+     "mean": -3.532,
+     "gain": 4.302,
+     "se": 2.946
+    },
+    {
+     "a": "raise",
+     "mean": -6.046,
+     "gain": 3.19,
+     "se": 5.061
+    }
+   ]
+  },
+  {
+   "cat": "turn · facing a bet · multiway · slightly behind · edge fell",
+   "n": 631,
+   "usual": "fold",
+   "usualShare": 0.7670364500792393,
+   "best": "fold",
+   "gain": 0.6930195409403069,
+   "se": 0.7676652387085252,
+   "z": 0.9027626965449187,
+   "bb100": 0.021864766516666686,
+   "alts": [
+    {
+     "a": "fold",
+     "mean": -9.87,
+     "gain": 0.693,
+     "se": 0.768
+    },
+    {
+     "a": "call",
+     "mean": -15.351,
+     "gain": -4.787,
+     "se": 1.484
+    },
+    {
+     "a": "raise",
+     "mean": -32.728,
+     "gain": -23.406,
+     "se": 2.5
+    }
+   ]
+  },
+  {
+   "cat": "turn · facing a bet · heads-up · behind (<−10) · edge jumped",
+   "n": 287,
+   "usual": "fold",
+   "usualShare": 0.9024390243902439,
+   "best": "raise",
+   "gain": 1.3217928947368431,
+   "se": 1.6864524296622974,
+   "z": 0.7837712297651496,
+   "bb100": 0.0189677280394737,
+   "alts": [
+    {
+     "a": "fold",
+     "mean": -4.846,
+     "gain": 0.125,
+     "se": 0.198
+    },
+    {
+     "a": "call",
+     "mean": -6.38,
+     "gain": -1.408,
+     "se": 0.821
+    },
+    {
+     "a": "raise",
+     "mean": -3.379,
+     "gain": 1.322,
+     "se": 1.686
+    }
+   ]
+  },
+  {
+   "cat": "turn · checked to / first in · heads-up · slightly behind · edge fell",
+   "n": 8381,
+   "usual": "bet pot",
+   "usualShare": 0.9805512468679155,
+   "best": "bet pot",
+   "gain": 0.04335271447321323,
+   "se": 0.02914841224157615,
+   "z": 1.4873096384775506,
+   "bb100": 0.018166955000000005,
+   "alts": [
+    {
+     "a": "check",
+     "mean": -4.814,
+     "gain": -5.828,
+     "se": 0.278
+    },
+    {
+     "a": "bet ⅓",
+     "mean": -2.454,
+     "gain": -3.468,
+     "se": 0.279
+    },
+    {
+     "a": "bet ⅔",
+     "mean": -1.017,
+     "gain": -2.031,
+     "se": 0.214
+    },
+    {
+     "a": "bet pot",
+     "mean": 1.057,
+     "gain": 0.043,
+     "se": 0.029
+    }
+   ]
+  },
+  {
+   "cat": "river · checked to / first in · multiway · slightly behind · edge jumped",
+   "n": 135,
+   "usual": "check",
+   "usualShare": 1,
+   "best": "bet pot",
+   "gain": 2.1338932098765437,
+   "se": 1.281494785395154,
+   "z": 1.6651594951426583,
+   "bb100": 0.01440377916666667,
+   "alts": [
+    {
+     "a": "check",
+     "mean": 0.808,
+     "gain": 0,
+     "se": 0
+    },
+    {
+     "a": "bet ⅓",
+     "mean": 1.35,
+     "gain": 0.542,
+     "se": 0.529
+    },
+    {
+     "a": "bet ⅔",
+     "mean": 2.004,
+     "gain": 1.196,
+     "se": 1.053
+    },
+    {
+     "a": "bet pot",
+     "mean": 2.942,
+     "gain": 2.134,
+     "se": 1.281
+    }
+   ]
+  },
+  {
+   "cat": "river · facing a bet · heads-up · slightly behind · edge jumped",
+   "n": 361,
+   "usual": "fold",
+   "usualShare": 0.6842105263157895,
+   "best": "fold",
+   "gain": 0.7661843531855957,
+   "se": 0.7543469008895772,
+   "z": 1.015692319120101,
+   "bb100": 0.013829627575000005,
+   "alts": [
+    {
+     "a": "fold",
+     "mean": -11.821,
+     "gain": 0.766,
+     "se": 0.754
+    },
+    {
+     "a": "call",
+     "mean": -13.468,
+     "gain": -0.882,
+     "se": 0.881
+    },
+    {
+     "a": "raise",
+     "mean": -20.083,
+     "gain": -9.886,
+     "se": 1.954
+    }
+   ]
+  },
+  {
+   "cat": "flop · facing a bet · multiway · slightly ahead · edge fell",
+   "n": 20,
+   "usual": "call",
+   "usualShare": 0.5,
+   "best": "raise",
+   "gain": 13.311628947368419,
+   "se": 9.894462042710774,
+   "z": 1.3453615658847329,
+   "bb100": 0.013311628947368419,
+   "alts": [
+    {
+     "a": "fold",
+     "mean": -5.643,
+     "gain": 5.282,
+     "se": 4.922
+    },
+    {
+     "a": "call",
+     "mean": -12.164,
+     "gain": -1.239,
+     "se": 3.432
+    },
+    {
+     "a": "raise",
+     "mean": 3.278,
+     "gain": 13.312,
+     "se": 9.894
+    }
+   ]
+  },
+  {
+   "cat": "flop · checked to / first in · heads-up · way ahead (>+20) · edge jumped",
+   "n": 21621,
+   "usual": "bet ⅓",
+   "usualShare": 0.9888534295360991,
+   "best": "bet ⅓",
+   "gain": 0.012218865146539647,
+   "se": 0.013583474253617557,
+   "z": 0.8995390220793854,
+   "bb100": 0.013209204166666686,
+   "alts": [
+    {
+     "a": "check",
+     "mean": 9.908,
+     "gain": -1.833,
+     "se": 0.123
+    },
+    {
+     "a": "bet ⅓",
+     "mean": 11.753,
+     "gain": 0.012,
+     "se": 0.014
+    },
+    {
+     "a": "bet ⅔",
+     "mean": 10.28,
+     "gain": -1.461,
+     "se": 0.109
+    },
+    {
+     "a": "bet pot",
+     "mean": 8.884,
+     "gain": -2.857,
+     "se": 0.134
+    }
+   ]
+  },
+  {
+   "cat": "turn · facing a bet · heads-up · slightly behind · edge jumped",
+   "n": 774,
+   "usual": "fold",
+   "usualShare": 0.7532299741602068,
+   "best": "fold",
+   "gain": 0.3182185981912146,
+   "se": 0.6280871027814322,
+   "z": 0.5066472417312976,
+   "bb100": 0.012315059750000006,
+   "alts": [
+    {
+     "a": "fold",
+     "mean": -11.236,
+     "gain": 0.318,
+     "se": 0.628
+    },
+    {
+     "a": "call",
+     "mean": -12.902,
+     "gain": -1.348,
+     "se": 1.183
+    },
+    {
+     "a": "raise",
+     "mean": -11.939,
+     "gain": -2.599,
+     "se": 1.762
+    }
+   ]
+  },
+  {
+   "cat": "river · checked to / first in · heads-up · ahead +10–20 · edge fell",
+   "n": 1288,
+   "usual": "bet pot",
+   "usualShare": 0.5015527950310559,
+   "best": "bet pot",
+   "gain": 0.1889154298654241,
+   "se": 0.26698120298664757,
+   "z": 0.7075982419439178,
+   "bb100": 0.01216615368333331,
+   "alts": [
+    {
+     "a": "check",
+     "mean": 5.725,
+     "gain": -1.899,
+     "se": 0.558
+    },
+    {
+     "a": "bet ⅓",
+     "mean": 6.029,
+     "gain": -1.595,
+     "se": 0.354
+    },
+    {
+     "a": "bet ⅔",
+     "mean": 7.171,
+     "gain": -0.453,
+     "se": 0.276
+    },
+    {
+     "a": "bet pot",
+     "mean": 7.813,
+     "gain": 0.189,
+     "se": 0.267
+    }
+   ]
+  },
+  {
+   "cat": "turn · checked to / first in · multiway · behind (<−10) · edge jumped",
+   "n": 59,
+   "usual": "check",
+   "usualShare": 1,
+   "best": "bet ⅔",
+   "gain": 4.10269138418079,
+   "se": 1.4809716678486544,
+   "z": 2.7702700012759855,
+   "bb100": 0.012102939583333331,
+   "alts": [
+    {
+     "a": "check",
+     "mean": -0.512,
+     "gain": 0,
+     "se": 0
+    },
+    {
+     "a": "bet ⅓",
+     "mean": 1.48,
+     "gain": 1.992,
+     "se": 1.196
+    },
+    {
+     "a": "bet ⅔",
+     "mean": 3.591,
+     "gain": 4.103,
+     "se": 1.481
+    },
+    {
+     "a": "bet pot",
+     "mean": 3.453,
+     "gain": 3.964,
+     "se": 1.47
+    }
+   ]
+  },
+  {
+   "cat": "turn · facing a bet · multiway · behind (<−10) · edge steady",
+   "n": 588,
+   "usual": "fold",
+   "usualShare": 0.9897959183673469,
+   "best": "fold",
+   "gain": 0.4023611111111111,
+   "se": 0.19700389305035879,
+   "z": 2.0424018270961692,
+   "bb100": 0.011829416666666669,
+   "alts": [
+    {
+     "a": "fold",
+     "mean": -6.382,
+     "gain": 0.402,
+     "se": 0.197
+    },
+    {
+     "a": "call",
+     "mean": -11.245,
+     "gain": -4.46,
+     "se": 0.985
+    },
+    {
+     "a": "raise",
+     "mean": -26.467,
+     "gain": -20.499,
+     "se": 1.802
+    }
+   ]
+  },
+  {
+   "cat": "flop · facing a bet · multiway · slightly behind · edge jumped",
+   "n": 9,
+   "usual": "fold",
+   "usualShare": 0.7777777777777778,
+   "best": "call",
+   "gain": 23.968888888888884,
+   "se": 14.717633218076815,
+   "z": 1.6285831107306907,
+   "bb100": 0.010785999999999997,
+   "alts": [
+    {
+     "a": "fold",
+     "mean": -4.389,
+     "gain": -10.516,
+     "se": 11.187
+    },
+    {
+     "a": "call",
+     "mean": 30.096,
+     "gain": 23.969,
+     "se": 14.718
+    },
+    {
+     "a": "raise",
+     "mean": 1.423,
+     "gain": -4.704,
+     "se": 25.081
+    }
+   ]
+  },
+  {
+   "cat": "turn · facing a bet · multiway · way ahead (>+20) · edge jumped",
+   "n": 438,
+   "usual": "call",
+   "usualShare": 0.6438356164383562,
+   "best": "raise",
+   "gain": 0.48440530459770176,
+   "se": 1.5268932959979926,
+   "z": 0.31724895633986633,
+   "bb100": 0.010608476170689668,
+   "alts": [
+    {
+     "a": "fold",
+     "mean": -12.499,
+     "gain": -38.887,
+     "se": 3.705
+    },
+    {
+     "a": "call",
+     "mean": 24.732,
+     "gain": -1.656,
+     "se": 0.988
+    },
+    {
+     "a": "raise",
+     "mean": 24.943,
+     "gain": 0.484,
+     "se": 1.527
+    }
+   ]
+  },
+  {
+   "cat": "turn · facing a bet · heads-up · way ahead (>+20) · edge fell",
+   "n": 350,
+   "usual": "call",
+   "usualShare": 0.6771428571428572,
+   "best": "call",
+   "gain": 0.5286297485714279,
+   "se": 1.1051011197475906,
+   "z": 0.4783541877979175,
+   "bb100": 0.009251020599999988,
+   "alts": [
+    {
+     "a": "fold",
+     "mean": -27.231,
+     "gain": -48.934,
+     "se": 3.877
+    },
+    {
+     "a": "call",
+     "mean": 22.231,
+     "gain": 0.529,
+     "se": 1.105
+    }
+   ]
+  },
+  {
+   "cat": "river · facing a bet · multiway · behind (<−10) · edge fell",
+   "n": 410,
+   "usual": "fold",
+   "usualShare": 0.973170731707317,
+   "best": "fold",
+   "gain": 0.36073500000000003,
+   "se": 0.18412593557895965,
+   "z": 1.9591753810549097,
+   "bb100": 0.007395067500000001,
+   "alts": [
+    {
+     "a": "fold",
+     "mean": -14.452,
+     "gain": 0.361,
+     "se": 0.184
+    },
+    {
+     "a": "call",
+     "mean": -37.479,
+     "gain": -22.667,
+     "se": 1.146
+    }
+   ]
+  },
+  {
+   "cat": "flop · facing a bet · heads-up · way ahead (>+20) · edge steady",
+   "n": 11,
+   "usual": "call",
+   "usualShare": 0.7272727272727273,
+   "best": "fold",
+   "gain": 13.134527272727274,
+   "se": 10.627740930693237,
+   "z": 1.2358719843080068,
+   "bb100": 0.00722399,
+   "alts": [
+    {
+     "a": "fold",
+     "mean": -7.159,
+     "gain": 13.135,
+     "se": 10.628
+    },
+    {
+     "a": "call",
+     "mean": -18.737,
+     "gain": 1.557,
+     "se": 0.997
+    },
+    {
+     "a": "raise",
+     "mean": -14.078,
+     "gain": 6.216,
+     "se": 5.936
+    }
+   ]
+  },
+  {
+   "cat": "turn · facing a bet · multiway · slightly ahead · edge fell",
+   "n": 210,
+   "usual": "fold",
+   "usualShare": 0.6047619047619047,
+   "best": "call",
+   "gain": 0.682975726984127,
+   "se": 2.9952457049031334,
+   "z": 0.2280199336789349,
+   "bb100": 0.007171245133333333,
+   "alts": [
+    {
+     "a": "fold",
+     "mean": -10.556,
+     "gain": -0.782,
+     "se": 2.433
+    },
+    {
+     "a": "call",
+     "mean": -9.092,
+     "gain": 0.683,
+     "se": 2.995
+    },
+    {
+     "a": "raise",
+     "mean": -12.538,
+     "gain": -2.477,
+     "se": 4.633
+    }
+   ]
+  },
+  {
+   "cat": "flop · checked to / first in · multiway · slightly ahead · edge fell",
+   "n": 85,
+   "usual": "bet pot",
+   "usualShare": 0.7176470588235294,
+   "best": "bet ⅓",
+   "gain": 1.6731315686274477,
+   "se": 2.473669772453256,
+   "z": 0.6763762840373488,
+   "bb100": 0.007110809166666653,
+   "alts": [
+    {
+     "a": "check",
+     "mean": -0.555,
+     "gain": -4.078,
+     "se": 1.817
+    },
+    {
+     "a": "bet ⅓",
+     "mean": 5.196,
+     "gain": 1.673,
+     "se": 2.474
+    },
+    {
+     "a": "bet ⅔",
+     "mean": 2.612,
+     "gain": -0.91,
+     "se": 2.644
+    },
+    {
+     "a": "bet pot",
+     "mean": 2.889,
+     "gain": -0.634,
+     "se": 2.072
+    }
+   ]
+  },
+  {
+   "cat": "turn · facing a bet · multiway · slightly behind · edge jumped",
+   "n": 29,
+   "usual": "fold",
+   "usualShare": 0.6206896551724138,
+   "best": "call",
+   "gain": 4.51926896551724,
+   "se": 5.003151549663135,
+   "z": 0.903284443946441,
+   "bb100": 0.0065529399999999976,
+   "alts": [
+    {
+     "a": "fold",
+     "mean": -5.724,
+     "gain": 0.212,
+     "se": 1.336
+    },
+    {
+     "a": "call",
+     "mean": -1.417,
+     "gain": 4.519,
+     "se": 5.003
+    },
+    {
+     "a": "raise",
+     "mean": -7.599,
+     "gain": -2.809,
+     "se": 8.557
+    }
+   ]
+  },
+  {
+   "cat": "turn · facing a bet · multiway · way ahead (>+20) · edge steady",
+   "n": 122,
+   "usual": "call",
+   "usualShare": 0.8770491803278688,
+   "best": "call",
+   "gain": 0.942702975409837,
+   "se": 1.4029403457984964,
+   "z": 0.6719480113555998,
+   "bb100": 0.005750488150000005,
+   "alts": [
+    {
+     "a": "fold",
+     "mean": -18.356,
+     "gain": -35.032,
+     "se": 7.205
+    },
+    {
+     "a": "call",
+     "mean": 17.618,
+     "gain": 0.943,
+     "se": 1.403
+    }
+   ]
+  },
+  {
+   "cat": "turn · facing a bet · multiway · behind (<−10) · edge jumped",
+   "n": 7,
+   "usual": "fold",
+   "usualShare": 1,
+   "best": "raise",
+   "gain": 16.056714285714285,
+   "se": 15.547229659009055,
+   "z": 1.0327701229016066,
+   "bb100": 0.00561985,
+   "alts": [
+    {
+     "a": "fold",
+     "mean": -3.5,
+     "gain": 0,
+     "se": 0
+    },
+    {
+     "a": "call",
+     "mean": 4.584,
+     "gain": 8.084,
+     "se": 5.932
+    },
+    {
+     "a": "raise",
+     "mean": 12.557,
+     "gain": 16.057,
+     "se": 15.547
+    }
+   ]
+  },
+  {
+   "cat": "river · facing a bet · multiway · ahead +10–20 · edge jumped",
+   "n": 57,
+   "usual": "call",
+   "usualShare": 0.8596491228070176,
+   "best": "fold",
+   "gain": 1.4539817485380107,
+   "se": 3.715571463345439,
+   "z": 0.39132116361687996,
+   "bb100": 0.0041438479833333305,
+   "alts": [
+    {
+     "a": "fold",
+     "mean": -16.771,
+     "gain": 1.454,
+     "se": 3.716
+    },
+    {
+     "a": "call",
+     "mean": -20.527,
+     "gain": -2.302,
+     "se": 1.982
+    }
+   ]
+  },
+  {
+   "cat": "river · facing a bet · multiway · slightly behind · edge jumped",
+   "n": 19,
+   "usual": "call",
+   "usualShare": 0.5789473684210527,
+   "best": "fold",
+   "gain": 3.036017763157896,
+   "se": 2.499180994430884,
+   "z": 1.2148050781129045,
+   "bb100": 0.0028842168750000015,
+   "alts": [
+    {
+     "a": "fold",
+     "mean": -6.489,
+     "gain": 3.036,
+     "se": 2.499
+    },
+    {
+     "a": "call",
+     "mean": -9.515,
+     "gain": 0.01,
+     "se": 1.15
+    },
+    {
+     "a": "raise",
+     "mean": -24.552,
+     "gain": -15.027,
+     "se": 5.79
+    }
+   ]
+  },
+  {
+   "cat": "river · checked to / first in · multiway · behind (<−10) · edge jumped",
+   "n": 42,
+   "usual": "check",
+   "usualShare": 1,
+   "best": "bet pot",
+   "gain": 1.2440079365079364,
+   "se": 1.084475388353201,
+   "z": 1.147105734134722,
+   "bb100": 0.0026124166666666665,
+   "alts": [
+    {
+     "a": "check",
+     "mean": -0.107,
+     "gain": 0,
+     "se": 0
+    },
+    {
+     "a": "bet ⅓",
+     "mean": -0.003,
+     "gain": 0.104,
+     "se": 0.789
+    },
+    {
+     "a": "bet ⅔",
+     "mean": 0.524,
+     "gain": 0.63,
+     "se": 0.885
+    },
+    {
+     "a": "bet pot",
+     "mean": 1.137,
+     "gain": 1.244,
+     "se": 1.084
+    }
+   ]
+  },
+  {
+   "cat": "river · checked to / first in · multiway · ahead +10–20 · edge fell",
+   "n": 53,
+   "usual": "bet pot",
+   "usualShare": 0.7358490566037735,
+   "best": "bet pot",
+   "gain": 0.7514290880503146,
+   "se": 0.5676270359020715,
+   "z": 1.323807783144341,
+   "bb100": 0.0019912870833333337,
+   "alts": [
+    {
+     "a": "check",
+     "mean": 3.843,
+     "gain": -8.755,
+     "se": 3.28
+    },
+    {
+     "a": "bet ⅓",
+     "mean": 4.088,
+     "gain": -8.51,
+     "se": 1.855
+    },
+    {
+     "a": "bet ⅔",
+     "mean": 9.32,
+     "gain": -3.278,
+     "se": 1.377
+    },
+    {
+     "a": "bet pot",
+     "mean": 13.349,
+     "gain": 0.751,
+     "se": 0.568
+    }
+   ]
+  },
+  {
+   "cat": "river · facing a bet · heads-up · behind (<−10) · edge jumped",
+   "n": 135,
+   "usual": "fold",
+   "usualShare": 0.8740740740740741,
+   "best": "fold",
+   "gain": 0.26031277777777767,
+   "se": 0.13152846260915652,
+   "z": 1.9791364744474378,
+   "bb100": 0.0017571112499999992,
+   "alts": [
+    {
+     "a": "fold",
+     "mean": -6.669,
+     "gain": 0.26,
+     "se": 0.132
+    },
+    {
+     "a": "call",
+     "mean": -7.722,
+     "gain": -0.792,
+     "se": 1.521
+    },
+    {
+     "a": "raise",
+     "mean": -11.62,
+     "gain": -4.961,
+     "se": 3.159
+    }
+   ]
+  },
+  {
+   "cat": "flop · facing a bet · multiway · behind (<−10) · edge steady",
+   "n": 1562,
+   "usual": "fold",
+   "usualShare": 0.9993597951344431,
+   "best": "fold",
+   "gain": 0.02144686299615877,
+   "se": 0.021439996704003875,
+   "z": 1.0003202562131743,
+   "bb100": 0.001675,
+   "alts": [
+    {
+     "a": "fold",
+     "mean": -5.038,
+     "gain": 0.021,
+     "se": 0.021
+    },
+    {
+     "a": "call",
+     "mean": -10.632,
+     "gain": -5.572,
+     "se": 0.705
+    },
+    {
+     "a": "raise",
+     "mean": -18.562,
+     "gain": -14.111,
+     "se": 1.113
+    }
+   ]
+  },
+  {
+   "cat": "flop · checked to / first in · multiway · way ahead (>+20) · edge jumped",
+   "n": 5799,
+   "usual": "bet ⅓",
+   "usualShare": 0.9991377823762718,
+   "best": "bet ⅓",
+   "gain": 0.004668908432488355,
+   "se": 0.002661980224686501,
+   "z": 1.7539230341345635,
+   "bb100": 0.0013537499999999986,
+   "alts": [
+    {
+     "a": "check",
+     "mean": 17.43,
+     "gain": -2.598,
+     "se": 0.447
+    },
+    {
+     "a": "bet ⅓",
+     "mean": 20.033,
+     "gain": 0.005,
+     "se": 0.003
+    },
+    {
+     "a": "bet ⅔",
+     "mean": 17.933,
+     "gain": -2.095,
+     "se": 0.359
+    },
+    {
+     "a": "bet pot",
+     "mean": 16.081,
+     "gain": -3.947,
+     "se": 0.419
+    }
+   ]
+  },
+  {
+   "cat": "turn · checked to / first in · multiway · way ahead (>+20) · edge fell",
+   "n": 36,
+   "usual": "bet ⅔",
+   "usualShare": 1,
+   "best": "bet ⅓",
+   "gain": 0.6024571759259297,
+   "se": 4.375492052293497,
+   "z": 0.1376890115958822,
+   "bb100": 0.0010844229166666734,
+   "alts": [
+    {
+     "a": "check",
+     "mean": 29.681,
+     "gain": -0.9,
+     "se": 4.663
+    },
+    {
+     "a": "bet ⅓",
+     "mean": 31.184,
+     "gain": 0.602,
+     "se": 4.375
+    },
+    {
+     "a": "bet ⅔",
+     "mean": 30.581,
+     "gain": 0,
+     "se": 0
+    },
+    {
+     "a": "bet pot",
+     "mean": 23.407,
+     "gain": -7.174,
+     "se": 4.272
+    }
+   ]
+  },
+  {
+   "cat": "river · facing a bet · multiway · behind (<−10) · edge steady",
+   "n": 127,
+   "usual": "fold",
+   "usualShare": 0.984251968503937,
+   "best": "fold",
+   "gain": 0.1622614173228347,
+   "se": 0.1359399200886272,
+   "z": 1.1936259578278916,
+   "bb100": 0.0010303600000000003,
+   "alts": [
+    {
+     "a": "fold",
+     "mean": -6.187,
+     "gain": 0.162,
+     "se": 0.136
+    },
+    {
+     "a": "call",
+     "mean": -16.686,
+     "gain": -10.337,
+     "se": 1.054
+    },
+    {
+     "a": "raise",
+     "mean": -42.75,
+     "gain": -37.807,
+     "se": 2.355
+    }
+   ]
+  },
+  {
+   "cat": "flop · checked to / first in · multiway · slightly behind · edge jumped",
+   "n": 19,
+   "usual": "bet pot",
+   "usualShare": 0.5789473684210527,
+   "best": "check",
+   "gain": 0.8005378947368413,
+   "se": 4.851566447823684,
+   "z": 0.16500606625638337,
+   "bb100": 0.0007605109999999993,
+   "alts": [
+    {
+     "a": "check",
+     "mean": -8.057,
+     "gain": 0.801,
+     "se": 4.852
+    },
+    {
+     "a": "bet ⅓",
+     "mean": -18.402,
+     "gain": -9.545,
+     "se": 7.183
+    },
+    {
+     "a": "bet ⅔",
+     "mean": -18.024,
+     "gain": -9.167,
+     "se": 7.565
+    },
+    {
+     "a": "bet pot",
+     "mean": -11.864,
+     "gain": -3.007,
+     "se": 5.163
+    }
+   ]
+  },
+  {
+   "cat": "river · checked to / first in · multiway · ahead +10–20 · edge steady",
+   "n": 62,
+   "usual": "bet pot",
+   "usualShare": 0.7258064516129032,
+   "best": "bet pot",
+   "gain": 0.20853467741935403,
+   "se": 0.35980359126873834,
+   "z": 0.5795791995405596,
+   "bb100": 0.0006464574999999975,
+   "alts": [
+    {
+     "a": "check",
+     "mean": 3.038,
+     "gain": -10.039,
+     "se": 2.601
+    },
+    {
+     "a": "bet ⅓",
+     "mean": 7.101,
+     "gain": -5.975,
+     "se": 2.021
+    },
+    {
+     "a": "bet ⅔",
+     "mean": 11.021,
+     "gain": -2.055,
+     "se": 1.445
+    },
+    {
+     "a": "bet pot",
+     "mean": 13.285,
+     "gain": 0.209,
+     "se": 0.36
+    }
+   ]
+  },
+  {
+   "cat": "flop · checked to / first in · heads-up · ahead +10–20 · edge fell",
+   "n": 2,
+   "usual": "bet ⅔",
+   "usualShare": 1,
+   "best": "bet ⅓",
+   "gain": 4.5,
+   "se": 1.90918830920368,
+   "z": 2.3570226039551563,
+   "bb100": 0.00045,
+   "alts": [
+    {
+     "a": "check",
+     "mean": -7.25,
+     "gain": -14.25,
+     "se": 6.046
+    },
+    {
+     "a": "bet ⅓",
+     "mean": 11.5,
+     "gain": 4.5,
+     "se": 1.909
+    },
+    {
+     "a": "bet ⅔",
+     "mean": 7,
+     "gain": 0,
+     "se": 0
+    },
+    {
+     "a": "bet pot",
+     "mean": 7,
+     "gain": 0,
+     "se": 0
+    }
+   ]
+  },
+  {
+   "cat": "turn · checked to / first in · multiway · slightly ahead · edge fell",
+   "n": 439,
+   "usual": "bet pot",
+   "usualShare": 0.9498861047835991,
+   "best": "bet pot",
+   "gain": 0.011995104783599213,
+   "se": 0.3014139400897287,
+   "z": 0.03979611818892105,
+   "bb100": 0.0002632925500000027,
+   "alts": [
+    {
+     "a": "check",
+     "mean": -1.35,
+     "gain": -10.057,
+     "se": 1.465
+    },
+    {
+     "a": "bet ⅓",
+     "mean": 1.418,
+     "gain": -7.289,
+     "se": 1.684
+    },
+    {
+     "a": "bet ⅔",
+     "mean": 4.246,
+     "gain": -4.461,
+     "se": 1.461
+    },
+    {
+     "a": "bet pot",
+     "mean": 8.719,
+     "gain": 0.012,
+     "se": 0.301
+    }
+   ]
+  },
+  {
+   "cat": "river · facing a bet · multiway · ahead +10–20 · edge fell",
+   "n": 42,
+   "usual": "call",
+   "usualShare": 0.8095238095238095,
+   "best": "call",
+   "gain": 0.0794980158730151,
+   "se": 3.49001363794423,
+   "z": 0.022778712096908276,
+   "bb100": 0.0001669458333333317,
+   "alts": [
+    {
+     "a": "fold",
+     "mean": -32.177,
+     "gain": -7.153,
+     "se": 5.033
+    },
+    {
+     "a": "call",
+     "mean": -24.945,
+     "gain": 0.079,
+     "se": 3.49
+    }
+   ]
+  },
+  {
+   "cat": "river · checked to / first in · multiway · way ahead (>+20) · edge fell",
+   "n": 21,
+   "usual": "bet pot",
+   "usualShare": 1,
+   "best": "bet ⅓",
+   "gain": 0.13667837301587074,
+   "se": 3.385563180209378,
+   "z": 0.04037094147728117,
+   "bb100": 0.00014351229166666428,
+   "alts": [
+    {
+     "a": "check",
+     "mean": 23.038,
+     "gain": -9.869,
+     "se": 6.477
+    },
+    {
+     "a": "bet ⅓",
+     "mean": 33.043,
+     "gain": 0.137,
+     "se": 3.386
+    },
+    {
+     "a": "bet ⅔",
+     "mean": 32.174,
+     "gain": -0.732,
+     "se": 3.008
+    },
+    {
+     "a": "bet pot",
+     "mean": 32.906,
+     "gain": 0,
+     "se": 0
+    }
+   ]
+  },
+  {
+   "cat": "turn · checked to / first in · heads-up · slightly ahead · edge steady",
+   "n": 17428,
+   "usual": "bet pot",
+   "usualShare": 1,
+   "best": "bet pot",
+   "gain": 0,
+   "se": 7.574888148133692e-9,
+   "z": 0,
+   "bb100": 0,
+   "alts": [
+    {
+     "a": "check",
+     "mean": -1.837,
+     "gain": -6.043,
+     "se": 0.191
+    },
+    {
+     "a": "bet ⅓",
+     "mean": 0.894,
+     "gain": -3.312,
+     "se": 0.178
+    },
+    {
+     "a": "bet ⅔",
+     "mean": 2.446,
+     "gain": -1.76,
+     "se": 0.139
+    },
+    {
+     "a": "bet pot",
+     "mean": 4.205,
+     "gain": 0,
+     "se": 0
+    }
+   ]
+  },
+  {
+   "cat": "flop · checked to / first in · heads-up · ahead +10–20 · edge steady",
+   "n": 10151,
+   "usual": "bet ⅔",
+   "usualShare": 1,
+   "best": "bet ⅔",
+   "gain": 0,
+   "se": 9.925344418528813e-9,
+   "z": 0,
+   "bb100": 0,
+   "alts": [
+    {
+     "a": "check",
+     "mean": 3.212,
+     "gain": -2.665,
+     "se": 0.216
+    },
+    {
+     "a": "bet ⅓",
+     "mean": 5.53,
+     "gain": -0.348,
+     "se": 0.193
+    },
+    {
+     "a": "bet ⅔",
+     "mean": 5.877,
+     "gain": 0,
+     "se": 0
+    },
+    {
+     "a": "bet pot",
+     "mean": 5.248,
+     "gain": -0.63,
+     "se": 0.153
+    }
+   ]
+  },
+  {
+   "cat": "river · checked to / first in · multiway · behind (<−10) · edge fell",
+   "n": 1074,
+   "usual": "check",
+   "usualShare": 1,
+   "best": "check",
+   "gain": 0,
+   "se": 3.051390988486767e-8,
+   "z": 0,
+   "bb100": 0,
+   "alts": [
+    {
+     "a": "check",
+     "mean": -5.407,
+     "gain": 0,
+     "se": 0
+    },
+    {
+     "a": "bet ⅓",
+     "mean": -7.277,
+     "gain": -1.87,
+     "se": 0.44
+    },
+    {
+     "a": "bet ⅔",
+     "mean": -7.649,
+     "gain": -2.242,
+     "se": 0.605
+    },
+    {
+     "a": "bet pot",
+     "mean": -6.753,
+     "gain": -1.346,
+     "se": 0.718
+    }
+   ]
+  },
+  {
+   "cat": "flop · checked to / first in · multiway · ahead +10–20 · edge steady",
+   "n": 1069,
+   "usual": "bet ⅔",
+   "usualShare": 1,
+   "best": "bet ⅔",
+   "gain": 0,
+   "se": 3.05851875103308e-8,
+   "z": 0,
+   "bb100": 0,
+   "alts": [
+    {
+     "a": "check",
+     "mean": 5.847,
+     "gain": -4.039,
+     "se": 1.036
+    },
+    {
+     "a": "bet ⅓",
+     "mean": 9.285,
+     "gain": -0.601,
+     "se": 0.912
+    },
+    {
+     "a": "bet ⅔",
+     "mean": 9.887,
+     "gain": 0,
+     "se": 0
+    },
+    {
+     "a": "bet pot",
+     "mean": 9.101,
+     "gain": -0.785,
+     "se": 0.588
+    }
+   ]
+  },
+  {
+   "cat": "turn · checked to / first in · multiway · way ahead (>+20) · edge steady",
+   "n": 470,
+   "usual": "bet ⅔",
+   "usualShare": 1,
+   "best": "bet ⅔",
+   "gain": 0,
+   "se": 4.612656040144425e-8,
+   "z": 0,
+   "bb100": 0,
+   "alts": [
+    {
+     "a": "check",
+     "mean": 16.142,
+     "gain": -6.737,
+     "se": 1.489
+    },
+    {
+     "a": "bet ⅓",
+     "mean": 21.293,
+     "gain": -1.586,
+     "se": 1.558
+    },
+    {
+     "a": "bet ⅔",
+     "mean": 22.88,
+     "gain": 0,
+     "se": 0
+    },
+    {
+     "a": "bet pot",
+     "mean": 19.746,
+     "gain": -3.133,
+     "se": 1.225
+    }
+   ]
+  },
+  {
+   "cat": "turn · checked to / first in · multiway · behind (<−10) · edge fell",
+   "n": 1388,
+   "usual": "check",
+   "usualShare": 1,
+   "best": "check",
+   "gain": 0,
+   "se": 2.6841406354750947e-8,
+   "z": 0,
+   "bb100": 0,
+   "alts": [
+    {
+     "a": "check",
+     "mean": -4.199,
+     "gain": 0,
+     "se": 0
+    },
+    {
+     "a": "bet ⅓",
+     "mean": -6.514,
+     "gain": -2.314,
+     "se": 0.459
+    },
+    {
+     "a": "bet ⅔",
+     "mean": -7.137,
+     "gain": -2.937,
+     "se": 0.616
+    },
+    {
+     "a": "bet pot",
+     "mean": -5.462,
+     "gain": -1.262,
+     "se": 0.746
+    }
+   ]
+  },
+  {
+   "cat": "turn · checked to / first in · heads-up · slightly ahead · edge fell",
+   "n": 5331,
+   "usual": "bet pot",
+   "usualShare": 1,
+   "best": "bet pot",
+   "gain": 0,
+   "se": 1.3696060278575734e-8,
+   "z": 0,
+   "bb100": 0,
+   "alts": [
+    {
+     "a": "check",
+     "mean": -1.175,
+     "gain": -5.455,
+     "se": 0.341
+    },
+    {
+     "a": "bet ⅓",
+     "mean": 1.389,
+     "gain": -2.892,
+     "se": 0.34
+    },
+    {
+     "a": "bet ⅔",
+     "mean": 2.74,
+     "gain": -1.541,
+     "se": 0.264
+    },
+    {
+     "a": "bet pot",
+     "mean": 4.281,
+     "gain": 0,
+     "se": 0
+    }
+   ]
+  },
+  {
+   "cat": "river · facing a bet · heads-up · ahead +10–20 · edge steady",
+   "n": 1883,
+   "usual": "call",
+   "usualShare": 1,
+   "best": "call",
+   "gain": 0,
+   "se": 2.3044900641260894e-8,
+   "z": 0,
+   "bb100": 0,
+   "alts": [
+    {
+     "a": "fold",
+     "mean": -28.397,
+     "gain": -12.625,
+     "se": 0.968
+    },
+    {
+     "a": "call",
+     "mean": -15.772,
+     "gain": 0,
+     "se": 0
+    }
+   ]
+  },
+  {
+   "cat": "river · facing a bet · heads-up · ahead +10–20 · edge jumped",
+   "n": 940,
+   "usual": "call",
+   "usualShare": 1,
+   "best": "call",
+   "gain": 0,
+   "se": 3.261640365267211e-8,
+   "z": 0,
+   "bb100": 0,
+   "alts": [
+    {
+     "a": "fold",
+     "mean": -23.962,
+     "gain": -3.991,
+     "se": 1.221
+    },
+    {
+     "a": "call",
+     "mean": -19.971,
+     "gain": 0,
+     "se": 0
+    }
+   ]
+  },
+  {
+   "cat": "river · facing a bet · heads-up · ahead +10–20 · edge fell",
+   "n": 529,
+   "usual": "call",
+   "usualShare": 1,
+   "best": "call",
+   "gain": 0,
+   "se": 4.347826086956522e-8,
+   "z": 0,
+   "bb100": 0,
+   "alts": [
+    {
+     "a": "fold",
+     "mean": -32.196,
+     "gain": -17.601,
+     "se": 1.895
+    },
+    {
+     "a": "call",
+     "mean": -14.595,
+     "gain": 0,
+     "se": 0
+    }
+   ]
+  },
+  {
+   "cat": "river · checked to / first in · multiway · way ahead (>+20) · edge jumped",
+   "n": 459,
+   "usual": "bet pot",
+   "usualShare": 1,
+   "best": "bet pot",
+   "gain": 0,
+   "se": 4.667600280093366e-8,
+   "z": 0,
+   "bb100": 0,
+   "alts": [
+    {
+     "a": "check",
+     "mean": 27.662,
+     "gain": -7.203,
+     "se": 1.079
+    },
+    {
+     "a": "bet ⅓",
+     "mean": 30.28,
+     "gain": -4.586,
+     "se": 0.855
+    },
+    {
+     "a": "bet ⅔",
+     "mean": 33.706,
+     "gain": -1.16,
+     "se": 0.64
+    },
+    {
+     "a": "bet pot",
+     "mean": 34.866,
+     "gain": 0,
+     "se": 0
+    }
+   ]
+  },
+  {
+   "cat": "river · checked to / first in · multiway · way ahead (>+20) · edge steady",
+   "n": 130,
+   "usual": "bet pot",
+   "usualShare": 1,
+   "best": "bet pot",
+   "gain": 0,
+   "se": 8.770580193070293e-8,
+   "z": 0,
+   "bb100": 0,
+   "alts": [
+    {
+     "a": "check",
+     "mean": 26.397,
+     "gain": -15.773,
+     "se": 2.53
+    },
+    {
+     "a": "bet ⅓",
+     "mean": 31.564,
+     "gain": -10.606,
+     "se": 1.929
+    },
+    {
+     "a": "bet ⅔",
+     "mean": 38.32,
+     "gain": -3.85,
+     "se": 1.698
+    },
+    {
+     "a": "bet pot",
+     "mean": 42.17,
+     "gain": 0,
+     "se": 0
+    }
+   ]
+  },
+  {
+   "cat": "river · facing a bet · multiway · behind (<−10) · edge jumped",
+   "n": 4,
+   "usual": "fold",
+   "usualShare": 1,
+   "best": "fold",
+   "gain": 0,
+   "se": 5e-7,
+   "z": 0,
+   "bb100": 0,
+   "alts": [
+    {
+     "a": "fold",
+     "mean": -3.5,
+     "gain": 0,
+     "se": 0
+    },
+    {
+     "a": "call",
+     "mean": -5.134,
+     "gain": -1.634,
+     "se": 1.814
+    },
+    {
+     "a": "raise",
+     "mean": -19.345,
+     "gain": -15.845,
+     "se": 6.036
+    }
+   ]
+  },
+  {
+   "cat": "flop · checked to / first in · multiway · way ahead (>+20) · edge steady",
+   "n": 2,
+   "usual": "bet ⅔",
+   "usualShare": 1,
+   "best": "bet ⅔",
+   "gain": 0,
+   "se": 7.071067811865475e-7,
+   "z": 0,
+   "bb100": 0,
+   "alts": [
+    {
+     "a": "check",
+     "mean": 2.675,
+     "gain": -11.438,
+     "se": 15.088
+    },
+    {
+     "a": "bet ⅓",
+     "mean": -0.433,
+     "gain": -14.545,
+     "se": 21.864
+    },
+    {
+     "a": "bet ⅔",
+     "mean": 14.113,
+     "gain": 0,
+     "se": 0
+    },
+    {
+     "a": "bet pot",
+     "mean": 14.113,
+     "gain": 0,
+     "se": 0
+    }
+   ]
+  },
+  {
+   "cat": "flop · facing a bet · heads-up · behind (<−10) · edge jumped",
+   "n": 1,
+   "usual": "fold",
+   "usualShare": 1,
+   "best": "fold",
+   "gain": 0,
+   "se": 0.000001,
+   "z": 0,
+   "bb100": 0,
+   "alts": [
+    {
+     "a": "fold",
+     "mean": -1,
+     "gain": 0,
+     "se": 0
+    },
+    {
+     "a": "call",
+     "mean": -2.32,
+     "gain": -1.32,
+     "se": 0
+    },
+    {
+     "a": "raise",
+     "mean": -6.96,
+     "gain": -5.96,
+     "se": 0
+    }
+   ]
+  },
+  {
+   "cat": "river · checked to / first in · multiway · ahead +10–20 · edge jumped",
+   "n": 189,
+   "usual": "bet pot",
+   "usualShare": 0.9735449735449735,
+   "best": "bet pot",
+   "gain": -0.03536155202821886,
+   "se": 0.03326493279005042,
+   "z": -1.0630279114466015,
+   "bb100": -0.00033416666666666827,
+   "alts": [
+    {
+     "a": "check",
+     "mean": 2.899,
+     "gain": -2.161,
+     "se": 1.324
+    },
+    {
+     "a": "bet ⅓",
+     "mean": 2.176,
+     "gain": -2.884,
+     "se": 0.886
+    },
+    {
+     "a": "bet ⅔",
+     "mean": 4.487,
+     "gain": -0.573,
+     "se": 0.589
+    },
+    {
+     "a": "bet pot",
+     "mean": 5.025,
+     "gain": -0.035,
+     "se": 0.033
+    }
+   ]
+  },
+  {
+   "cat": "turn · facing a bet · multiway · ahead +10–20 · edge fell",
+   "n": 45,
+   "usual": "call",
+   "usualShare": 0.7333333333333333,
+   "best": "call",
+   "gain": -0.18174766666666578,
+   "se": 5.704962918645604,
+   "z": -0.03185781735279252,
+   "bb100": -0.000408932249999998,
+   "alts": [
+    {
+     "a": "fold",
+     "mean": -16.974,
+     "gain": -3.097,
+     "se": 9.449
+    },
+    {
+     "a": "call",
+     "mean": -14.06,
+     "gain": -0.182,
+     "se": 5.705
+    }
+   ]
+  },
+  {
+   "cat": "turn · facing a bet · multiway · way ahead (>+20) · edge fell",
+   "n": 9,
+   "usual": "call",
+   "usualShare": 0.6666666666666666,
+   "best": "call",
+   "gain": -1.5980777777777777,
+   "se": 1.9684694087581676,
+   "z": -0.8118377510300981,
+   "bb100": -0.000719135,
+   "alts": [
+    {
+     "a": "fold",
+     "mean": -18.014,
+     "gain": -27.113,
+     "se": 24.498
+    },
+    {
+     "a": "call",
+     "mean": 7.501,
+     "gain": -1.598,
+     "se": 1.968
+    }
+   ]
+  },
+  {
+   "cat": "river · facing a bet · multiway · slightly behind · edge fell",
+   "n": 63,
+   "usual": "fold",
+   "usualShare": 0.7142857142857143,
+   "best": "fold",
+   "gain": -0.35863087764550283,
+   "se": 1.7782837048181874,
+   "z": -0.2016724759237275,
+   "bb100": -0.001129687264583334,
+   "alts": [
+    {
+     "a": "fold",
+     "mean": -22.975,
+     "gain": -0.359,
+     "se": 1.778
+    },
+    {
+     "a": "call",
+     "mean": -46.298,
+     "gain": -23.682,
+     "se": 3.706
+    }
+   ]
+  },
+  {
+   "cat": "river · facing a bet · multiway · slightly ahead · edge jumped",
+   "n": 45,
+   "usual": "call",
+   "usualShare": 0.6444444444444445,
+   "best": "fold",
+   "gain": -0.7386667111111096,
+   "se": 2.9050956070646223,
+   "z": -0.2542658869177376,
+   "bb100": -0.0016620000999999966,
+   "alts": [
+    {
+     "a": "fold",
+     "mean": -9.614,
+     "gain": -0.739,
+     "se": 2.905
+    },
+    {
+     "a": "call",
+     "mean": -11.529,
+     "gain": -2.654,
+     "se": 2.828
+    },
+    {
+     "a": "raise",
+     "mean": -35.131,
+     "gain": -27.929,
+     "se": 5.753
+    }
+   ]
+  },
+  {
+   "cat": "river · facing a bet · multiway · way ahead (>+20) · edge fell",
+   "n": 10,
+   "usual": "call",
+   "usualShare": 0.9,
+   "best": "call",
+   "gain": -3.5635568499999977,
+   "se": 3.380686865248498,
+   "z": -1.0540925533894596,
+   "bb100": -0.0017817784249999989,
+   "alts": [
+    {
+     "a": "fold",
+     "mean": -20.621,
+     "gain": -23.798,
+     "se": 14.256
+    },
+    {
+     "a": "call",
+     "mean": -0.386,
+     "gain": -3.564,
+     "se": 3.381
+    },
+    {
+     "a": "raise",
+     "mean": -9.479,
+     "gain": -7.481,
+     "se": 8.123
+    }
+   ]
+  },
+  {
+   "cat": "river · facing a bet · multiway · slightly ahead · edge fell",
+   "n": 72,
+   "usual": "call",
+   "usualShare": 0.6388888888888888,
+   "best": "fold",
+   "gain": -0.7462070717592586,
+   "se": 3.4174557971268418,
+   "z": -0.21835163819430156,
+   "bb100": -0.002686345458333331,
+   "alts": [
+    {
+     "a": "fold",
+     "mean": -24.877,
+     "gain": -0.746,
+     "se": 3.417
+    },
+    {
+     "a": "call",
+     "mean": -27.172,
+     "gain": -3.042,
+     "se": 2.594
+    }
+   ]
+  },
+  {
+   "cat": "turn · checked to / first in · multiway · ahead +10–20 · edge fell",
+   "n": 189,
+   "usual": "bet pot",
+   "usualShare": 0.9047619047619048,
+   "best": "bet pot",
+   "gain": -0.2911712522045853,
+   "se": 0.41401990632024643,
+   "z": -0.7032783877289294,
+   "bb100": -0.002751568333333331,
+   "alts": [
+    {
+     "a": "check",
+     "mean": 4.046,
+     "gain": -6.006,
+     "se": 2.662
+    },
+    {
+     "a": "bet ⅓",
+     "mean": 5.948,
+     "gain": -4.104,
+     "se": 2.965
+    },
+    {
+     "a": "bet ⅔",
+     "mean": 8.694,
+     "gain": -1.358,
+     "se": 2.044
+    },
+    {
+     "a": "bet pot",
+     "mean": 9.761,
+     "gain": -0.291,
+     "se": 0.414
+    }
+   ]
+  },
+  {
+   "cat": "turn · facing a bet · heads-up · ahead +10–20 · edge fell",
+   "n": 674,
+   "usual": "call",
+   "usualShare": 0.9584569732937686,
+   "best": "call",
+   "gain": -0.1207063835311575,
+   "se": 0.2776551016423271,
+   "z": -0.4347349744959861,
+   "bb100": -0.004067805125000007,
+   "alts": [
+    {
+     "a": "fold",
+     "mean": -21.562,
+     "gain": -20.534,
+     "se": 2.283
+    },
+    {
+     "a": "call",
+     "mean": -1.148,
+     "gain": -0.121,
+     "se": 0.278
+    }
+   ]
+  },
+  {
+   "cat": "river · facing a bet · multiway · way ahead (>+20) · edge steady",
+   "n": 61,
+   "usual": "call",
+   "usualShare": 0.9016393442622951,
+   "best": "call",
+   "gain": -1.427788664617486,
+   "se": 1.187624151269027,
+   "z": -1.2022226586515885,
+   "bb100": -0.004354755427083332,
+   "alts": [
+    {
+     "a": "fold",
+     "mean": -34.549,
+     "gain": -47.36,
+     "se": 10.591
+    },
+    {
+     "a": "call",
+     "mean": 11.383,
+     "gain": -1.428,
+     "se": 1.188
+    }
+   ]
+  },
+  {
+   "cat": "river · facing a bet · heads-up · way ahead (>+20) · edge fell",
+   "n": 248,
+   "usual": "call",
+   "usualShare": 0.7661290322580645,
+   "best": "call",
+   "gain": -0.3657098124999994,
+   "se": 1.253827077640976,
+   "z": -0.2916748401925307,
+   "bb100": -0.004534801674999992,
+   "alts": [
+    {
+     "a": "fold",
+     "mean": -33.576,
+     "gain": -43.846,
+     "se": 4.477
+    },
+    {
+     "a": "call",
+     "mean": 9.905,
+     "gain": -0.366,
+     "se": 1.254
+    }
+   ]
+  },
+  {
+   "cat": "turn · facing a bet · heads-up · way ahead (>+20) · edge steady",
+   "n": 3689,
+   "usual": "call",
+   "usualShare": 0.7332610463540254,
+   "best": "call",
+   "gain": -0.028409539102738406,
+   "se": 0.22274235321555744,
+   "z": -0.1275443968900035,
+   "bb100": -0.005240139487500099,
+   "alts": [
+    {
+     "a": "fold",
+     "mean": -23.096,
+     "gain": -41.722,
+     "se": 1.044
+    },
+    {
+     "a": "call",
+     "mean": 18.598,
+     "gain": -0.028,
+     "se": 0.223
+    }
+   ]
+  },
+  {
+   "cat": "turn · checked to / first in · heads-up · ahead +10–20 · edge fell",
+   "n": 2030,
+   "usual": "bet pot",
+   "usualShare": 0.8896551724137931,
+   "best": "bet pot",
+   "gain": -0.05477792692939265,
+   "se": 0.13705815715501618,
+   "z": -0.3996692212010224,
+   "bb100": -0.0055599595833333544,
+   "alts": [
+    {
+     "a": "check",
+     "mean": 5.74,
+     "gain": -2.033,
+     "se": 0.511
+    },
+    {
+     "a": "bet ⅓",
+     "mean": 6.468,
+     "gain": -1.305,
+     "se": 0.465
+    },
+    {
+     "a": "bet ⅔",
+     "mean": 7.314,
+     "gain": -0.459,
+     "se": 0.351
+    },
+    {
+     "a": "bet pot",
+     "mean": 7.718,
+     "gain": -0.055,
+     "se": 0.137
+    }
+   ]
+  },
+  {
+   "cat": "turn · checked to / first in · multiway · ahead +10–20 · edge steady",
+   "n": 895,
+   "usual": "bet pot",
+   "usualShare": 0.8759776536312849,
+   "best": "bet pot",
+   "gain": -0.12654138733705733,
+   "se": 0.32726417583174894,
+   "z": -0.386664342393877,
+   "bb100": -0.005662727083333315,
+   "alts": [
+    {
+     "a": "check",
+     "mean": 6.362,
+     "gain": -8.773,
+     "se": 1.002
+    },
+    {
+     "a": "bet ⅓",
+     "mean": 10.897,
+     "gain": -4.238,
+     "se": 1.092
+    },
+    {
+     "a": "bet ⅔",
+     "mean": 11.776,
+     "gain": -3.359,
+     "se": 0.966
+    },
+    {
+     "a": "bet pot",
+     "mean": 15.008,
+     "gain": -0.127,
+     "se": 0.327
+    }
+   ]
+  },
+  {
+   "cat": "river · facing a bet · multiway · ahead +10–20 · edge steady",
+   "n": 82,
+   "usual": "call",
+   "usualShare": 0.9024390243902439,
+   "best": "call",
+   "gain": -1.645953963414634,
+   "se": 1.3360115873134495,
+   "z": -1.231990784394647,
+   "bb100": -0.00674841125,
+   "alts": [
+    {
+     "a": "fold",
+     "mean": -28.678,
+     "gain": -14.5,
+     "se": 4.688
+    },
+    {
+     "a": "call",
+     "mean": -15.825,
+     "gain": -1.646,
+     "se": 1.336
+    }
+   ]
+  },
+  {
+   "cat": "turn · checked to / first in · multiway · way ahead (>+20) · edge jumped",
+   "n": 1107,
+   "usual": "bet ⅓",
+   "usualShare": 0.9223125564588979,
+   "best": "bet ⅓",
+   "gain": -0.1458594323998793,
+   "se": 0.21928882484829548,
+   "z": -0.6651475856135634,
+   "bb100": -0.00807331958333332,
+   "alts": [
+    {
+     "a": "check",
+     "mean": 23.985,
+     "gain": -6.002,
+     "se": 0.756
+    },
+    {
+     "a": "bet ⅓",
+     "mean": 29.841,
+     "gain": -0.146,
+     "se": 0.219
+    },
+    {
+     "a": "bet ⅔",
+     "mean": 28.451,
+     "gain": -1.536,
+     "se": 0.695
+    },
+    {
+     "a": "bet pot",
+     "mean": 27.084,
+     "gain": -2.902,
+     "se": 0.864
+    }
+   ]
+  },
+  {
+   "cat": "turn · facing a bet · multiway · behind (<−10) · edge fell",
+   "n": 1225,
+   "usual": "fold",
+   "usualShare": 0.9853061224489796,
+   "best": "fold",
+   "gain": -0.15169574408163267,
+   "se": 0.18113135682456732,
+   "z": -0.8374902432192115,
+   "bb100": -0.009291364325,
+   "alts": [
+    {
+     "a": "fold",
+     "mean": -8.195,
+     "gain": -0.152,
+     "se": 0.181
+    },
+    {
+     "a": "call",
+     "mean": -17.483,
+     "gain": -9.44,
+     "se": 0.788
+    },
+    {
+     "a": "raise",
+     "mean": -38.759,
+     "gain": -31.583,
+     "se": 1.437
+    }
+   ]
+  },
+  {
+   "cat": "flop · facing a bet · multiway · behind (<−10) · edge fell",
+   "n": 13794,
+   "usual": "fold",
+   "usualShare": 0.9999275047121937,
+   "best": "fold",
+   "gain": -0.015051834130781499,
+   "se": 0.015051288527369238,
+   "z": -1.0000362496148598,
+   "bb100": -0.01038125,
+   "alts": [
+    {
+     "a": "fold",
+     "mean": -4.972,
+     "gain": -0.015,
+     "se": 0.015
+    },
+    {
+     "a": "call",
+     "mean": -11.537,
+     "gain": -6.58,
+     "se": 0.21
+    },
+    {
+     "a": "raise",
+     "mean": -19.527,
+     "gain": -15.148,
+     "se": 0.342
+    }
+   ]
+  },
+  {
+   "cat": "flop · facing a bet · heads-up · slightly ahead · edge fell",
+   "n": 338,
+   "usual": "fold",
+   "usualShare": 0.7189349112426036,
+   "best": "fold",
+   "gain": -0.77182825443787,
+   "se": 0.8053945885958627,
+   "z": -0.9583231193339494,
+   "bb100": -0.013043897500000002,
+   "alts": [
+    {
+     "a": "fold",
+     "mean": -5.72,
+     "gain": -0.772,
+     "se": 0.805
+    },
+    {
+     "a": "call",
+     "mean": -9.022,
+     "gain": -4.074,
+     "se": 1.905
+    },
+    {
+     "a": "raise",
+     "mean": -10.159,
+     "gain": -5.942,
+     "se": 2.217
+    }
+   ]
+  },
+  {
+   "cat": "flop · facing a bet · multiway · slightly behind · edge fell",
+   "n": 2986,
+   "usual": "fold",
+   "usualShare": 0.9698593436034829,
+   "best": "fold",
+   "gain": -0.1571242344273275,
+   "se": 0.1941387936191292,
+   "z": -0.8093397074238617,
+   "bb100": -0.023458648199999994,
+   "alts": [
+    {
+     "a": "fold",
+     "mean": -5.6,
+     "gain": -0.157,
+     "se": 0.194
+    },
+    {
+     "a": "call",
+     "mean": -9.485,
+     "gain": -4.042,
+     "se": 0.604
+    },
+    {
+     "a": "raise",
+     "mean": -10.242,
+     "gain": -5.652,
+     "se": 0.85
+    }
+   ]
+  },
+  {
+   "cat": "turn · checked to / first in · heads-up · ahead +10–20 · edge steady",
+   "n": 13151,
+   "usual": "bet pot",
+   "usualShare": 0.8562086533343471,
+   "best": "bet pot",
+   "gain": -0.051291104605480226,
+   "se": 0.05401139453936526,
+   "z": -0.9496348880252963,
+   "bb100": -0.033726465833333524,
+   "alts": [
+    {
+     "a": "check",
+     "mean": 5.329,
+     "gain": -2.54,
+     "se": 0.195
+    },
+    {
+     "a": "bet ⅓",
+     "mean": 6.204,
+     "gain": -1.665,
+     "se": 0.185
+    },
+    {
+     "a": "bet ⅔",
+     "mean": 7.277,
+     "gain": -0.592,
+     "se": 0.149
+    },
+    {
+     "a": "bet pot",
+     "mean": 7.818,
+     "gain": -0.051,
+     "se": 0.054
+    }
+   ]
+  },
+  {
+   "cat": "turn · facing a bet · multiway · slightly behind · edge steady",
+   "n": 814,
+   "usual": "fold",
+   "usualShare": 0.7764127764127764,
+   "best": "fold",
+   "gain": -1.5299483013923008,
+   "se": 0.8486487437642877,
+   "z": -1.8028051212401772,
+   "bb100": -0.062268895866666646,
+   "alts": [
+    {
+     "a": "fold",
+     "mean": -8.761,
+     "gain": -1.53,
+     "se": 0.849
+    },
+    {
+     "a": "call",
+     "mean": -11.648,
+     "gain": -4.417,
+     "se": 1.337
+    },
+    {
+     "a": "raise",
+     "mean": -22.353,
+     "gain": -15.256,
+     "se": 2.133
+    }
+   ]
+  },
+  {
+   "cat": "river · facing a bet · multiway · way ahead (>+20) · edge jumped",
+   "n": 179,
+   "usual": "call",
+   "usualShare": 0.6256983240223464,
+   "best": "call",
+   "gain": -7.038206138733704,
+   "se": 1.9308796900697305,
+   "z": -3.6450775130787827,
+   "bb100": -0.06299194494166666,
+   "alts": [
+    {
+     "a": "fold",
+     "mean": -20.992,
+     "gain": -54.415,
+     "se": 5.699
+    },
+    {
+     "a": "call",
+     "mean": 26.385,
+     "gain": -7.038,
+     "se": 1.931
+    }
+   ]
+  },
+  {
+   "cat": "river · facing a bet · heads-up · slightly ahead · edge steady",
+   "n": 2414,
+   "usual": "call",
+   "usualShare": 0.8935376967688484,
+   "best": "call",
+   "gain": -0.8918191642502072,
+   "se": 0.23046702718275547,
+   "z": -3.869617164554362,
+   "bb100": -0.10764257312500003,
+   "alts": [
+    {
+     "a": "fold",
+     "mean": -26.432,
+     "gain": -1.587,
+     "se": 0.652
+    },
+    {
+     "a": "call",
+     "mean": -25.737,
+     "gain": -0.892,
+     "se": 0.23
+    }
+   ]
+  },
+  {
+   "cat": "flop · facing a bet · heads-up · ahead +10–20 · edge steady",
+   "n": 2175,
+   "usual": "call",
+   "usualShare": 0.41333333333333333,
+   "best": "call",
+   "gain": -1.1491751583908034,
+   "se": 0.8621923547479955,
+   "z": -1.3328524105583008,
+   "bb100": -0.12497279847499987,
+   "alts": [
+    {
+     "a": "fold",
+     "mean": -8.231,
+     "gain": -3.631,
+     "se": 0.739
+    },
+    {
+     "a": "call",
+     "mean": -5.749,
+     "gain": -1.149,
+     "se": 0.862
+    },
+    {
+     "a": "raise",
+     "mean": -5.598,
+     "gain": -1.178,
+     "se": 0.933
+    }
+   ]
+  },
+  {
+   "cat": "river · facing a bet · heads-up · way ahead (>+20) · edge steady",
+   "n": 2756,
+   "usual": "call",
+   "usualShare": 0.75,
+   "best": "call",
+   "gain": -2.419486222079099,
+   "se": 0.3363742773734174,
+   "z": -7.192839598115785,
+   "bb100": -0.33340520140249985,
+   "alts": [
+    {
+     "a": "fold",
+     "mean": -33.072,
+     "gain": -54.642,
+     "se": 1.221
+    },
+    {
+     "a": "call",
+     "mean": 19.151,
+     "gain": -2.419,
+     "se": 0.336
+    }
+   ]
+  },
+  {
+   "cat": "turn · checked to / first in · heads-up · behind (<−10) · edge fell",
+   "n": 13609,
+   "usual": "check",
+   "usualShare": 0.8067455360423249,
+   "best": "check",
+   "gain": -0.5729511435202197,
+   "se": 0.10924887332980797,
+   "z": -5.244458144575602,
+   "bb100": -0.38986460560833347,
+   "alts": [
+    {
+     "a": "check",
+     "mean": -6.998,
+     "gain": -0.573,
+     "se": 0.109
+    },
+    {
+     "a": "bet ⅓",
+     "mean": -8.805,
+     "gain": -2.379,
+     "se": 0.162
+    },
+    {
+     "a": "bet ⅔",
+     "mean": -9.607,
+     "gain": -3.182,
+     "se": 0.203
+    },
+    {
+     "a": "bet pot",
+     "mean": -9.363,
+     "gain": -2.938,
+     "se": 0.229
+    }
+   ]
+  },
+  {
+   "cat": "flop · checked to / first in · multiway · behind (<−10) · edge fell",
+   "n": 17572,
+   "usual": "bet pot",
+   "usualShare": 0.524698383792397,
+   "best": "bet pot",
+   "gain": -0.682410735260644,
+   "se": 0.1319967367698832,
+   "z": -5.169906104954142,
+   "bb100": -0.5995660720000018,
+   "alts": [
+    {
+     "a": "check",
+     "mean": -3.905,
+     "gain": -1.544,
+     "se": 0.144
+    },
+    {
+     "a": "bet ⅓",
+     "mean": -5.534,
+     "gain": -3.174,
+     "se": 0.163
+    },
+    {
+     "a": "bet ⅔",
+     "mean": -5.24,
+     "gain": -2.879,
+     "se": 0.163
+    },
+    {
+     "a": "bet pot",
+     "mean": -3.043,
+     "gain": -0.682,
+     "se": 0.132
+    }
+   ]
+  },
+  {
+   "cat": "river · facing a bet · heads-up · way ahead (>+20) · edge jumped",
+   "n": 4462,
+   "usual": "call",
+   "usualShare": 0.5791125056028686,
+   "best": "call",
+   "gain": -6.7107104406544185,
+   "se": 0.38041919204113617,
+   "z": -17.640304645641443,
+   "bb100": -1.4971594993100006,
+   "alts": [
+    {
+     "a": "fold",
+     "mean": -28.91,
+     "gain": -55.753,
+     "se": 1.004
+    },
+    {
+     "a": "call",
+     "mean": 20.132,
+     "gain": -6.711,
+     "se": 0.38
+    }
+   ]
+  }
+ ]
+}

@@ -303,9 +303,10 @@ async function heroCoach(h) {
     const bluffSpot = d.hu && mP < T.bluffMax && T.bluff >= 0.1 && L.canRaise;
     const stabSpot = !bluffSpot && d.a !== 'raise' && mP >= T.stabLo && T.stab >= 0.15 && L.canRaise;
     if (bluffSpot || stabSpot) ok.add('raise');
+    if (stabSpot && T.stab >= 0.9 && Math.abs(mP - T.stabLo) >= 0.03) ok.delete('check'); // the strategy always stabs here
     if (trapSpot) ok.add('check');
     if (d.a === 'raise') size = { cls: d.kind, frac: d.size, txt: `${d.kind === 'bomb' ? 'bomb it' : d.kind === 'swing' ? 'swing bet' : d.kind === 'value' ? 'value bet' : 'thin value'} (~${Math.round(d.size * 100)}% pot)${d.kind === 'bomb' && vsStation ? ': a calling station is in the hand' : ''}` };
-    else if (stabSpot) size = { cls: 'stab', frac: 1, txt: `stab pot; checked to and only slightly behind, the strategy bets here ${Math.round(T.stab * 100)}% of the time` };
+    else if (stabSpot) size = { cls: 'stab', frac: 1, txt: T.stab >= 0.9 ? 'stab pot: checked to and no more than ' + Math.round(-T.stabLo * 100) + ' points behind, the strategy always bets' : `stab pot; checked to and only slightly behind, the strategy bets here ${Math.round(T.stab * 100)}% of the time` };
     else if (bluffSpot) size = { cls: 'bluff', frac: T.bluffSize, txt: `bluff ~${Math.round(T.bluffSize * 100)}% pot; the strategy bluffs here ${Math.round(T.bluff * 100)}% of the time` };
     why = `Your edge is ${pp(mP)} points (equity ${P(eqP)} vs fair share ${P(fair)}), scoop chance ${P(scP)}. ${notes.join(' ')} Strategy: bet from a ${pp(d.vbEff)} edge${d.hu && T.huVb ? ` (heads-up ${Math.round(T.huVb * 100)} points thinner)` : ''}.${size ? ` Size: ${size.txt}.` : ''} <span class="muted">Vs ranges narrowed by betting (${rangeTxt}): ${P(eq)}.</span>`;
   } else {

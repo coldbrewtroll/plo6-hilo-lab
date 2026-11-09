@@ -63,7 +63,7 @@ const CFG_DEFAULT = {
   tbScale: 1, callScale: 1, fbScale: 1, call3Scale: 1,
   bbIso: SOLVED && SOLVED.bbIso ? SOLVED.bbIso : 25, foldTo4: 0.20, playSpread: 0.40, realIP: 0.90, realOOP: 0.75, realOOP3: 0.65, rakePct: 5, rakeCap: 2, gradeBy: 'range', adjustForType: true,
 };
-const CFG_KEY = 'plo6hl_cfg_v4'; // v4: charts tuned by self-play (round 9)
+const CFG_KEY = 'plo6hl_cfg_v6'; // v6: charts from the 100M-hand cleanup (round 14)
 let CFG = (() => {
   const s = store.get(CFG_KEY, {});
   return Object.assign(JSON.parse(JSON.stringify(CFG_DEFAULT)), s, { rfi: Object.assign({}, CFG_DEFAULT.rfi, s.rfi || {}), vsOpen: CFG_DEFAULT.vsOpen, vs3: CFG_DEFAULT.vs3 });

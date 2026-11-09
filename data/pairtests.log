@@ -1,0 +1,4 @@
+preflop cleanup package (all 8 scan fixes): +2.71 ± 0.82 bb/100 (z 3.3) · 600,000 duplicate deals (1,200,000 hands) · 13.6 min
+openers defend 40% wider vs 3-bets (call): -1.13 ± 0.46 bb/100 (z -2.4) · 600,000 duplicate deals (1,200,000 hands) · 12.9 min
+BB 3-bets 10 points wider vs HJ, CO and BTN opens: +2.00 ± 0.58 bb/100 (z 3.5) · 600,000 duplicate deals (1,200,000 hands) · 13.0 min
+round 14 vs round 9 (start of the 100M-hand run): +32.46 ± 0.94 bb/100 (z 34.4) · 1,000,000 duplicate deals (2,000,000 hands) · 23.0 min

@@ -46,7 +46,7 @@ async function pairEval(star, cand, seedBase, deals) {
   return { bb100: mean * 100, se100: se * 100, z: mean / se, n, changed: nz / n };
 }
 const STEP0 = { vb: 0.04, big: 0.05, thin: 0.15, bomb: 0.15, bluff: 0.05, slack: 0.03, sizeAdj: 0.25, raiseM: 0.08, raiseSc: 0.15, swing: 0.05, swingVb: 0.05, swingSize: 0.2, swingRaise: 0.06, initVb: 0.04, bigSize: 0.2, bluffSize: 0.2, bluffMax: 0.05, huVb: 0.04, huAdj: 0.04, braise: 0.05, trap: 0.08, stab: 0.08, stabLo: 0.05, rfiUTG: 0.15, rfiHJ: 0.15, rfiCO: 0.15, rfiBTN: 0.12, rfiSB: 0.15, sbc: 0.12, iso: 0.2, tbIP: 0.2, ctIP: 0.15, tbBlind: 3, ctSB: 0.15, ctBB: 0.12, fb: 0.2, cb: 0.2 };
-const clamp = (k, v) => Math.max(SP.BOUNDS[k][0], Math.min(SP.BOUNDS[k][1], +v.toFixed(3)));
+const clamp = (k, v) => { const b = SP.boundsOf(k); return Math.max(b[0], Math.min(b[1], +v.toFixed(3))); };
 function save(state) { fs.writeFileSync(OUT, JSON.stringify(state, null, 1)); }
 
 async function hypotheses(star, label, seedBase) {

@@ -44,8 +44,8 @@ if bp2.exists():  # round 2 (aggressive, equity-driven) supersedes round 1; keep
         R = {k: p3.get(k) for k in ('history', 'final', 'deals', 'sweeps')} | {'n': n}
         rb = root / 'data' / f'robustness{n}.json'
         if rb.exists(): R['robustness'] = json.loads(rb.read_text())
-        sc = root / 'data' / f'spots.r{n - 1}.json'
-        if sc.exists(): S = json.loads(sc.read_text()); R['spots'] = {k: v for k, v in S.items() if k != 'spots'} | {'top': S['spots'][:12]}
+        sc = next((f for f in (root / 'data' / f'spots.post.r{n - 1}.json', root / 'data' / f'spots.pre.r{n - 1}.json', root / 'data' / f'spots.r{n - 1}.json') if f.exists()), None)
+        if sc: S = json.loads(sc.read_text()); R['spots'] = {k: v for k, v in S.items() if k != 'spots'} | {'top': S['spots'][:12]}
         if p3.get('hypothesesEnd'): p2['hypothesesEnd'] = p3['hypothesesEnd']
         p2['rounds'].insert(0, R)  # latest first
     pol = p2

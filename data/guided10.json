@@ -1,0 +1,14 @@
+[
+ { "name": "CO opens 30% wider", "street": "pre", "patch": { "rfiCO": 1.3 } },
+ { "name": "CO opens 60% wider", "street": "pre", "patch": { "rfiCO": 1.6 } },
+ { "name": "UTG opens 40% wider", "street": "pre", "patch": { "rfiUTG": 1.4 } },
+ { "name": "UTG opens 80% wider", "street": "pre", "patch": { "rfiUTG": 1.8 } },
+ { "name": "BB 3-bets 10 points wider vs a BTN open", "street": "pre", "patch": { "tb@BTN>BB": 10 } },
+ { "name": "BB 3-bets 25 points wider vs a BTN open", "street": "pre", "patch": { "tb@BTN>BB": 25 } },
+ { "name": "SB flats tighter vs CO and BTN opens", "street": "pre", "patch": { "ct@BTN>SB": -10, "ct@CO>SB": -8 } },
+ { "name": "BB iso-raises a SB complete half as often", "street": "pre", "patch": { "iso": 0.5 } },
+ { "name": "BB iso-raises a SB complete rarely (top 5%)", "street": "pre", "patch": { "iso": 0.2 } },
+ { "name": "4-bet 40% less vs 3-bets (call instead)", "street": "pre", "patch": { "fb": 0.6 } },
+ { "name": "SB raises 40% more first in", "street": "pre", "patch": { "rfiSB": 1.4 } },
+ { "name": "BTN opens 15% tighter", "street": "pre", "patch": { "rfiBTN": 0.85 } }
+]

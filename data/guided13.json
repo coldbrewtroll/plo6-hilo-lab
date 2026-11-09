@@ -1,0 +1,8 @@
+[
+ { "name": "flop: stab 80% when checked to and slightly behind", "street": "flop", "patch": { "stab": 0.80 } },
+ { "name": "flop: always stab when checked to and slightly behind", "street": "flop", "patch": { "stab": 1.0 } },
+ { "name": "turn heads-up: call a bet a little more (call tax 2 instead of 6)", "street": "turn", "patch": { "huAdj": 0.02 } },
+ { "name": "turn: call bets a little more (slack +0.01)", "street": "turn", "patch": { "slack": 0.01 } },
+ { "name": "river heads-up: never trap, bet big hands", "street": "river", "patch": { "trap": 0.0 } },
+ { "name": "river heads-up: bluff 10% instead of 20%", "street": "river", "patch": { "bluff": 0.10 } }
+]

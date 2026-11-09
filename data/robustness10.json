@@ -1,0 +1,3 @@
+{ "note": "paired duplicate deals, 60,000 per table type. Round 10 = round 9 plus the preflop cleanup package; the package alone measured +2.71 ± 0.82 bb/100 over 600,000 duplicate deals",
+  "cols": { "round1": "round-1 bots", "round3": "round-3 bots", "round9": "round-9 bots", "stations": "calling stations", "mixed": "mixed table" },
+  "rows": [ { "label": "Round 10 vs round 9", "vals": { "round1": [4.40, 2.69], "round3": [7.35, 2.66], "round9": [2.33, 2.73], "stations": [3.48, 2.98], "mixed": [5.00, 2.69] } } ] }

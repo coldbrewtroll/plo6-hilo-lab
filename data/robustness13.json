@@ -1,0 +1,3 @@
+{ "note": "paired duplicate deals, 60,000 per table type. Versus calling stations the trainer turns stabs and bluffs off",
+  "cols": { "round1": "round-1 bots", "round3": "round-3 bots", "round12": "round-12 bots", "stations": "calling stations", "mixed": "mixed table" },
+  "rows": [ { "label": "Round 13 vs round 12", "vals": { "round1": [-0.28, 2.16], "round3": [6.27, 1.79], "round12": [19.14, 1.60], "stations": [5.75, 2.68], "mixed": [10.80, 1.98] } } ] }

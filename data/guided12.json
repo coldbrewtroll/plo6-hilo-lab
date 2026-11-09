@@ -1,0 +1,10 @@
+[
+ { "name": "river heads-up: trap (check) big hands 20% instead of 45%", "street": "river", "patch": { "trap": 0.20 } },
+ { "name": "river heads-up: never trap, bet big hands", "street": "river", "patch": { "trap": 0.0 } },
+ { "name": "river heads-up: bluff 20% instead of 35%", "street": "river", "patch": { "bluff": 0.20 } },
+ { "name": "river: call bets a little less (slack −0.08)", "street": "river", "patch": { "slack": -0.08 } },
+ { "name": "flop: stab 80% when checked to and slightly behind", "street": "flop", "patch": { "stab": 0.80 } },
+ { "name": "flop: stab down to 20 points behind", "street": "flop", "patch": { "stabLo": -0.20 } },
+ { "name": "turn: stab pot 30% when checked to and slightly behind", "street": "turn", "patch": { "stab": 0.30, "stabLo": -0.10 } },
+ { "name": "turn: bet pot (not ⅓) after the equity swings your way", "street": "turn", "patch": { "swingSize": 1.0 } }
+]

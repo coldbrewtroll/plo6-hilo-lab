@@ -1,0 +1,26 @@
+[0.0m] guided jumps: 6 candidates from the problem-spot scan (100,000 duplicate deals each)
+[2.2m]   ✓ flop: stab 80% when checked to and slightly behind: +7.18 ± 0.98 bb/100 (z 7.3)
+[4.3m]   ✓ flop: always stab when checked to and slightly behind: +5.54 ± 0.96 bb/100 (z 5.8)
+[6.4m]   · turn heads-up: call a bet a little more (call tax 2 instead of 6): -0.16 ± 0.88 bb/100 (z -0.2)
+[8.5m]   · turn: call bets a little more (slack +0.01): +0.64 ± 0.75 bb/100 (z 0.9)
+[10.6m]   ✓ river heads-up: never trap, bet big hands: +1.89 ± 0.45 bb/100 (z 4.2)
+[12.7m]   ✓ river heads-up: bluff 10% instead of 20%: +1.51 ± 0.47 bb/100 (z 3.2)
+[12.7m] sweep 1 (step ×1.00, 40,000 duplicate deals per test)
+[26.5m]   ✓ river.bluffSize: 1 → 0.8  +0.58 ± 0.23 bb/100 (z 2.5)
+[69.9m] sweep 1 done: 1 changes kept · 11.5M hands simulated so far
+[69.9m] sweep 2 (step ×0.70, 40,000 duplicate deals per test)
+[83.8m]   ✓ river.bluffSize: 0.8 → 0.66  +0.23 ± 0.09 bb/100 (z 2.6)
+[96.2m] sweep 2 done: 1 changes kept · 16.2M hands simulated so far
+[96.2m] final checks…
+[96.8m]   end thin river value: river.vb 0.1 → 0.02: +0.53 ± 0.86 bb/100 (z 0.6)
+[97.1m]   end thin river value: river.vb 0.1 → 0.06: +1.19 ± 0.63 bb/100 (z 1.9)
+[97.4m]   end thin river value: river.vb 0.1 → 0.14: -0.13 ± 0.79 bb/100 (z -0.2)
+[97.7m]   end river bomb with scoop potential: river.bomb 1.01 → 0.4: +0.01 ± 0.04 bb/100 (z 0.3)
+[98.1m]   end river bomb with scoop potential: river.bomb 1.01 → 0.55: +0.01 ± 0.04 bb/100 (z 0.3)
+[98.4m]   end river bomb with scoop potential: river.bomb 1.01 → 0.7: +0.00 ± 0.00 bb/100 (z 0.0)
+[98.7m]   end turn bomb with scoop potential: turn.bomb 1.01 → 0.5: -2.30 ± 1.39 bb/100 (z -1.7)
+[99.0m]   end turn bomb with scoop potential: turn.bomb 1.01 → 0.65: -1.69 ± 1.12 bb/100 (z -1.5)
+[99.3m]   end thin value size (river): river.thin 0.8 → 0.33: -0.72 ± 0.36 bb/100 (z -2.0)
+[99.6m]   end thin value size (river): river.thin 0.8 → 0.5: -0.57 ± 0.37 bb/100 (z -1.5)
+[99.9m]   end thin value size (river): river.thin 0.8 → 0.75: +0.01 ± 0.02 bb/100 (z 0.3)
+[106.4m] tuned bot vs the previous tuned bot (same seat, same cards, table of baseline bots): +15.17 ± 0.86 bb/100

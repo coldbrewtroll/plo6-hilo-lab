@@ -1,0 +1,11 @@
+[
+ { "name": "river: bet pot (not ⅓) after the equity swings your way", "street": "river", "patch": { "swingSize": 1.0 } },
+ { "name": "river: bet pot (not ⅔) when well ahead", "street": "river", "patch": { "bigSize": 1.0 } },
+ { "name": "river: thin value at pot size", "street": "river", "patch": { "thin": 1.0 } },
+ { "name": "turn: thin value at pot size (not ⅘)", "street": "turn", "patch": { "thin": 1.0 } },
+ { "name": "turn: bet ⅔ (not ⅓) after the equity swings your way", "street": "turn", "patch": { "swingSize": 0.66 } },
+ { "name": "flop: raise more readily after the equity swings your way (−15 points)", "street": "flop", "patch": { "swingRaise": 0.15 } },
+ { "name": "flop: raise much more readily after a swing (−30 points)", "street": "flop", "patch": { "swingRaise": 0.30 } },
+ { "name": "flop: bet ⅔ (not ⅓) after the equity swings your way", "street": "flop", "patch": { "swingSize": 0.66 } },
+ { "name": "river heads-up: bluff 20% instead of 35%", "street": "river", "patch": { "bluff": 0.20 } }
+]

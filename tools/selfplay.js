@@ -36,9 +36,10 @@ const KEYS = ['vb', 'big', 'thin', 'bomb', 'bluff', 'slack', 'sizeAdj', 'raiseM'
 // bigSize = bet size when well ahead; bluffSize / bluffMax = bluff size and the edge below which we may bluff (heads-up);
 // huVb = how much thinner we value-bet heads-up; huAdj = extra equity we demand to call a bet heads-up.
 const NEUTRAL = { swing: 0.10, swingVb: 0, swingSize: 0.66, swingRaise: 0, initVb: 0, bigSize: 0.66, bluffSize: 0.6, bluffMax: -0.05, huVb: 0, huAdj: 0, braise: 0, trap: 0, stab: 0, stabLo: -0.10 };
-const BOUNDS = { vb: [-0.05, 0.4], big: [0, 0.5], thin: [0.2, 0.8], bomb: [0.2, 1.01], bluff: [0, 0.5], slack: [-0.15, 0.15], sizeAdj: [0, 1.5], raiseM: [0, 0.6], raiseSc: [0.3, 1.01], swing: [0.02, 0.3], swingVb: [0, 0.25], swingSize: [0.33, 1], swingRaise: [0, 0.3], initVb: [0, 0.2], bigSize: [0.25, 1], bluffSize: [0.25, 1], bluffMax: [-0.3, 0.05], huVb: [-0.1, 0.2], huAdj: [-0.1, 0.25], braise: [0, 0.5], trap: [0, 0.6], stab: [0, 0.6], stabLo: [-0.3, 0.05] };
+const BOUNDS = { vb: [-0.05, 0.4], big: [0, 0.5], thin: [0.2, 1], bomb: [0.2, 1.01], bluff: [0, 0.5], slack: [-0.15, 0.15], sizeAdj: [0, 1.5], raiseM: [0, 0.6], raiseSc: [0.3, 1.01], swing: [0.02, 0.3], swingVb: [0, 0.25], swingSize: [0.33, 1], swingRaise: [0, 0.3], initVb: [0, 0.2], bigSize: [0.25, 1], bluffSize: [0.25, 1], bluffMax: [-0.3, 0.05], huVb: [-0.1, 0.2], huAdj: [-0.1, 0.25], braise: [0, 0.5], trap: [0, 0.6], stab: [0, 1], stabLo: [-0.3, 0.05] };
 for (const k of ['rfiUTG', 'rfiHJ', 'rfiCO', 'rfiBTN', 'rfiSB', 'sbc', 'iso', 'tbIP', 'ctIP', 'ctSB', 'ctBB', 'fb', 'cb']) BOUNDS[k] = [0.4, 2.5];
 BOUNDS.tbBlind = [0, 20];
+const boundsOf = k => BOUNDS[k] || (k.includes('@') ? [-40, 40] : null);
 // starting point = the current app heuristic translated into these terms (equity margins over fair share, no scoop logic)
 const BASELINE = {
   flop: { vb: 0.18, big: 0.18, thin: 0.66, bomb: 1.01, bluff: 0.08, slack: 0.03, sizeAdj: 0, raiseM: 0.30, raiseSc: 1.01 },
@@ -87,13 +88,16 @@ const PRE_NEUTRAL = { rfiUTG: 1, rfiHJ: 1, rfiCO: 1, rfiBTN: 1, rfiSB: 1, sbc: 1
 function preChart(T) {
   T = Object.assign({}, PRE_NEUTRAL, T || {});
   const rfi = {}; for (const p of ['UTG', 'HJ', 'CO', 'BTN', 'SB']) rfi[p] = Math.min(100, CFG.rfi[p] * T['rfi' + p]);
+  const sbc0 = T['sbc@'] || 0, iso0 = T['iso@'] || 0;
   const vsOpen = {}, vs3 = {};
   for (const k of Object.keys(CFG.vsOpen)) { const [o, p] = k.split('>'), v = S.vsOpenOf(o, p), blind = p === 'SB' || p === 'BB';
     const tb = Math.min(60, blind ? v.tb + T.tbBlind : v.tb * T.tbIP), cw = (v.ct - v.tb) * (blind ? (p === 'SB' ? T.ctSB : T.ctBB) : T.ctIP);
-    vsOpen[k] = { tb, ct: Math.min(100, tb + cw) }; }
-  for (const k of Object.keys(CFG.vs3)) { const [p, a] = k.split('>'), v = S.vs3Of(p, a), fb = Math.min(rfi[p] || 100, v.fb * T.fb);
-    vs3[k] = { fb, cb: Math.max(fb, Math.min(rfi[p] || 100, v.cb * T.cb)) }; }
-  return { rfi, sbComplete: Math.max(rfi.SB, Math.min(100, CFG.sbComplete * T.sbc)), bbIso: Math.min(100, CFG.bbIso * T.iso), vsOpen, vs3 };
+    // per-spot fine-tuning (percentage points), e.g. T['ct@UTG>CO'] = +3 widens CO's continue range vs a UTG open
+    const tb2 = Math.max(0, Math.min(60, tb + (T['tb@' + k] || 0)));
+    vsOpen[k] = { tb: tb2, ct: Math.max(tb2, Math.min(100, tb + cw + (T['ct@' + k] || 0))) }; }
+  for (const k of Object.keys(CFG.vs3)) { const [p, a] = k.split('>'), v = S.vs3Of(p, a), fb = Math.max(0, Math.min(rfi[p] || 100, v.fb * T.fb + (T['fb@' + k] || 0)));
+    vs3[k] = { fb, cb: Math.max(fb, Math.min(rfi[p] || 100, v.cb * T.cb + (T['cb@' + k] || 0))) }; }
+  return { rfi, sbComplete: Math.max(rfi.SB, Math.min(100, CFG.sbComplete * T.sbc + sbc0)), bbIso: Math.max(0, Math.min(100, CFG.bbIso * T.iso + iso0)), vsOpen, vs3 };
 }
 const chartCache = new WeakMap();
 const chartOf = th => { const T = th && th.pre; if (!T) return BASE_CHART; let c = chartCache.get(T); if (!c) { c = preChart(T); chartCache.set(T, c); } return c; };
@@ -112,6 +116,12 @@ function preDecide(h, i, th) {
   const cont = Math.max(2, pl.band[0] < 1e-9 && pl.band[1] < 100 ? pl.band[1] * (1 - CFG.foldTo4) : pl.band[0] + 0.3 * (pl.band[1] - pl.band[0]));
   if (t <= cont) return L.canRaise && h.rng() < 0.5 ? raise([0, cont]) : { a: 'call', band: [0, cont] };
   return passive;
+}
+// the range opponents assign to a preflop action: the chart band of that action in this spot (used when a replay deviates from the chart)
+function chartBand(h, i, th, a) {
+  const pl = h.P[i], top0 = pl.top, rng0 = h.rng; h.rng = () => 0;
+  try { for (let t = 0.05; t <= 100; t += t < 10 ? 0.25 : 1) { pl.top = t; const d = preDecide(h, i, th); if (d.a === a || (a === 'call' && d.a === 'check')) return d.band || null; } return null; }
+  finally { pl.top = top0; h.rng = rng0; }
 }
 // postflop: parameterized policy. eq/scoop are vs the opponents' preflop ranges (real-equity pool).
 const EQ_T = +(process.env.EQ_T || 300);
@@ -160,7 +170,7 @@ function playHand(seed, thetas, trace, override) {
   const deckR = mulberry32(hash(seed, 7)), inUse = new Set(used), deck = [...Array(52).keys()].filter(c => !inUse.has(c));
   for (let i = deck.length - 1; i > 0; i--) { const j = Math.floor(deckR() * (i + 1)); [deck[i], deck[j]] = [deck[j], deck[i]]; }
   const h = { seed, P: POS.map((p, i) => ({ cards: hands[i].cards, stack: 100, contrib: 0, sb: 0, folded: false, allin: false, acted: false, band: [0, 100], top: hands[i].top })),
-    board: [], fullBoard: deck.slice(0, 5), street: 'pre', bet: 1, lastRaise: 1, raises: 0, aggr: -1, opener: -1, prevAggr: -1, k: 0, nDec: 0, rng: mulberry32(hash(seed, 11)), flopSeen: false };
+    board: [], fullBoard: deck.slice(0, 5), street: 'pre', bet: 1, lastRaise: 1, raises: 0, aggr: -1, opener: -1, prevAggr: -1, k: 0, kp: 0, nDec: 0, rng: mulberry32(hash(seed, 11)), flopSeen: false };
   put(h, 4, 0.5); put(h, 5, 1);
   let cur = 5;
   for (;;) {
@@ -176,10 +186,13 @@ function playHand(seed, thetas, trace, override) {
       cur = 3; continue; // BTN index: postflop action starts left of the button
     }
     let d;
-    if (h.street === 'pre') d = preDecide(h, i, thetas[i]);
-    else { d = postDecide(h, i, thetas[i]); const k = h.k++; if (override) { const o = override(k, h, i, d); if (o) d = Object.assign({}, o, { ctx: d.ctx }); } }
+    let kk;
+    if (h.street === 'pre') { // preflop decisions are numbered -1, -2, ... (postflop 0, 1, ...)
+      d = preDecide(h, i, thetas[i]); kk = -1 - h.kp++;
+      if (override) { const o = override(kk, h, i, d); if (o && o.a !== d.a) d = Object.assign({}, o, { band: chartBand(h, i, thetas[i], o.a) || h.P[i].band }); }
+    } else { d = postDecide(h, i, thetas[i]); kk = h.k++; if (override) { const o = override(kk, h, i, d); if (o) d = Object.assign({}, o, { ctx: d.ctx }); } }
     if (d.band) h.P[i].band = d.band;
-    if (trace) trace(h, i, d, h.street === 'pre' ? -1 : h.k - 1);
+    if (trace) trace(h, i, d, kk);
     act(h, i, d.a, d.to);
     cur = i;
   }
@@ -218,7 +231,7 @@ function playSpot(seed, spec, thetas) {
   return h.P[spec.hero].stack - 100;
 }
 BASE_CHART = preChart(null);
-module.exports = { PRE_KEYS, PRE_NEUTRAL, preChart, playHand, playSpot, BASELINE, KEYS, BOUNDS, STREETS, NEUTRAL, withNeutral, clone, E, POS, S, legal };
+module.exports = { boundsOf, chartBand, PRE_KEYS, PRE_NEUTRAL, preChart, playHand, playSpot, BASELINE, KEYS, BOUNDS, STREETS, NEUTRAL, withNeutral, clone, E, POS, S, legal };
 
 if (require.main === module) { // quick sanity / speed check
   const th = POS.map(() => clone(BASELINE));

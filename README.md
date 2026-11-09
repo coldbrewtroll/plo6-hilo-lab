@@ -41,6 +41,14 @@ Counters to the stab (raising flop bets, re-steals, calling wider) all lost agai
 ## Round 9: preflop charts by self-play
 Every chart width (opening range per position, SB complete, BB iso-raise, calls and 3-bets vs opens, blind 3-bets, 4-bets and calls vs 3-bets) was tested by self-play with the round-8 postflop bot. The solver charts held up everywhere except one spot: **the blinds should 3-bet their top ~10% vs opens** (the solver never 3-bet from the blinds), keeping the same flatting band behind it. +5.5 bb/100 on average over table types (+8.6 vs round-1 bots, +4.0 vs round-8 bots, level vs calling stations). The trainer's preflop charts now include this (`tools/applypre.js` writes them into `data/ranges.json`; the solver charts stay in `data/ranges.solver.json`). Saved range settings were reset (settings key v4) so the new charts take effect. The optional "grade by EV" mode still uses the equity-realization model, which is more pessimistic about the blinds than self-play, so in SB/BB spots it agrees with the chart less often (84–93% instead of 95–98%).
 
+## Rounds 10–13: the 100M-hand EV cleanup
+About 100M practice hands. Problem-spot scans replayed sampled decisions with every alternative action against a mixed field (old and new bots plus calling stations; `MODE=pre` covers preflop chart decisions by spot and hand-strength band), and each fix was then kept only if it won as a whole strategy (`tools/pairtest.js`, `tools/optimize.js`).
+- **Round 10 (preflop)**: UTG opens 40% wider, CO 30% wider, SB raises 40% more first in, BB 3-bets 10 points wider vs BTN, SB flats tighter vs CO/BTN, BB rarely iso-raises a SB complete, 4-bet 40% less vs 3-bets. +2.71 ± 0.82 bb/100 as a package.
+- **Round 11**: pot-size river bets after an equity swing and when well ahead, pot-size thin value on the turn, flop stabs 60%. +6.40 ± 0.64 vs round 10.
+- **Round 12**: river traps 45% → 20%, river bluffs 35% → 20%, flop stabs down to 20 points behind, turn stabs 30%. +8.31 ± 0.68 vs round 11.
+- **Round 13**: always stab the flop when checked to and up to 20 points behind; never trap on the river; river bluffs 10% at ~⅔ pot. +15.17 ± 0.86 vs round 12 (level vs round-1 bots, +6 to +19 elsewhere).
+- **Round 14 (preflop again)**: after the new postflop play, the BB 3-bets 10 points wider vs HJ and CO opens and 20 wider vs BTN (BB vs BTN: 3-bet top 30%, call to 56.6%). Openers defending wider vs 3-bets lost (−1.13 ± 0.46); the BB change won as a whole strategy (+2.00 ± 0.58) and at every table type.
+
 ## iPhone / phone version
 The same page adapts to phone screens: a portrait table, a bottom action bar within thumb reach, the river call-math box under the buttons, panels stacked, wide tables scroll inside their panel, 16px inputs (so iOS Safari doesn't zoom), safe-area padding for the notch and home bar.
 - `artifact.html`: the build for a hosted claude.ai page (open it in Safari on the phone).
